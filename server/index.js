@@ -16,11 +16,13 @@ const onPlatform = !!(process.env.RAILWAY_ENVIRONMENT || process.env.RENDER);
 if (onPlatform) {
   process.env.NODE_ENV = process.env.NODE_ENV || 'production';
   process.env.TRUST_PROXY = process.env.TRUST_PROXY || '1';
+  process.env.HOST = '0.0.0.0'; // 127.0.0.1 يمنع Railway من الوصول للموقع
 }
 const volume = process.env.RAILWAY_VOLUME_MOUNT_PATH || process.env.DATA_DIR;
 if (volume) {
-  process.env.DB_FILE = process.env.DB_FILE || path.join(volume, 'wasm.db');
-  process.env.UPLOAD_DIR = process.env.UPLOAD_DIR || path.join(volume, 'uploads');
+  // المسارات النسبية (مثل ./data من .env.example) تضيع مع كل نشر — نحطها في الـ Volume
+  if (!path.isAbsolute(process.env.DB_FILE || '')) process.env.DB_FILE = path.join(volume, 'wasm.db');
+  if (!path.isAbsolute(process.env.UPLOAD_DIR || '')) process.env.UPLOAD_DIR = path.join(volume, 'uploads');
 } else if (onPlatform) {
   console.warn('⚠️ لا يوجد قرص دائم (Volume): البيانات ستضيع عند إعادة التشغيل. أضف Volume مركّباً على /data');
 }
@@ -35,7 +37,9 @@ const admins = String(process.env.ADMIN_EMAIL || '').split(',').map(e => e.trim(
 for (const e of admins) db.run("UPDATE users SET role='super_admin', admin_country_code=NULL WHERE lower(email)=? AND role<>'super_admin'", e);
 
 // SEED_DEMO=1: بيانات تجريبية وهمية (مرة وحدة، ما تمس حسابات الناس الحقيقية)
-if (process.env.SEED_DEMO === '1' && !db.one("SELECT 1 FROM users WHERE email='demo@wasm.demo'")) {
+const seedOn = ['1', 'true', 'yes', 'on'].includes(String(process.env.SEED_DEMO || '').trim().toLowerCase());
+console.log(`[boot] DB=${process.env.DB_FILE || 'data/wasm.db'} SEED_DEMO=${seedOn ? 'on' : 'off'}`);
+if (seedOn && !db.one("SELECT 1 FROM users WHERE email='demo@wasm.demo'")) {
   require('../scripts/seed').seed({ silent: false }).catch(e => console.error('[seed]', e));
 }
 const port = Number(process.env.PORT) || 3000;
