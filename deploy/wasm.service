@@ -1,0 +1,18 @@
+[Unit]
+Description=WASM camel platform
+After=network.target
+
+[Service]
+User=wasm
+WorkingDirectory=/opt/wasm
+EnvironmentFile=/opt/wasm/.env
+ExecStart=/usr/bin/node --disable-warning=ExperimentalWarning server/index.js
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/opt/wasm/data /opt/wasm/backups
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

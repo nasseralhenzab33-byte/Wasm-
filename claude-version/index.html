@@ -1,0 +1,2047 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>وسم | WASM — السوق الخليجي لأهل الإبل</title>
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLZiNiz2YUiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRTJDMjdFIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjQjM4QTQ1Ii8+PC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiByeD0iMTgiIGZpbGw9IiMwRTNCMzEiLz4KICA8cmVjdCB4PSI1LjUiIHk9IjUuNSIgd2lkdGg9IjUzIiBoZWlnaHQ9IjUzIiByeD0iMTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNnKSIgc3Ryb2tlLXdpZHRoPSIxLjUiIG9wYWNpdHk9Ii41NSIvPgogIDwhLS0g2LPZhtin2YXYp9mGINi52YTZiSDZh9mK2KbYqSDZiNiz2YUgLS0+CiAgPHBhdGggZD0iTTEzIDQxIEMxNyAyNyAyNCAyMiAyOCAzMCBDMzAgMzQgMzEgMzUgMzIgMzUgQzMzIDM1IDM0IDM0IDM2IDMwIEM0MCAyMiA0NyAyNyA1MSA0MSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2cpIiBzdHJva2Utd2lkdGg9IjQuMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgPCEtLSDYrti3INin2YTZiNiz2YUgKNin2YTYudi12KcpINmI2KfZhNmG2YLYt9ipIC0tPgogIDxwYXRoIGQ9Ik0zMiA0MCBWNTAiIHN0cm9rZT0idXJsKCNnKSIgc3Ryb2tlLXdpZHRoPSI0LjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxjaXJjbGUgY3g9IjMyIiBjeT0iMTciIHI9IjMiIGZpbGw9InVybCgjZykiLz4KPC9zdmc+Cg==">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@500;600;700&display=swap">
+<style>/* وسم | WASM — نظام التصميم */
+:root {
+  --emerald-900: #0A2A23;
+  --emerald-800: #0E3B31;
+  --emerald-700: #14503F;
+  --emerald-600: #1B6650;
+  --emerald-100: #E3EFE9;
+  --gold-600: #A88340;
+  --gold-500: #C9A35B;
+  --gold-300: #E2C98F;
+  --gold-100: #F5ECD7;
+  --ivory: #FAF6EC;
+  --ivory-2: #F3EDDF;
+  --charcoal: #24282A;
+  --charcoal-2: #4A5053;
+  --muted: #7B8285;
+  --line: #E6DFCF;
+  --white: #FFFFFF;
+  --danger: #B3412E;
+  --danger-bg: #FBEAE6;
+  --warn: #9A6A12;
+  --warn-bg: #FBF1DA;
+  --info: #1B6650;
+  --info-bg: #E3EFE9;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 1px 2px rgba(10, 42, 35, .06), 0 8px 24px rgba(10, 42, 35, .06);
+  --shadow-lg: 0 20px 50px rgba(10, 42, 35, .18);
+  --font: "IBM Plex Sans Arabic", "Noto Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+  --font-display: "Reem Kufi", "IBM Plex Sans Arabic", "Noto Kufi Arabic", "Noto Sans Arabic", sans-serif;
+  --sidebar: 264px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  font-family: var(--font); color: var(--charcoal); background: var(--ivory);
+  font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased;
+}
+a { color: var(--emerald-700); text-decoration: none; }
+a:hover { color: var(--emerald-600); }
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; margin: 0 0 .4em; line-height: 1.3; color: var(--emerald-900); }
+h1 { font-size: 1.75rem; } h2 { font-size: 1.3rem; } h3 { font-size: 1.08rem; }
+p { margin: 0 0 .8em; }
+button, input, select, textarea { font: inherit; color: inherit; }
+img { max-width: 100%; display: block; }
+:focus-visible { outline: 3px solid var(--gold-500); outline-offset: 2px; border-radius: 6px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+/* ===== الهيكل ===== */
+.shell { display: grid; grid-template-columns: var(--sidebar) 1fr; min-height: 100vh; }
+.sidebar {
+  background: linear-gradient(180deg, var(--emerald-800), var(--emerald-900));
+  color: var(--ivory); padding: 22px 16px; position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.brand { display: flex; align-items: center; gap: 12px; padding: 4px 8px 18px; border-bottom: 1px solid rgba(226, 201, 143, .18); margin-bottom: 10px; }
+.brand img { width: 44px; height: 44px; }
+.brand b { font-family: var(--font-display); font-size: 1.45rem; color: var(--gold-300); display: block; line-height: 1.1; }
+.brand small { color: rgba(250, 246, 236, .62); font-size: .78rem; }
+.nav-label { font-size: .72rem; letter-spacing: .02em; color: rgba(250, 246, 236, .45); padding: 14px 10px 4px; }
+.nav a {
+  display: flex; align-items: center; gap: 12px; color: rgba(250, 246, 236, .86); padding: 10px 12px; border-radius: 12px;
+  font-size: .95rem; transition: background .15s;
+}
+.nav a:hover { background: rgba(255, 255, 255, .06); color: var(--white); }
+.nav a.active { background: rgba(201, 163, 91, .16); color: var(--gold-300); box-shadow: inset -3px 0 0 var(--gold-500); }
+.nav a .ico { width: 20px; height: 20px; flex: none; opacity: .9; }
+.nav a .soon { margin-inline-start: auto; font-size: .66rem; background: rgba(255, 255, 255, .08); color: rgba(250, 246, 236, .6); padding: 1px 8px; border-radius: 20px; }
+.sidebar .foot { margin-top: auto; padding: 14px 10px 0; font-size: .75rem; color: rgba(250, 246, 236, .45); }
+
+.main { min-width: 0; }
+.topbar {
+  display: flex; align-items: center; gap: 12px; padding: 16px 32px; background: rgba(250, 246, 236, .86);
+  backdrop-filter: saturate(1.4) blur(8px); position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--line);
+}
+.topbar .title { font-family: var(--font-display); font-size: 1.2rem; color: var(--emerald-900); }
+.topbar .spacer { flex: 1; }
+.topbar .mobile-brand { display: none; }
+.user-chip { display: flex; align-items: center; gap: 10px; padding: 6px 6px 6px 14px; border-radius: 30px; background: var(--white); border: 1px solid var(--line); cursor: pointer; }
+.avatar { width: 34px; height: 34px; border-radius: 50%; background: var(--emerald-700); color: var(--gold-300); display: grid; place-items: center; font-weight: 700; font-size: .9rem; }
+.page { padding: 28px 32px 80px; max-width: 1280px; }
+
+.demo-banner {
+  background: repeating-linear-gradient(-45deg, var(--gold-100), var(--gold-100) 12px, #F0E3C4 12px, #F0E3C4 24px);
+  color: #6E5420; text-align: center; font-size: .82rem; padding: 6px 12px; border-bottom: 1px solid #E6D3A8;
+}
+
+/* ===== المكونات ===== */
+.card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid rgba(230, 223, 207, .7); padding: 20px; }
+.card + .card { margin-top: 16px; }
+.card-h { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.card-h h2, .card-h h3 { margin: 0; }
+.grid { display: grid; gap: 16px; }
+.g2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.g3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.g4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.g-main { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.stack > * + * { margin-top: 10px; }
+.muted { color: var(--muted); }
+.small { font-size: .85rem; }
+.nowrap { white-space: nowrap; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid transparent; cursor: pointer;
+  padding: 10px 18px; border-radius: 12px; font-weight: 600; font-size: .95rem; transition: transform .05s, background .15s, box-shadow .15s;
+  background: var(--emerald-700); color: var(--ivory); min-height: 44px; text-decoration: none;
+}
+.btn:hover { background: var(--emerald-600); color: var(--white); }
+.btn:active { transform: translateY(1px); }
+.btn.gold { background: linear-gradient(180deg, var(--gold-500), var(--gold-600)); color: var(--emerald-900); }
+.btn.gold:hover { filter: brightness(1.05); color: var(--emerald-900); }
+.btn.ghost { background: transparent; color: var(--emerald-700); border-color: var(--line); }
+.btn.ghost:hover { background: var(--emerald-100); }
+.btn.danger { background: var(--danger-bg); color: var(--danger); }
+.btn.sm { padding: 6px 12px; min-height: 34px; font-size: .85rem; border-radius: 10px; }
+.btn[disabled] { opacity: .55; cursor: not-allowed; }
+.icon-btn { background: none; border: 0; cursor: pointer; padding: 8px; border-radius: 10px; color: var(--charcoal-2); }
+.icon-btn:hover { background: var(--ivory-2); }
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: .88rem; font-weight: 600; color: var(--charcoal-2); }
+.field .hint { font-size: .78rem; color: var(--muted); }
+.input, select.input, textarea.input {
+  width: 100%; padding: 11px 14px; border: 1.5px solid var(--line); border-radius: 12px; background: var(--white); min-height: 46px;
+  transition: border-color .15s, box-shadow .15s;
+}
+.input:focus { outline: none; border-color: var(--gold-500); box-shadow: 0 0 0 4px rgba(201, 163, 91, .18); }
+textarea.input { min-height: 90px; resize: vertical; }
+.check { display: flex; gap: 10px; align-items: flex-start; font-size: .92rem; cursor: pointer; }
+.check input { width: 20px; height: 20px; accent-color: var(--emerald-700); margin-top: 3px; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 18px; }
+.form-grid .full { grid-column: 1 / -1; }
+.seg { display: inline-flex; background: var(--ivory-2); padding: 4px; border-radius: 12px; gap: 4px; }
+.seg button { border: 0; background: none; padding: 7px 16px; border-radius: 9px; cursor: pointer; font-weight: 600; color: var(--charcoal-2); }
+.seg button.on { background: var(--white); color: var(--emerald-800); box-shadow: var(--shadow); }
+
+.badge { display: inline-flex; align-items: center; gap: 5px; padding: 2px 10px; border-radius: 20px; font-size: .76rem; font-weight: 600; background: var(--ivory-2); color: var(--charcoal-2); white-space: nowrap; }
+.badge.green { background: var(--emerald-100); color: var(--emerald-700); }
+.badge.gold { background: var(--gold-100); color: #7A5B1E; }
+.badge.red { background: var(--danger-bg); color: var(--danger); }
+.badge.warn { background: var(--warn-bg); color: var(--warn); }
+.badge.outline { background: transparent; border: 1px dashed var(--gold-500); color: #7A5B1E; }
+
+.stat { padding: 18px 20px; border-radius: var(--radius); background: var(--white); border: 1px solid rgba(230, 223, 207, .7); box-shadow: var(--shadow); position: relative; overflow: hidden; }
+.stat .k { color: var(--muted); font-size: .85rem; }
+.stat .v { font-family: var(--font-display); font-size: 2rem; color: var(--emerald-800); line-height: 1.2; }
+.stat .ico-bg { position: absolute; inset-inline-end: -10px; bottom: -14px; width: 84px; height: 84px; opacity: .07; color: var(--emerald-800); }
+.stat.hero { background: linear-gradient(135deg, var(--emerald-800), var(--emerald-600)); color: var(--ivory); border: 0; }
+.stat.hero .k { color: rgba(250, 246, 236, .75); }
+.stat.hero .v { color: var(--gold-300); }
+.stat.hero .ico-bg { color: var(--gold-300); opacity: .14; }
+
+.hero-band {
+  border-radius: 22px; padding: 26px 28px; color: var(--ivory); margin-bottom: 20px; position: relative; overflow: hidden;
+  background: radial-gradient(1200px 300px at 0% 0%, rgba(226, 201, 143, .22), transparent 60%), linear-gradient(135deg, var(--emerald-900), var(--emerald-700));
+}
+.hero-band h1 { color: var(--ivory); margin-bottom: 4px; }
+.hero-band p { color: rgba(250, 246, 236, .78); margin: 0; }
+.hero-band .dunes { position: absolute; inset-inline-start: 0; bottom: 0; width: 100%; height: 70px; opacity: .25; }
+.hero-band .actions { margin-top: 16px; position: relative; }
+
+.list { list-style: none; margin: 0; padding: 0; }
+.list li { display: flex; gap: 12px; align-items: center; padding: 12px 4px; border-bottom: 1px solid var(--ivory-2); }
+.list li:last-child { border-bottom: 0; }
+.list .grow { flex: 1; min-width: 0; }
+.list .t { font-weight: 600; }
+.dot { width: 10px; height: 10px; border-radius: 50%; flex: none; background: var(--emerald-600); }
+.dot.urgent { background: var(--danger); } .dot.warning { background: #D89A1E; } .dot.info { background: var(--emerald-600); }
+
+.empty { text-align: center; padding: 36px 16px; color: var(--muted); }
+.empty svg { width: 70px; height: 70px; margin: 0 auto 10px; color: var(--gold-500); opacity: .7; }
+
+/* بطاقات الإبل */
+.camel-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.camel-card { background: var(--white); border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(230, 223, 207, .8); box-shadow: var(--shadow); transition: transform .15s, box-shadow .15s; color: inherit; display: block; }
+.camel-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); color: inherit; }
+.camel-card .ph { aspect-ratio: 4/3; background: linear-gradient(160deg, var(--gold-100), var(--ivory-2)); position: relative; }
+.camel-card .ph img { width: 100%; height: 100%; object-fit: cover; }
+.camel-card .ph .sex { position: absolute; top: 10px; inset-inline-start: 10px; }
+.camel-card .ph .ph-fallback { position: absolute; inset: 0; display: grid; place-items: center; color: var(--gold-500); }
+.camel-card .ph .ph-fallback svg { width: 70px; opacity: .6; }
+.camel-card .body { padding: 12px 14px 14px; }
+.camel-card .name { font-family: var(--font-display); font-size: 1.12rem; color: var(--emerald-900); }
+.camel-card .meta { font-size: .82rem; color: var(--muted); }
+
+.toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 18px; }
+.toolbar .search { flex: 1; min-width: 220px; position: relative; }
+.toolbar .search svg { position: absolute; inset-inline-start: 12px; top: 13px; width: 20px; color: var(--muted); }
+.toolbar .search .input { padding-inline-start: 40px; }
+
+/* الملف الرقمي */
+.profile-head { display: grid; grid-template-columns: 220px 1fr; gap: 22px; align-items: start; }
+.profile-photo { aspect-ratio: 1; border-radius: 20px; overflow: hidden; background: var(--gold-100); border: 4px solid var(--white); box-shadow: var(--shadow); }
+.profile-photo img { width: 100%; height: 100%; object-fit: cover; }
+.facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; margin-top: 12px; }
+.fact { background: var(--ivory); border-radius: 12px; padding: 10px 12px; }
+.fact .k { font-size: .76rem; color: var(--muted); }
+.fact .v { font-weight: 600; }
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin: 22px 0 18px; overflow-x: auto; scrollbar-width: none; }
+.tabs button { background: none; border: 0; padding: 12px 16px; cursor: pointer; font-weight: 600; color: var(--muted); border-bottom: 3px solid transparent; white-space: nowrap; }
+.tabs button.on { color: var(--emerald-800); border-bottom-color: var(--gold-500); }
+
+.timeline { position: relative; padding-inline-start: 22px; }
+.timeline::before { content: ""; position: absolute; inset-inline-start: 7px; top: 6px; bottom: 6px; width: 2px; background: var(--line); }
+.tl-item { position: relative; padding: 0 0 18px; }
+.tl-item::before { content: ""; position: absolute; inset-inline-start: -20px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: var(--white); border: 3px solid var(--gold-500); }
+.tl-item.mating::before { border-color: var(--emerald-600); }
+.tl-item.birth::before { border-color: #C2702E; }
+.tl-item .when { font-size: .8rem; color: var(--muted); }
+
+/* شجرة النسب */
+.ped { display: grid; grid-template-columns: repeat(4, minmax(150px, 1fr)); gap: 0 18px; align-items: center; overflow-x: auto; padding-bottom: 6px; }
+.ped .gen { display: flex; flex-direction: column; justify-content: space-around; gap: 10px; height: 100%; }
+.pnode { background: var(--white); border: 1.5px solid var(--line); border-radius: 12px; padding: 8px 12px; position: relative; min-height: 54px; }
+.pnode.f { border-inline-start: 4px solid #C27BA0; }
+.pnode.m { border-inline-start: 4px solid #4F7FB0; }
+.pnode.self { background: var(--emerald-800); color: var(--ivory); border-color: var(--emerald-800); }
+.pnode.self .n { color: var(--gold-300); }
+.pnode.ext { border-style: dashed; background: var(--ivory); }
+.pnode.none { border-style: dashed; color: var(--muted); background: transparent; }
+.pnode .n { font-weight: 700; font-family: var(--font-display); }
+.pnode .s { font-size: .74rem; opacity: .75; }
+a.pnode { color: inherit; display: block; }
+a.pnode:hover { border-color: var(--gold-500); }
+
+/* التقويم */
+.cal { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+.cal .dow { text-align: center; font-size: .78rem; color: var(--muted); padding: 4px; }
+.cal .day { min-height: 92px; background: var(--white); border-radius: 12px; border: 1px solid var(--line); padding: 6px 8px; font-size: .78rem; overflow: hidden; }
+.cal .day.out { opacity: .4; }
+.cal .day.today { border: 2px solid var(--gold-500); }
+.cal .day .num { font-weight: 700; color: var(--charcoal-2); }
+.cal .ev { display: block; border-radius: 6px; padding: 1px 6px; margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--charcoal); }
+.ev.expected_birth { background: var(--gold-100); }
+.ev.birth { background: #F8E1D0; }
+.ev.mating { background: var(--emerald-100); }
+.ev.follow_up { background: #E4ECF6; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: .8rem; color: var(--charcoal-2); }
+.legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-inline-end: 6px; vertical-align: middle; }
+.legend .l1::before { background: var(--gold-300); } .legend .l2::before { background: #F0C2A0; } .legend .l3::before { background: #9CC9B5; } .legend .l4::before { background: #A9C2E2; }
+
+/* المساعد */
+.chat { display: flex; flex-direction: column; height: calc(100vh - 170px); min-height: 480px; background: var(--white); border-radius: 22px; border: 1px solid var(--line); box-shadow: var(--shadow); overflow: hidden; }
+.chat-head { display: flex; align-items: center; gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--line); background: linear-gradient(180deg, var(--white), var(--ivory)); }
+.chat-head .ai-ico { width: 42px; height: 42px; border-radius: 14px; background: linear-gradient(135deg, var(--emerald-800), var(--emerald-600)); display: grid; place-items: center; }
+.chat-head .ai-ico svg { width: 24px; color: var(--gold-300); }
+.msgs { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 12px; background: radial-gradient(800px 300px at 100% 0, rgba(201, 163, 91, .06), transparent); }
+.msg { max-width: 78%; padding: 11px 15px; border-radius: 18px; white-space: pre-wrap; word-wrap: break-word; font-size: .95rem; }
+.msg.user { align-self: flex-start; background: var(--emerald-700); color: var(--ivory); border-start-start-radius: 6px; }
+.msg.assistant { align-self: flex-end; background: var(--ivory); border: 1px solid var(--line); border-start-end-radius: 6px; }
+.msg .src { display: block; margin-top: 6px; }
+.action-card { margin-top: 10px; background: var(--white); border: 1.5px solid var(--gold-300); border-radius: 14px; padding: 12px 14px; white-space: normal; }
+.action-card .kv { display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; font-size: .88rem; margin: 6px 0 10px; }
+.action-card .kv dt { color: var(--muted); }
+.action-card .kv dd { margin: 0; font-weight: 600; }
+.chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; white-space: normal; }
+.chip { border: 1px solid var(--line); background: var(--white); padding: 6px 12px; border-radius: 20px; cursor: pointer; font-size: .85rem; color: var(--emerald-800); }
+.chip:hover { border-color: var(--gold-500); background: var(--gold-100); }
+.composer { display: flex; gap: 10px; padding: 12px; border-top: 1px solid var(--line); background: var(--white); }
+.composer .input { border-radius: 14px; }
+.typing span { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--gold-500); margin: 0 2px; animation: b 1s infinite; }
+.typing span:nth-child(2) { animation-delay: .15s; } .typing span:nth-child(3) { animation-delay: .3s; }
+@keyframes b { 0%, 80%, 100% { opacity: .3; transform: translateY(0); } 40% { opacity: 1; transform: translateY(-3px); } }
+
+/* النوافذ والتنبيهات */
+.modal-back { position: fixed; inset: 0; background: rgba(10, 42, 35, .45); z-index: 100; display: grid; place-items: center; padding: 16px; animation: fade .15s; }
+.modal { background: var(--white); border-radius: 22px; width: min(560px, 100%); max-height: 92vh; overflow-y: auto; box-shadow: var(--shadow-lg); padding: 22px; }
+.modal .mh { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.modal .mf { display: flex; gap: 10px; justify-content: flex-start; margin-top: 18px; }
+@keyframes fade { from { opacity: 0; } }
+.toast-wrap { position: fixed; bottom: 24px; inset-inline-start: 50%; transform: translateX(50%); z-index: 200; display: flex; flex-direction: column; gap: 8px; align-items: center; }
+.toast { background: var(--emerald-900); color: var(--ivory); padding: 12px 18px; border-radius: 14px; box-shadow: var(--shadow-lg); font-size: .92rem; animation: fade .2s; }
+.toast.err { background: var(--danger); }
+.notice { border-radius: 12px; padding: 10px 14px; font-size: .85rem; display: flex; gap: 10px; align-items: flex-start; }
+.notice.gold { background: var(--gold-100); color: #6E5420; }
+.notice.info { background: var(--info-bg); color: var(--emerald-700); }
+.notice.err { background: var(--danger-bg); color: var(--danger); }
+
+/* صفحات الدخول */
+.auth { min-height: 100vh; display: grid; grid-template-columns: 1.1fr 1fr; }
+.auth .art {
+  background: radial-gradient(900px 400px at 80% 10%, rgba(226, 201, 143, .25), transparent 60%), linear-gradient(160deg, var(--emerald-900), var(--emerald-700));
+  color: var(--ivory); padding: 48px; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden;
+}
+.auth .art h1 { color: var(--gold-300); font-size: 2.6rem; }
+.auth .art p { color: rgba(250, 246, 236, .8); font-size: 1.1rem; max-width: 460px; }
+.auth .art .feat { display: grid; gap: 12px; margin-top: 26px; max-width: 440px; }
+.auth .art .feat div { display: flex; gap: 12px; align-items: center; background: rgba(255, 255, 255, .06); padding: 12px 14px; border-radius: 14px; border: 1px solid rgba(226, 201, 143, .15); }
+.auth .art .feat svg { width: 24px; color: var(--gold-300); flex: none; }
+.auth .art .dunes { position: absolute; bottom: 0; inset-inline: 0; width: 100%; opacity: .5; }
+.auth .form-side { display: grid; place-items: center; padding: 32px; }
+.auth .box { width: min(420px, 100%); }
+
+/* الأقسام القادمة */
+.soon-hero { text-align: center; padding: 40px 20px; }
+.soon-hero .big { width: 96px; height: 96px; border-radius: 28px; margin: 0 auto 16px; display: grid; place-items: center; background: var(--gold-100); color: var(--gold-600); }
+.soon-hero .big svg { width: 48px; }
+.phase-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; text-align: start; margin-top: 20px; }
+
+/* الجوال */
+.bottom-nav { display: none; }
+@media (max-width: 960px) {
+  .shell { grid-template-columns: 1fr; }
+  .sidebar { display: none; }
+  .topbar { padding: 12px 16px; }
+  .topbar .mobile-brand { display: flex; align-items: center; gap: 8px; }
+  .topbar .mobile-brand img { width: 34px; }
+  .topbar .title { display: none; }
+  .page { padding: 18px 16px 110px; }
+  .g4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .g3, .g2, .g-main { grid-template-columns: 1fr; }
+  .form-grid { grid-template-columns: 1fr; }
+  .profile-head { grid-template-columns: 1fr; }
+  .profile-photo { max-width: 240px; }
+  .auth { grid-template-columns: 1fr; }
+  .auth .art { padding: 28px 22px 80px; min-height: auto; }
+  .auth .art h1 { font-size: 2rem; }
+  .auth .art .feat { display: none; }
+  .chat { height: calc(100vh - 200px); border-radius: 18px; }
+  .msg { max-width: 90%; }
+  .cal .day { min-height: 62px; padding: 4px; }
+  .cal .ev { font-size: .66rem; padding: 0 3px; }
+  .bottom-nav {
+    display: grid; grid-template-columns: repeat(5, 1fr); position: fixed; bottom: 0; inset-inline: 0; z-index: 50;
+    background: var(--white); border-top: 1px solid var(--line); padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
+    box-shadow: 0 -6px 20px rgba(10, 42, 35, .06);
+  }
+  .bottom-nav a { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: .7rem; color: var(--muted); padding: 4px; }
+  .bottom-nav a svg { width: 24px; height: 24px; }
+  .bottom-nav a.active { color: var(--emerald-700); font-weight: 700; }
+  .bottom-nav a.ai { color: var(--gold-600); }
+  .bottom-nav a.ai .bub { width: 46px; height: 46px; margin-top: -22px; border-radius: 16px; background: linear-gradient(135deg, var(--emerald-800), var(--emerald-600)); display: grid; place-items: center; box-shadow: var(--shadow-lg); }
+  .bottom-nav a.ai .bub svg { color: var(--gold-300); }
+  .ped { grid-template-columns: repeat(4, 150px); }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+/* أحجام الأيقونات الافتراضية */
+.ico { width: 20px; height: 20px; flex: none; vertical-align: middle; display: inline-block; }
+.btn .ico { width: 18px; height: 18px; }
+.list li > .ico { color: var(--gold-600); }
+a.small .ico { width: 16px; height: 16px; transform: scaleX(-1); }
+@media (max-width: 960px) { .user-chip .small { display: none; } .user-chip { padding: 4px; } }
+
+.boot { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 24px; }
+</style>
+</head>
+<body>
+<div id="app" aria-live="polite"></div>
+<div class="toast-wrap" id="toasts" role="status"></div>
+<script>/* وسم | WASM — نسخة Claude: "خادم" داخل الصفحة.
+   نفس منطق الخادم (الحلال، التلقيح، الولادة، النسب، المساعد) لكن البيانات محفوظة
+   في قاعدة بيانات الصفحة الخاصة بكل مستخدم: data/users/<id>/ — لا يراها غيره ولا حتى صاحب الصفحة. */
+'use strict';
+
+// ===================== وحدات مشتركة =====================
+const DAY = 86400000;
+const util = {
+  id: () => (crypto.randomUUID ? crypto.randomUUID() : 'x' + Date.now().toString(36) + Math.random().toString(36).slice(2)),
+  todayISO: (off = 180, now = Date.now()) => new Date(now + off * 60000).toISOString().slice(0, 10),
+  addDays: (iso, n) => new Date(new Date(iso + 'T00:00:00Z').getTime() + n * DAY).toISOString().slice(0, 10),
+  diffDays: (a, b) => Math.round((new Date(b + 'T00:00:00Z') - new Date(a + 'T00:00:00Z')) / DAY),
+  isISODate: s => { if (typeof s !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(s)) return false; const d = new Date(s + 'T00:00:00Z'); return !isNaN(d) && d.toISOString().slice(0, 10) === s; },
+  normalizeAr: (s = '') => String(s)
+    .replace(/[٠-٩]/g, d => '٠١٢٣٤٥٦٧٨٩'.indexOf(d)).replace(/[۰-۹]/g, d => '۰۱۲۳۴۵۶۷۸۹'.indexOf(d))
+    .replace(/[ً-ٰٟـ]/g, '').replace(/[أإآٱ]/g, 'ا').replace(/ى/g, 'ي').replace(/ة/g, 'ه')
+    .replace(/ؤ/g, 'و').replace(/ئ/g, 'ي').replace(/[؟?!،,.:؛]/g, ' ').replace(/\s+/g, ' ').trim().toLowerCase(),
+};
+const __mods = { '../../lib/util': util };
+function require(n) { return __mods[n]; }
+
+const LOGO = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLZiNiz2YUiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRTJDMjdFIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjQjM4QTQ1Ii8+PC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiByeD0iMTgiIGZpbGw9IiMwRTNCMzEiLz4KICA8cmVjdCB4PSI1LjUiIHk9IjUuNSIgd2lkdGg9IjUzIiBoZWlnaHQ9IjUzIiByeD0iMTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNnKSIgc3Ryb2tlLXdpZHRoPSIxLjUiIG9wYWNpdHk9Ii41NSIvPgogIDwhLS0g2LPZhtin2YXYp9mGINi52YTZiSDZh9mK2KbYqSDZiNiz2YUgLS0+CiAgPHBhdGggZD0iTTEzIDQxIEMxNyAyNyAyNCAyMiAyOCAzMCBDMzAgMzQgMzEgMzUgMzIgMzUgQzMzIDM1IDM0IDM0IDM2IDMwIEM0MCAyMiA0NyAyNyA1MSA0MSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2cpIiBzdHJva2Utd2lkdGg9IjQuMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgPCEtLSDYrti3INin2YTZiNiz2YUgKNin2YTYudi12KcpINmI2KfZhNmG2YLYt9ipIC0tPgogIDxwYXRoIGQ9Ik0zMiA0MCBWNTAiIHN0cm9rZT0idXJsKCNnKSIgc3Ryb2tlLXdpZHRoPSI0LjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxjaXJjbGUgY3g9IjMyIiBjeT0iMTciIHI9IjMiIGZpbGw9InVybCgjZykiLz4KPC9zdmc+Cg==';
+(function(){ const module = { exports: {} };
+'use strict';
+// أسماء الإبل حسب العمر — حسب الجدول الذي أرسله صاحب المشروع.
+// الجدول قابل للتعديل من مكان واحد. "حتى" = العمر بالأشهر المكتملة (غير شامل).
+const AGE_NAMES = [
+  { key: 'hwar',   m: 'حوار',  f: 'حوار',    fromMonths: 0,  label: 'من الولادة حتى يكمل سنة' },
+  { key: 'mafrud', m: 'مفرود', f: 'مفرودة',  fromMonths: 12, label: 'يكمل سنة ويُفصل عن أمه' },
+  { key: 'hig',    m: 'حق',    f: 'حقة',     fromMonths: 24, label: 'يكمل سنتين' },
+  { key: 'lgi',    m: 'لقي',   f: 'لقية',    fromMonths: 36, label: 'يكمل ثلاث سنوات' },
+  { key: 'jitha',  m: 'جذع',   f: 'جذعة',    fromMonths: 48, label: 'يكمل أربع سنوات' },
+  { key: 'thani',  m: 'ثني',   f: 'ثنية',    fromMonths: 60, label: 'يكمل خمس سنوات' },
+  { key: 'rubaa',  m: 'رباع',  f: 'رباعية',  fromMonths: 72, label: 'يكمل ست سنوات' },
+  { key: 'sadees', m: 'سديس',  f: 'سديسة',   fromMonths: 84, label: 'يكمل سبع سنوات' },
+  { key: 'fater',  m: 'بعير',  f: 'فاطر',    fromMonths: 96, label: 'ثماني سنوات فأكثر' },
+];
+
+function monthsBetween(fromISO, toISO) {
+  const [y1, m1, d1] = fromISO.split('-').map(Number);
+  const [y2, m2, d2] = toISO.split('-').map(Number);
+  let m = (y2 - y1) * 12 + (m2 - m1);
+  if (d2 < d1) m -= 1;
+  return Math.max(0, m);
+}
+
+function ageName(birthDate, sex, todayISO) {
+  if (!birthDate) return null;
+  const months = monthsBetween(birthDate, todayISO);
+  let row = AGE_NAMES[0];
+  for (const r of AGE_NAMES) if (months >= r.fromMonths) row = r;
+  return { key: row.key, name: sex === 'female' ? row.f : row.m, months };
+}
+
+// كلمات البحث (مفرد + مؤنث + جموع شائعة) بعد التطبيع
+const AGE_WORDS = {
+  hwar: ['حوار', 'حيران', 'حواير'],
+  mafrud: ['مفرود', 'مفروده', 'مفاريد', 'مفرودات'],
+  hig: ['حق', 'حقه', 'حقاق', 'حقق'],
+  lgi: ['لقي', 'لقيه', 'لقايا'],
+  jitha: ['جذع', 'جذعه', 'جذعان', 'جذاع'],
+  thani: ['ثني', 'ثنيه', 'ثنايا', 'ثنيان'],
+  rubaa: ['رباع', 'رباعيه', 'ربعان'],
+  sadees: ['سديس', 'سديسه', 'سدسان'],
+  fater: ['فاطر', 'فواطر', 'بعير', 'بعران'],
+};
+
+module.exports = { AGE_NAMES, AGE_WORDS, ageName, monthsBetween };
+
+__mods['../../lib/ageNames'] = module.exports; })();
+(function(){ const module = { exports: {} };
+'use strict';
+// فهم اللغة الطبيعية الخليجية لأوامر إدارة الحلال — محلي وحتمي (بدون نموذج خارجي)
+// الهدف: أن تعمل عمليات البيانات الحساسة (تسجيل/استعلام) بدقة ودون "هلوسة"، وأن يُستدعى النموذج اللغوي فقط للأسئلة المفتوحة.
+const { normalizeAr, todayISO, addDays, isISODate } = require('../../lib/util');
+const { AGE_WORDS } = require('../../lib/ageNames');
+function ageKeyIn(n) { const toks = n.split(' ').map(t => t.replace(/^ال/, '')); for (const [k, ws] of Object.entries(AGE_WORDS)) if (toks.some(t => ws.includes(t))) return k; return null; }
+
+const QUESTION = /^(متي|وش|ايش|شو|كم|هل|اي|ايه|ماذا|ماهي|ما هي|مين|من هي|من هو|وين|عطني|اعطني|ابي اعرف|ابغي اعرف|ابغى اعرف)(?:^|(?<=\s)|(?=\s)|$)/;
+
+// ===== استخراج التاريخ =====
+const NUM_WORDS = { 'يومين': 2, 'ثلاث': 3, 'ثلاثه': 3, 'اربع': 4, 'اربعه': 4, 'خمس': 5, 'خمسه': 5, 'اسبوع': 7, 'اسبوعين': 14 };
+function extractDate(n, today = todayISO()) {
+  let m;
+  const rules = [
+    [/(?:^|(?<=\s)|(?=\s)|$)(اول امس|اول البارحه|قبل امس)(?:^|(?<=\s)|(?=\s)|$)/, () => addDays(today, -2)],
+    [/(?:^|(?<=\s)|(?=\s)|$)(امس|البارحه|امبارح)(?:^|(?<=\s)|(?=\s)|$)/, () => addDays(today, -1)],
+    [/(?:^|(?<=\s)|(?=\s)|$)(اليوم|الحين|توه|توها|هالحين)(?:^|(?<=\s)|(?=\s)|$)/, () => today],
+    [/(?:^|(?<=\s)|(?=\s)|$)قبل (\d{1,3}) (يوم|ايام)(?:^|(?<=\s)|(?=\s)|$)/, x => addDays(today, -Number(x[1]))],
+    [/(?:^|(?<=\s)|(?=\s)|$)قبل (يومين|ثلاث|ثلاثه|اربع|اربعه|خمس|خمسه)( ايام)?(?:^|(?<=\s)|(?=\s)|$)/, x => addDays(today, -NUM_WORDS[x[1]])],
+    [/(?:^|(?<=\s)|(?=\s)|$)قبل (اسبوعين|اسبوع)(?:^|(?<=\s)|(?=\s)|$)/, x => addDays(today, -NUM_WORDS[x[1]])],
+    [/(?:^|(?<=\s)|(?=\s)|$)(\d{4})-(\d{1,2})-(\d{1,2})(?:^|(?<=\s)|(?=\s)|$)/, x => `${x[1]}-${x[2].padStart(2, '0')}-${x[3].padStart(2, '0')}`],
+    [/(?:^|(?<=\s)|(?=\s)|$)(\d{1,2})[/-](\d{1,2})[/-](\d{4})(?:^|(?<=\s)|(?=\s)|$)/, x => `${x[3]}-${x[2].padStart(2, '0')}-${x[1].padStart(2, '0')}`],
+    [/(?:^|(?<=\s)|(?=\s)|$)(\d{1,2})[/-](\d{1,2})(?:^|(?<=\s)|(?=\s)|$)/, x => { const y = today.slice(0, 4); const d = `${y}-${x[2].padStart(2, '0')}-${x[1].padStart(2, '0')}`; return d > today ? `${Number(y) - 1}${d.slice(4)}` : d; }],
+  ];
+  for (const [re, fn] of rules) {
+    if ((m = re.exec(n))) {
+      const date = fn(m);
+      if (!isISODate(date)) return { date: null, invalid: true, rest: n.replace(m[0], ' ').replace(/\s+/g, ' ').trim() };
+      return { date, rest: n.replace(m[0], ' ').replace(/\s+/g, ' ').replace(/(?:^|(?<=\s)|(?=\s)|$)(بتاريخ|تاريخ|في|يوم)\s*$/, '').trim() };
+    }
+  }
+  return { date: null, rest: n };
+}
+
+const FILLER_PRE = /^(الناقه|ناقتي|ناقتنا|الفحل|فحلي|فحلنا|المطيه|مطيتي|حقتي|يا|عن|على|علي)\s+/;
+const FILLER_POST = /\s+(اخر مره|آخر مره|المره الماضيه|المره اللي فاتت|عندي|حقي|حقتي|بتاريخ|تاريخ|في|يوم|الحين|الحمدلله|ان شاء الله|انشالله)$/;
+function cleanName(s) {
+  let x = String(s || '').trim(), prev;
+  do { prev = x; x = x.replace(FILLER_PRE, '').replace(FILLER_POST, '').trim(); } while (x !== prev);
+  return x.replace(/^(ب|بـ)\s*/, '').trim();
+}
+
+function monthRange(today, offset) {
+  const [y, m] = today.split('-').map(Number);
+  const d = new Date(Date.UTC(y, m - 1 + offset, 1));
+  const from = d.toISOString().slice(0, 10);
+  const to = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth() + 1, 0)).toISOString().slice(0, 10);
+  return { from, to };
+}
+
+function extractPeriod(n, today = todayISO()) {
+  let m;
+  if (/(الشهر (القادم|الجاي|اللي جاي|الياي|المقبل)|الشهر الجاي)/.test(n)) return { ...monthRange(today, 1), label: 'الشهر القادم' };
+  if (/(هالشهر|هذا الشهر|الشهر الحالي|ذا الشهر)/.test(n)) return { ...monthRange(today, 0), label: 'هذا الشهر' };
+  if (/(الاسبوع (القادم|الجاي)|هالاسبوع|هذا الاسبوع|خلال اسبوع)/.test(n)) return { from: today, to: addDays(today, 7), label: 'الأسبوع القادم' };
+  if ((m = /خلال (\d{1,3}) (يوم|ايام)/.exec(n))) return { from: today, to: addDays(today, Number(m[1])), label: `خلال ${m[1]} يوم` };
+  if ((m = /خلال (\d{1,2}) (شهر|اشهر|شهور)/.exec(n))) return { from: today, to: addDays(today, Number(m[1]) * 30), label: `خلال ${m[1]} أشهر` };
+  if (/(خلال شهرين|الشهرين الجايه|الشهرين القادمه)/.test(n)) return { from: today, to: addDays(today, 60), label: 'خلال شهرين' };
+  return { from: today, to: addDays(today, 30), label: 'خلال 30 يوماً', defaulted: true };
+}
+
+function sexWord(n) {
+  if (/(?:^|(?<=\s)|(?=\s)|$)(ذكر|ولد|قعود|حوار ذكر|فحل)(?:^|(?<=\s)|(?=\s)|$)/.test(n)) return 'male';
+  if (/(?:^|(?<=\s)|(?=\s)|$)(انثي|بنت|بكره|حاشي|حاشيه|ناقه|مفروده)(?:^|(?<=\s)|(?=\s)|$)/.test(n)) return 'female';
+  return null;
+}
+
+// إرجاع الصيغة الأصلية (بالتاء المربوطة والهمزات) لجزء من النص بعد التطبيع
+function original(raw, frag) {
+  if (!frag) return frag;
+  const toks = String(raw).split(/\s+/).filter(Boolean);
+  const normToks = toks.map(t => normalizeAr(t));
+  const want = frag.split(' ');
+  for (let i = 0; i + want.length <= normToks.length; i++) {
+    if (want.every((w, j) => normToks[i + j] === w)) return toks.slice(i, i + want.length).join(' ').replace(/[؟?!،,.:؛]/g, '');
+  }
+  return frag;
+}
+
+function parse(text, today = todayISO()) {
+  const out = parseNorm(text, today);
+  for (const k of ['dam', 'sire', 'calf_name', 'name', 'parent']) if (typeof out[k] === 'string') out[k] = original(text, out[k]);
+  return out;
+}
+
+function parseNorm(text, today) {
+  const raw = String(text || '').trim();
+  const n = normalizeAr(raw);
+  if (!n) return { intent: 'empty' };
+  const isQ = QUESTION.test(n) || /\?|؟/.test(raw);
+  let m;
+
+  if (/^(السلام|سلام|مرحبا|هلا|هلا والله|صباح|مساء|اهلا|يا هلا)/.test(n) && n.split(' ').length <= 4) return { intent: 'greeting' };
+  if (/^(مساعده|ساعدني|وش تقدر|ايش تقدر|كيف استخدم|الاوامر|help)/.test(n)) return { intent: 'help' };
+
+  // --- استعلامات ---
+  if (isQ && /لقح/.test(n) && (m = /(?:لقحت|لقح|تلقيح|انلقحت|تلقحت)\s+(.+)$/.exec(n)) && /^(متي|كم|وش|ايش)/.test(n)) {
+    return { intent: 'query_last_mating', dam: cleanName(m[1].replace(/\s+(من|علي)\s+.*$/, '')) };
+  }
+  if (isQ && (m = /(?:وش|ايش|شو|ماذا|ما|مين|من)\s+(?:جابت|ولدت|نتجت|عطت)\s+(.+)$/.exec(n))) {
+    return { intent: 'query_last_birth', dam: cleanName(m[1]) };
+  }
+  if (isQ && (m = /متي\s+(?:بتولد|تولد|راح تولد|موعد ولاده|ولاده)\s+(.+)$/.exec(n))) {
+    return { intent: 'query_due_one', dam: cleanName(m[1]) };
+  }
+  if (/(بتولد|تولد|يولدن|تولدن|بيولدن|الولادات|ولادات|موعد الولاده|الولاده)/.test(n) && (isQ || /(النوق|ولادات|الولادات)/.test(n))) {
+    return { intent: 'query_due_list', period: extractPeriod(n, today) };
+  }
+  if ((m = /(?:عيال|مواليد|بنات|اولاد|ذريه|نسل)\s+(.+)$/.exec(n)) && !/^(سجل|ضيف|اضف)/.test(n)) {
+    return { intent: 'query_offspring', parent: cleanName(m[1]) };
+  }
+  if (isQ || /^(اعرض|عطني|اعطني|طلع|ابي)/.test(n)) { const ak = ageKeyIn(n); if (ak && !/(لقح|ولدت|جابت)/.test(n)) return { intent: 'query_age', key: ak }; }
+  if (/^كم(?:^|(?<=\s)|(?=\s)|$)/.test(n) && /(عندي|ناقه|نوق|فحل|فحول|حلال|راس|مطيه|مطايا|الابل|ابل)/.test(n)) return { intent: 'query_counts' };
+  if (/(التنبيهات|تنبيهاتي|المواعيد|مواعيدي|وش عندي|ذكرني|المتابعات|وش المطلوب)/.test(n)) return { intent: 'query_alerts' };
+  if ((m = /^(?:ابحث عن|دور|دورلي|وين|معلومات|ملف|بيانات|اعرض|افتح)\s+(.+)$/.exec(n))) return { intent: 'query_camel', name: cleanName(m[1]) };
+
+  // --- البيع: إنشاء وصف إعلان ---
+  if ((m = /(?:ابي|ابغي|ابغى|اريد|ودي|بغيت)\s+(?:ابيع|بيع|اعرض|اعلن عن)\s*(.*)$/.exec(n))) {
+    const nm = cleanName(m[1].replace(/^(هذي|هذه|هالناقه|الناقه هذي|ها)\s*/, ''));
+    return { intent: 'draft_listing', name: nm && !/^(هذي|هذه|ناقه|ناقتي|الناقه|هالناقه|المطيه)$/.test(nm) ? nm : null };
+  }
+
+  // --- تسجيل التلقيح ---
+  if (!isQ && (m = /^(?:لقحت|لقحنا|لقح|تلقيح|سجل تلقيح|سجل لقاح|انلقحت|تلقحت|ضربها|طرقها|طرق)\s+(.+)$/.exec(n))) {
+    const { date, invalid, rest } = extractDate(m[1], today);
+    let dam = rest, sire = null;
+    const sp = /\s+(?:من|علي|ب)\s+(?:الفحل\s+)?(.+)$/.exec(rest);
+    if (sp) { dam = rest.slice(0, sp.index); sire = sp[1]; }
+    return { intent: 'record_mating', dam: cleanName(dam) || null, sire: sire ? cleanName(sire) || null : null, date, invalid_date: !!invalid };
+  }
+
+  // --- تسجيل الولادة ---
+  if (!isQ && (m = /^(?:ولدت|جابت|سجل ولاده|نتجت|ولاده)\s+(.+)$/.exec(n))) {
+    const { date, invalid, rest } = extractDate(m[1], today);
+    let body = rest, calfName = null;
+    const nm = /\s+(?:وسميناه|وسميناها|سميناه|سميناها|اسمه|اسمها|سميته|سميتها|وسميته|وسميتها)\s+(.+)$/.exec(body);
+    if (nm) { calfName = cleanName(nm[1]); body = body.slice(0, nm.index); }
+    const sex = sexWord(body);
+    body = body.replace(/\s+(ولد|بنت|ذكر|انثي|قعود|حوار|حاشي|حاشيه|بكره|مولود|مولوده)(\s+(ذكر|انثي))?\s*$/, '').trim();
+    body = body.replace(/\s+(ولد|بنت|ذكر|انثي|قعود|حوار|حاشي|حاشيه|بكره|مولود|مولوده)(?:^|(?<=\s)|(?=\s)|$).*$/, '').trim();
+    return { intent: 'record_birth', dam: cleanName(body) || null, calf_sex: sex, calf_name: calfName, date, invalid_date: !!invalid };
+  }
+
+  return { intent: 'unknown', isQuestion: isQ };
+}
+
+module.exports = { parse, extractDate, extractPeriod, cleanName, sexWord };
+
+__mods['./nlu'] = module.exports; })();
+// ===================== التخزين: ذاكرة + قاعدة بيانات الصفحة =====================
+const { ageName, AGE_NAMES } = __mods['../../lib/ageNames'];
+const NLU = __mods['./nlu'];
+const { id: newId, todayISO, addDays, diffDays, isISODate, normalizeAr } = util;
+
+class HttpError extends Error { constructor(status, code, message) { super(message); this.status = status; this.code = code; } }
+const bad = (code, msg) => new HttpError(400, code, msg);
+const str = (v, max = 200) => (v == null || v === '' ? null : String(v).trim().slice(0, max));
+const nowISO = () => new Date().toISOString();
+
+const KINDS = { camel: 'c_', mating: 'm_', birth: 'b_', event: 'e_', photo: 'p_', farm: 'f_' };
+const S = { camels: new Map(), matings: new Map(), births: new Map(), events: new Map(), photos: new Map(), farms: new Map(),
+  settings: { gestation_days: 390, birth_alert_days: 14, ai_image_training_consent: false, country_code: 'QA', display_name: '' },
+  log: [], chat: { messages: [], pending: {} } };
+const MAPS = { camel: 'camels', mating: 'matings', birth: 'births', event: 'events', photo: 'photos', farm: 'farms' };
+
+const Store = {
+  db: null, uid: null, ready: false, coll: null, chains: new Map(), timers: {}, overlay: new Map(),
+  async init(db, uid, onChange) {
+    this.db = db; this.uid = uid;
+    this.coll = db.collection('data/users/' + uid);
+    return new Promise((resolve, reject) => {
+      let first = true;
+      const timer = setTimeout(() => { if (first) reject(new HttpError(503, 'timeout', 'تعذر الوصول إلى البيانات الآن، تأكد من الاتصال')); }, 12000);
+      this.coll.onSnapshot(snap => {
+        this.load(snap.docs);
+        if (first && !snap.metadata.fromCache) { first = false; clearTimeout(timer); this.ready = true; resolve(); }
+        else if (!first) onChange && onChange();
+        else if (first && snap.metadata.fromCache && snap.size) { /* نعرض النسخة المحفوظة ونكمل الانتظار */ }
+      }, e => { clearTimeout(timer); if (first) reject(new HttpError(503, e.code, 'تعذر تحميل البيانات (' + e.code + ')')); });
+    });
+  },
+  load(docs) {
+    for (const k of Object.values(MAPS)) S[k] = new Map();
+    for (const d of docs) {
+      const data = d.data(); if (!data) continue;
+      if (d.id === 'settings') { if (this.overlay.has('settings')) continue; S.settings = { ...S.settings, ...data }; continue; }
+      if (d.id === 'log') { if (!this.timers.log && !this.overlay.has('log')) S.log = data.items || []; continue; }
+      if (d.id === 'chat') { if (this.timers.chat || this.overlay.has('chat')) continue; S.chat = { messages: data.messages || [], pending: data.pending || {} }; continue; }
+      const kind = Object.keys(KINDS).find(k => d.id.startsWith(KINDS[k]));
+      if (kind) S[MAPS[kind]].set(data.id, { ...data });
+    }
+    // الكتابات المحلية التي لم تُؤكَّد بعد تبقى هي الأحدث
+    for (const [docId, data] of this.overlay) {
+      if (docId === 'settings' || docId === 'log' || docId === 'chat') continue;
+      const kind = Object.keys(KINDS).find(k => docId.startsWith(KINDS[k]));
+      if (!kind) continue;
+      if (data === null) S[MAPS[kind]].delete(docId.slice(KINDS[kind].length)); else S[MAPS[kind]].set(data.id, data);
+    }
+  },
+  write(docId, data) { // كتابة واحدة في كل مرة لكل وثيقة
+    const ref = this.coll.doc(docId);
+    const token = {}; this.overlay.set(docId, data); this.overlay[docId + ':t'] = token;
+    const prev = this.chains.get(docId) || Promise.resolve();
+    const next = prev.catch(() => {}).then(() => (data === null ? ref.delete() : ref.set(JSON.parse(JSON.stringify(data)))))
+      .catch(e => { window.dispatchEvent(new CustomEvent('wasm-save-error', { detail: e })); throw e; });
+    this.chains.set(docId, next);
+    next.then(() => { if (this.overlay[docId + ':t'] === token) this.overlay.delete(docId); }, () => {});
+    return next;
+  },
+  debounced(docId, getData, ms = 800) {
+    clearTimeout(this.timers[docId]);
+    this.timers[docId] = setTimeout(() => { delete this.timers[docId]; this.write(docId, getData()); }, ms);
+  },
+  put(kind, obj) { S[MAPS[kind]].set(obj.id, obj); return this.write(KINDS[kind] + obj.id, obj); },
+  del(kind, id) { S[MAPS[kind]].delete(id); return this.write(KINDS[kind] + id, null); },
+  saveSettings() { return this.write('settings', S.settings); },
+  saveChat() { this.debounced('chat', () => ({ messages: S.chat.messages.slice(-60), pending: S.chat.pending }), 300); },
+  logAppend(entry) { S.log.push(entry); if (S.log.length > 700) S.log = S.log.slice(-700); this.debounced('log', () => ({ items: S.log })); },
+};
+
+function audit(action, entity, entityId, { camelId = null, before = null, after = null } = {}) {
+  let diff = null;
+  if (before || after) {
+    diff = {};
+    for (const k of new Set([...Object.keys(before || {}), ...Object.keys(after || {})])) {
+      if (['updated_at', 'created_at', 'name_norm', 'id', 'owner_id'].includes(k)) continue;
+      const a = before ? before[k] : undefined, b = after ? after[k] : undefined;
+      if (a !== b && (typeof a !== 'object' || a === null) && (typeof b !== 'object' || b === null)) diff[k] = [a ?? null, b ?? null];
+    }
+  }
+  Store.logAppend({ action, entity, entity_id: entityId, camel_id: camelId, diff, created_at: nowISO() });
+}
+// ===================== منطق الحلال (منقول من herd.service.js) =====================
+const SEX = ['female', 'male'];
+const STATUS = ['active', 'pregnant', 'nursing', 'sold', 'dead', 'transferred'];
+const INACTIVE = ['sold', 'dead', 'transferred'];
+const EVENT_TYPES = ['weaning', 'vaccination', 'treatment', 'vet_visit', 'sale', 'purchase', 'transfer', 'checkup', 'achievement', 'note'];
+const CAMEL_FIELDS = ['name', 'tag_number', 'microchip', 'sex', 'breed', 'color', 'birth_date', 'birth_date_estimated', 'dam_id', 'sire_id', 'dam_name_text', 'sire_name_text', 'status', 'notes', 'farm_id'];
+const camels = () => [...S.camels.values()];
+const matings = () => [...S.matings.values()];
+const byDate = (k, dir = -1) => (a, b) => dir * String(a[k] || '').localeCompare(String(b[k] || '')) || dir * String(a.created_at || '').localeCompare(String(b.created_at || ''));
+
+function ownedCamel(id) {
+  const c = S.camels.get(String(id || ''));
+  if (!c) throw new HttpError(404, 'not_found', 'المطية غير موجودة');
+  return c;
+}
+function isDescendant(ancestorId, candidateId) {
+  const seen = new Set(); const stack = [ancestorId];
+  while (stack.length) {
+    const cur = stack.pop();
+    for (const c of camels()) if ((c.dam_id === cur || c.sire_id === cur) && !seen.has(c.id)) { if (c.id === candidateId) return true; seen.add(c.id); stack.push(c.id); }
+  }
+  return false;
+}
+function validateCamel(input, existing = null) {
+  const out = {};
+  for (const f of CAMEL_FIELDS) if (input[f] !== undefined) out[f] = input[f];
+  if (!existing || out.name !== undefined) { out.name = str(out.name, 80); if (!out.name) throw bad('name_required', 'اسم المطية مطلوب'); }
+  if (!existing || out.sex !== undefined) if (!SEX.includes(out.sex)) throw bad('invalid_sex', 'الجنس غير صحيح');
+  if (out.status !== undefined && !STATUS.includes(out.status)) throw bad('invalid_status', 'الحالة غير صحيحة');
+  for (const f of ['tag_number', 'microchip', 'breed', 'color', 'dam_name_text', 'sire_name_text']) if (out[f] !== undefined) out[f] = str(out[f], 80);
+  if (out.notes !== undefined) out.notes = str(out.notes, 2000);
+  if (out.birth_date !== undefined) {
+    out.birth_date = str(out.birth_date, 10);
+    if (out.birth_date && !isISODate(out.birth_date)) throw bad('invalid_date', 'تاريخ الميلاد غير صحيح');
+    if (out.birth_date && out.birth_date > todayISO()) throw bad('future_date', 'تاريخ الميلاد لا يمكن أن يكون في المستقبل');
+  }
+  if (out.birth_date_estimated !== undefined) out.birth_date_estimated = out.birth_date_estimated ? 1 : 0;
+  const selfId = existing ? existing.id : null;
+  for (const [f, sex] of [['dam_id', 'female'], ['sire_id', 'male']]) {
+    if (out[f] === undefined) continue;
+    out[f] = str(out[f], 64);
+    if (!out[f]) continue;
+    if (out[f] === selfId) throw bad('self_parent', 'لا يمكن أن تكون المطية أماً أو أباً لنفسها');
+    const p = ownedCamel(out[f]);
+    if (p.sex !== sex) throw bad('parent_sex', f === 'dam_id' ? 'الأم يجب أن تكون ناقة' : 'الأب يجب أن يكون فحلاً');
+    if (selfId && isDescendant(selfId, p.id)) throw bad('pedigree_cycle', 'هذا الربط يُنشئ حلقة في شجرة النسب');
+  }
+  if (out.farm_id !== undefined) { out.farm_id = str(out.farm_id, 64); if (out.farm_id && !S.farms.has(out.farm_id)) throw bad('invalid_farm', 'العزبة غير موجودة'); }
+  if (out.tag_number && camels().some(c => c.tag_number === out.tag_number && c.id !== selfId)) throw new HttpError(409, 'duplicate_tag', 'رقم الوسم مستخدم لمطية أخرى في حلالك');
+  if (out.name) out.name_norm = normalizeAr(out.name);
+  return out;
+}
+function openMating(damId) { return matings().filter(m => m.dam_id === damId && ['pending', 'confirmed_pregnant'].includes(m.outcome)).sort(byDate('mating_date'))[0] || null; }
+function sireName(m) { return m.sire_id ? (S.camels.get(m.sire_id) || {}).name || m.sire_name_text : m.sire_name_text; }
+function photoOf(id) { return [...S.photos.values()].filter(p => p.camel_id === id && p.kind === 'photo').sort((a, b) => (b.is_primary - a.is_primary) || a.created_at.localeCompare(b.created_at))[0]; }
+
+function listCamels({ q, sex, status, breed, age } = {}) {
+  const nq = q ? normalizeAr(q) : null;
+  return camels().filter(c => (!nq || c.name_norm.includes(nq) || (c.tag_number || '').includes(String(q).trim())) && (!sex || c.sex === sex) && (!status || c.status === status) && (!breed || c.breed === breed))
+    .map(c => { const om = c.sex === 'female' ? openMating(c.id) : null; const ph = photoOf(c.id);
+      return { id: c.id, name: c.name, tag_number: c.tag_number, sex: c.sex, breed: c.breed, color: c.color, birth_date: c.birth_date, status: c.status, is_demo: c.is_demo,
+        photo_id: ph ? ph.id : null, expected_birth_date: om ? om.expected_birth_date : null, age_name: ageName(c.birth_date, c.sex, todayISO()) }; })
+    .filter(c => !age || (age === 'unknown' ? !c.age_name : c.age_name && c.age_name.key === age))
+    .sort((a, b) => a.name.localeCompare(b.name, 'ar'));
+}
+function findByName(name, sex) {
+  const n = normalizeAr(name); if (!n) return [];
+  const act = camels().filter(c => !INACTIVE.includes(c.status) && (!sex || c.sex === sex));
+  const exact = act.filter(c => c.name_norm === n);
+  if (exact.length) return exact;
+  return act.filter(c => c.tag_number === name.trim() || c.name_norm.includes(n)).slice(0, 5);
+}
+function createCamel(input) {
+  const v = validateCamel(input);
+  const row = { id: newId(), status: 'active', birth_date_estimated: 0, created_at: nowISO(), updated_at: nowISO(), ...v };
+  if (input.is_demo) row.is_demo = 1;
+  Store.put('camel', row);
+  audit('create', 'camel', row.id, { camelId: row.id, after: v });
+  return getCamel(row.id);
+}
+function updateCamel(id, input) {
+  const before = ownedCamel(id);
+  const v = validateCamel(input, before);
+  const after = { ...before, ...v, updated_at: nowISO() };
+  for (const k of Object.keys(after)) if (after[k] === null) delete after[k];
+  Store.put('camel', after);
+  audit('update', 'camel', id, { camelId: id, before, after });
+  return getCamel(id);
+}
+function deleteCamel(id) {
+  const c = ownedCamel(id);
+  Store.del('camel', id);
+  for (const m of matings()) if (m.dam_id === id) Store.del('mating', m.id); else if (m.sire_id === id) Store.put('mating', { ...m, sire_id: null, sire_name_text: m.sire_name_text || c.name });
+  for (const b of [...S.births.values()]) if (b.dam_id === id) Store.del('birth', b.id); else if (b.calf_id === id) Store.put('birth', { ...b, calf_id: null });
+  for (const e of [...S.events.values()]) if (e.camel_id === id) Store.del('event', e.id);
+  for (const p of [...S.photos.values()]) if (p.camel_id === id) Store.del('photo', p.id);
+  for (const k of camels()) if (k.dam_id === id || k.sire_id === id) Store.put('camel', { ...k, dam_id: k.dam_id === id ? null : k.dam_id, sire_id: k.sire_id === id ? null : k.sire_id, [k.dam_id === id ? 'dam_name_text' : 'sire_name_text']: c.name });
+  audit('delete', 'camel', id, { camelId: id, before: c });
+  return { ok: true };
+}
+function getCamel(id) {
+  const c = ownedCamel(id);
+  const nm = i => { const x = i && S.camels.get(i); return x ? { id: x.id, name: x.name, tag_number: x.tag_number } : null; };
+  return { ...c, dam: nm(c.dam_id), sire: nm(c.sire_id), farm: c.farm_id && S.farms.get(c.farm_id) ? { id: c.farm_id, name: S.farms.get(c.farm_id).name } : null,
+    age_days: c.birth_date ? diffDays(c.birth_date, todayISO()) : null, age_name: ageName(c.birth_date, c.sex, todayISO()),
+    matings: c.sex === 'female' ? matings().filter(m => m.dam_id === c.id).sort(byDate('mating_date')).map(m => ({ ...m, sire_name: m.sire_id ? (S.camels.get(m.sire_id) || {}).name : null })) : [],
+    sired_matings: c.sex === 'male' ? matings().filter(m => m.sire_id === c.id).sort(byDate('mating_date')).map(m => ({ ...m, dam_name: (S.camels.get(m.dam_id) || {}).name })) : [],
+    births: [...S.births.values()].filter(b => b.dam_id === c.id).sort(byDate('birth_date')).map(b => { const k = b.calf_id && S.camels.get(b.calf_id); return { ...b, calf_name: k ? k.name : null, calf_tag: k ? k.tag_number : null }; }),
+    offspring: camels().filter(k => k.dam_id === c.id || k.sire_id === c.id).sort(byDate('birth_date')).map(k => ({ id: k.id, name: k.name, tag_number: k.tag_number, sex: k.sex, birth_date: k.birth_date, status: k.status })),
+    events: [...S.events.values()].filter(e => e.camel_id === c.id).sort(byDate('event_date')),
+    photos: [...S.photos.values()].filter(p => p.camel_id === c.id && p.kind === 'photo').sort((a, b) => (b.is_primary - a.is_primary) || a.created_at.localeCompare(b.created_at)).map(p => ({ id: p.id, caption: p.caption, is_primary: p.is_primary, created_at: p.created_at })),
+    documents: [] };
+}
+function recordMating(input) {
+  const dam = ownedCamel(input.dam_id);
+  if (dam.sex !== 'female') throw bad('dam_not_female', 'التلقيح يُسجل على ناقة');
+  if (INACTIVE.includes(dam.status)) throw bad('dam_inactive', 'الناقة ليست ضمن الحلال النشط');
+  const date = str(input.mating_date, 10) || todayISO();
+  if (!isISODate(date)) throw bad('invalid_date', 'تاريخ التلقيح غير صحيح');
+  if (date > addDays(todayISO(), 1)) throw bad('future_date', 'تاريخ التلقيح لا يمكن أن يكون في المستقبل');
+  let sireId = str(input.sire_id, 64), sireText = str(input.sire_name_text, 80);
+  if (sireId) { const s = ownedCamel(sireId); if (s.sex !== 'male') throw bad('sire_not_male', 'الفحل يجب أن يكون من الفحول'); sireText = null; }
+  if (!sireId && !sireText) throw bad('sire_required', 'حدد الفحل (من حلالك أو اكتب اسمه)');
+  for (const m of matings()) if (m.dam_id === dam.id && m.outcome === 'pending' && m.mating_date < date) Store.put('mating', { ...m, outcome: 'not_pregnant' });
+  const row = { id: newId(), dam_id: dam.id, sire_id: sireId, sire_name_text: sireText, mating_date: date, expected_birth_date: addDays(date, Number(S.settings.gestation_days) || 390),
+    outcome: 'pending', notes: str(input.notes, 1000), source: input.source === 'assistant' ? 'assistant' : 'manual', created_at: nowISO() };
+  Store.put('mating', row);
+  audit('create', 'mating', row.id, { camelId: dam.id, after: row });
+  return { ...row, sire_name: sireId ? S.camels.get(sireId).name : null };
+}
+function updateMating(id, input) {
+  const m = S.matings.get(id); if (!m) throw new HttpError(404, 'not_found', 'سجل التلقيح غير موجود');
+  if (input.outcome !== undefined && !['pending', 'confirmed_pregnant', 'not_pregnant', 'aborted'].includes(input.outcome)) throw bad('invalid_outcome', 'نتيجة غير صحيحة');
+  const after = { ...m, outcome: input.outcome ?? m.outcome, notes: input.notes !== undefined ? str(input.notes, 1000) : m.notes };
+  Store.put('mating', after);
+  const dam = S.camels.get(m.dam_id);
+  if (dam) {
+    if (after.outcome === 'confirmed_pregnant' && ['active', 'nursing'].includes(dam.status)) Store.put('camel', { ...dam, status: 'pregnant' });
+    if (['not_pregnant', 'aborted'].includes(after.outcome) && dam.status === 'pregnant') Store.put('camel', { ...dam, status: 'active' });
+  }
+  audit('update', 'mating', id, { camelId: m.dam_id, before: m, after });
+  return after;
+}
+function deleteMating(id) {
+  const m = S.matings.get(id); if (!m) throw new HttpError(404, 'not_found', 'سجل التلقيح غير موجود');
+  if (m.outcome === 'born') throw bad('mating_has_birth', 'لا يمكن حذف تلقيح مرتبط بولادة مسجلة');
+  Store.del('mating', id); audit('delete', 'mating', id, { camelId: m.dam_id, before: m });
+  return { ok: true };
+}
+function recordBirth(input) {
+  const dam = ownedCamel(input.dam_id);
+  if (dam.sex !== 'female') throw bad('dam_not_female', 'الولادة تُسجل على ناقة');
+  const date = str(input.birth_date, 10) || todayISO();
+  if (!isISODate(date) || date > todayISO()) throw bad('invalid_date', 'تاريخ الولادة غير صحيح');
+  const outcome = input.outcome === 'stillborn' ? 'stillborn' : 'live';
+  const calfSex = input.calf_sex ? (SEX.includes(input.calf_sex) ? input.calf_sex : (() => { throw bad('invalid_sex', 'جنس المولود غير صحيح'); })()) : null;
+  const mating = input.mating_id ? S.matings.get(input.mating_id) : openMating(dam.id);
+  if (mating && date < mating.mating_date) throw bad('birth_before_mating', 'تاريخ الولادة يسبق تاريخ التلقيح');
+  const tag = str(input.calf_tag, 80);
+  if (tag && camels().some(c => c.tag_number === tag)) throw new HttpError(409, 'duplicate_tag', 'رقم الوسم مستخدم');
+  const birthId = newId(); let calf = null;
+  if (outcome === 'live') {
+    const calfName = str(input.calf_name, 80) || `مولود ${dam.name} ${date}`;
+    calf = { id: newId(), farm_id: dam.farm_id || null, name: calfName, name_norm: normalizeAr(calfName), tag_number: tag, sex: calfSex || 'female', breed: dam.breed || null, birth_date: date,
+      birth_date_estimated: 0, dam_id: dam.id, sire_id: mating ? mating.sire_id : null, sire_name_text: mating ? mating.sire_name_text : null, status: 'active', created_at: nowISO(), updated_at: nowISO() };
+    if (dam.is_demo || input.is_demo) calf.is_demo = 1;
+    Store.put('camel', calf);
+  }
+  Store.put('birth', { id: birthId, dam_id: dam.id, mating_id: mating ? mating.id : null, calf_id: calf ? calf.id : null, birth_date: date, calf_sex: calfSex, outcome, notes: str(input.notes, 1000), source: input.source === 'assistant' ? 'assistant' : 'manual', created_at: nowISO() });
+  if (mating) Store.put('mating', { ...mating, outcome: 'born', birth_id: birthId });
+  Store.put('camel', { ...dam, status: outcome === 'live' ? 'nursing' : 'active' });
+  audit('create', 'birth', birthId, { camelId: dam.id, after: { date, outcome } });
+  if (calf) audit('create', 'camel', calf.id, { camelId: calf.id });
+  return { birth: S.births.get(birthId), calf: calf ? getCamel(calf.id) : null };
+}
+function addEvent(camelId, input) {
+  const c = ownedCamel(camelId);
+  if (!EVENT_TYPES.includes(input.type)) throw bad('invalid_type', 'نوع السجل غير صحيح');
+  const date = str(input.event_date, 10) || todayISO();
+  if (!isISODate(date)) throw bad('invalid_date', 'التاريخ غير صحيح');
+  const next = str(input.next_due_date, 10);
+  if (next && (!isISODate(next) || next < date)) throw bad('invalid_next_date', 'موعد المتابعة غير صحيح');
+  const title = str(input.title, 120); if (!title) throw bad('title_required', 'العنوان مطلوب');
+  const amount = input.amount != null && input.amount !== '' ? Number(input.amount) : null;
+  if (amount != null && (!isFinite(amount) || amount < 0)) throw bad('invalid_amount', 'المبلغ غير صحيح');
+  const row = { id: newId(), camel_id: c.id, type: input.type, event_date: date, title, details: str(input.details, 2000), next_due_date: next, counterparty: str(input.counterparty, 120), amount, currency: amount != null ? (str(input.currency, 3) || 'QAR') : null, created_at: nowISO() };
+  Store.put('event', row);
+  const statusMap = { sale: 'sold', transfer: 'transferred' };
+  if (statusMap[row.type]) Store.put('camel', { ...c, status: statusMap[row.type] });
+  if (row.type === 'weaning' && c.dam_id) { const d = S.camels.get(c.dam_id); if (d && d.status === 'nursing') Store.put('camel', { ...d, status: 'active' }); }
+  audit('create', 'event', row.id, { camelId: c.id, after: row });
+  return row;
+}
+function deleteEvent(id) { const e = S.events.get(id); if (!e) throw new HttpError(404, 'not_found', 'السجل غير موجود'); Store.del('event', id); audit('delete', 'event', id, { camelId: e.camel_id, before: e }); return { ok: true }; }
+
+function pedigree(id, depth = 3) {
+  ownedCamel(id);
+  const node = (cid, d) => {
+    const c = S.camels.get(cid); if (!c) return null;
+    const out = { id: c.id, name: c.name, tag_number: c.tag_number, sex: c.sex, breed: c.breed, color: c.color, birth_date: c.birth_date, verified: !!c.pedigree_verified };
+    if (d > 0) {
+      out.dam = c.dam_id ? node(c.dam_id, d - 1) : (c.dam_name_text ? { name: c.dam_name_text, external: true, sex: 'female' } : null);
+      out.sire = c.sire_id ? node(c.sire_id, d - 1) : (c.sire_name_text ? { name: c.sire_name_text, external: true, sex: 'male' } : null);
+    }
+    return out;
+  };
+  const offspring = []; const seen = new Set(); let frontier = [id];
+  for (let gen = 1; gen <= 3 && frontier.length; gen++) {
+    const nextF = [];
+    for (const c of camels()) if ((frontier.includes(c.dam_id) || frontier.includes(c.sire_id)) && !seen.has(c.id)) { seen.add(c.id); offspring.push({ id: c.id, name: c.name, tag_number: c.tag_number, sex: c.sex, birth_date: c.birth_date, generation: gen }); nextF.push(c.id); }
+    frontier = nextF;
+  }
+  return { tree: node(id, Math.min(Math.max(Number(depth) || 3, 1), 5)), offspring, notice: 'شجرة النسب مبنية على ما سجله المالك، ولا تُعد موثقة إلا بمستندات أو جهة تحقق معتمدة.' };
+}
+function expectedBirths(from, to) {
+  const out = [];
+  for (const c of camels()) {
+    if (c.sex !== 'female' || INACTIVE.includes(c.status)) continue;
+    const m = openMating(c.id);
+    if (m && m.expected_birth_date >= from && m.expected_birth_date <= to)
+      out.push({ mating_id: m.id, dam_id: c.id, dam_name: c.name, tag_number: c.tag_number, mating_date: m.mating_date, expected_birth_date: m.expected_birth_date, outcome: m.outcome, sire_name: sireName(m) });
+  }
+  return out.sort((a, b) => a.expected_birth_date.localeCompare(b.expected_birth_date));
+}
+function calendar(from, to) {
+  if (!isISODate(from) || !isISODate(to) || diffDays(from, to) > 400 || to < from) throw bad('invalid_range', 'نطاق التاريخ غير صحيح');
+  const items = [];
+  for (const b of expectedBirths(from, to)) items.push({ date: b.expected_birth_date, kind: 'expected_birth', camel_id: b.dam_id, title: `ولادة متوقعة: ${b.dam_name}`, sub: `تلقيح ${b.mating_date}${b.sire_name ? ' من ' + b.sire_name : ''}`, estimated: true });
+  for (const e of S.events.values()) if (e.next_due_date && e.next_due_date >= from && e.next_due_date <= to && S.camels.get(e.camel_id)) items.push({ date: e.next_due_date, kind: 'follow_up', camel_id: e.camel_id, title: `متابعة: ${e.title}`, sub: S.camels.get(e.camel_id).name });
+  for (const b of S.births.values()) if (b.birth_date >= from && b.birth_date <= to && S.camels.get(b.dam_id)) items.push({ date: b.birth_date, kind: 'birth', camel_id: b.dam_id, title: `ولادة: ${S.camels.get(b.dam_id).name}`, sub: b.outcome === 'live' ? 'مولود حي' : 'نفوق' });
+  for (const m of S.matings.values()) if (m.mating_date >= from && m.mating_date <= to && S.camels.get(m.dam_id)) items.push({ date: m.mating_date, kind: 'mating', camel_id: m.dam_id, title: `تلقيح: ${S.camels.get(m.dam_id).name}`, sub: '' });
+  items.sort((a, b) => a.date.localeCompare(b.date));
+  return { from, to, items, notice: 'مواعيد الولادة تقديرية بناءً على مدة تقديرية من اللقاح إلى الولادة، ولا تغني عن المتابعة البيطرية.' };
+}
+function alerts() {
+  const today = todayISO(); const win = Number(S.settings.birth_alert_days) || 14; const out = [];
+  for (const b of expectedBirths(addDays(today, -60), addDays(today, win))) {
+    const d = diffDays(today, b.expected_birth_date);
+    out.push({ level: d < 0 ? 'warning' : d <= 3 ? 'urgent' : 'info', kind: d < 0 ? 'overdue_birth' : 'upcoming_birth', camel_id: b.dam_id, date: b.expected_birth_date, days: d,
+      text: d < 0 ? `تجاوزت ${b.dam_name} موعد الولادة التقديري بـ ${-d} يوم — يُنصح بالمتابعة البيطرية وتحديث السجل` : d === 0 ? `موعد ولادة ${b.dam_name} التقديري اليوم` : `${b.dam_name} يُتوقع أن تلد خلال ${d} يوم (${b.expected_birth_date})` });
+  }
+  for (const e of S.events.values()) {
+    const c = S.camels.get(e.camel_id);
+    if (!e.next_due_date || !c || INACTIVE.includes(c.status) || e.next_due_date < addDays(today, -7) || e.next_due_date > addDays(today, 7)) continue;
+    const d = diffDays(today, e.next_due_date);
+    out.push({ level: d < 0 ? 'warning' : 'info', kind: 'follow_up', camel_id: e.camel_id, date: e.next_due_date, days: d, text: `${e.title} — ${c.name} (${d < 0 ? 'متأخر ' + -d + ' يوم' : d === 0 ? 'اليوم' : 'بعد ' + d + ' يوم'})` });
+  }
+  for (const m of S.matings.values()) { const c = S.camels.get(m.dam_id); if (m.outcome === 'pending' && m.mating_date <= addDays(today, -90) && c && !INACTIVE.includes(c.status)) out.push({ level: 'info', kind: 'confirm_pregnancy', camel_id: m.dam_id, date: m.mating_date, text: `لم يُسجل هل لقحت ${c.name} أو لا منذ تلقيح ${m.mating_date}` }); }
+  const rank = { urgent: 0, warning: 1, info: 2 };
+  return out.sort((a, b) => rank[a.level] - rank[b.level] || (a.date || '').localeCompare(b.date || ''));
+}
+function ageBreakdown() {
+  const out = AGE_NAMES.map(a => ({ key: a.key, m: a.m, f: a.f, males: 0, females: 0 })); let unknown = 0;
+  for (const c of camels()) { if (INACTIVE.includes(c.status)) continue; const a = ageName(c.birth_date, c.sex, todayISO()); if (!a) { unknown++; continue; } const o = out.find(x => x.key === a.key); if (c.sex === 'female') o.females++; else o.males++; }
+  return { groups: out.filter(o => o.males + o.females), unknown };
+}
+function dashboard() {
+  const today = todayISO(); const act = camels().filter(c => !INACTIVE.includes(c.status));
+  return { total: act.length, females: act.filter(c => c.sex === 'female').length, males: act.filter(c => c.sex === 'male').length,
+    pregnant: expectedBirths('0000-01-01', '9999-12-31').length, births_this_year: [...S.births.values()].filter(b => b.birth_date >= today.slice(0, 4) + '-01-01').length,
+    due_30: expectedBirths(today, addDays(today, 30)).length, upcoming: expectedBirths(addDays(today, -30), addDays(today, 120)).slice(0, 8), alerts: alerts().slice(0, 8), ages: ageBreakdown(),
+    recent: S.log.slice(-8).reverse().map(a => ({ action: a.action, entity: a.entity, created_at: a.created_at, camel_id: a.camel_id, camel_name: a.camel_id && S.camels.get(a.camel_id) ? S.camels.get(a.camel_id).name : null })),
+    has_demo: camels().some(c => c.is_demo) };
+}
+function history(id) { ownedCamel(id); return S.log.filter(a => a.camel_id === id).slice().reverse(); }
+
+// ===================== الصور =====================
+function uploadPhoto(camelId, { data_base64, caption, is_primary, is_demo }) {
+  const c = ownedCamel(camelId);
+  if (typeof data_base64 !== 'string' || !data_base64.startsWith('data:image/')) throw new HttpError(415, 'unsupported_file', 'أرسل صورة JPG أو PNG');
+  if (data_base64.length > 240 * 1024) throw new HttpError(413, 'file_too_large', 'الصورة كبيرة جداً بعد الضغط');
+  const dupOwn = [...S.photos.values()].filter(p => p.data === data_base64).map(p => ({ id: p.id, camel_id: p.camel_id, name: (S.camels.get(p.camel_id) || {}).name }));
+  const first = !photoOf(c.id);
+  if (is_primary) for (const p of S.photos.values()) if (p.camel_id === c.id && p.is_primary) Store.put('photo', { ...p, is_primary: 0 });
+  const row = { id: newId(), camel_id: c.id, kind: 'photo', data: data_base64, caption: caption ? String(caption).slice(0, 120) : null, is_primary: (is_primary || first) ? 1 : 0, created_at: nowISO() };
+  if (is_demo) row.is_demo = 1;
+  Store.put('photo', row);
+  audit('upload', 'media', row.id, { camelId: c.id });
+  return { id: row.id, kind: 'photo', duplicate_in_my_herd: dupOwn, duplicate_elsewhere: false };
+}
+function removePhoto(id) { const p = S.photos.get(id); if (!p) throw new HttpError(404, 'not_found', 'الملف غير موجود'); Store.del('photo', id); audit('delete', 'media', id, { camelId: p.camel_id }); return { ok: true }; }
+function mediaSrc(id) { const p = S.photos.get(id); return p ? p.data : ''; }
+// ===================== WASM AI (منقول من assistant.js) =====================
+const SEX_AR = { female: 'ناقة', male: 'فحل' };
+const CALF_SEX_AR = { female: 'بكرة', male: 'قعود' };
+const OUTCOME_AR = { pending: 'بانتظار التأكيد', confirmed_pregnant: 'خلفة (مؤكد)', not_pregnant: 'ما لقحت', born: 'ولدت', aborted: 'إجهاض' };
+const fmtA = iso => (iso ? new Date(iso + 'T00:00:00Z').toLocaleDateString('ar-QA-u-nu-latn', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }) : '—');
+const ESTIMATE_NOTE = 'الموعد تقديري ولا يغني عن المتابعة البيطرية.';
+const EXAMPLES = ['لقحت وضحى اليوم من شاهين', 'كم عندي حيران؟', 'متى لقحت وضحى؟', 'أي النوق عندي بتولد الشهر القادم؟', 'وش جابت وضحى آخر مرة؟', 'ولدت الشعلة اليوم بكرة وسميناها غلا', 'أبي أبيع الشعلة', 'وش التنبيهات؟'];
+let SAMPLE = null; // يُضبط من الواجهة إذا توفرت قدرة "اسأل Claude"
+
+function chatSave(role, content, meta) { S.chat.messages.push({ id: newId(), role, content, meta: meta || null, created_at: nowISO() }); if (S.chat.messages.length > 60) S.chat.messages = S.chat.messages.slice(-60); Store.saveChat(); }
+function lastMeta() {
+  const m = [...S.chat.messages].reverse().find(x => x.role === 'assistant');
+  if (!m || !m.meta || Date.now() - new Date(m.created_at).getTime() > 30 * 60000) return null;
+  return m.meta;
+}
+function actionStatus(a) { const p = S.chat.pending[a.id]; const st = p ? (p.status === 'pending' && p.expires_at < nowISO() ? 'expired' : p.status) : 'expired'; return { ...a, status: st }; }
+function aiHistory() { return S.chat.messages.map(m => ({ id: m.id, role: m.role, content: m.content, created_at: m.created_at, cards: m.meta?.cards, action: m.meta?.action ? actionStatus(m.meta.action) : undefined, options: m.meta?.options, source: m.meta?.source })); }
+
+function resolveCamel(name, sex) {
+  if (!name) return { status: 'missing' };
+  if (name.startsWith('@id:')) { const c = S.camels.get(name.slice(4)); return c && (!sex || c.sex === sex) ? { status: 'ok', camel: c } : { status: 'none', name }; }
+  const list = findByName(name, sex);
+  if (list.length === 1) return { status: 'ok', camel: list[0] };
+  if (list.length > 1) return { status: 'ambiguous', list, name };
+  return { status: 'none', name };
+}
+const ask = (text, awaiting, draft, options) => ({ text, meta: { awaiting, draft, options } });
+const optionsFrom = list => list.map(c => ({ label: `${c.name}${c.tag_number ? ' (' + c.tag_number + ')' : ''}`, value: '@id:' + c.id }));
+function propose(action, payload, summary, fields) {
+  const aid = newId();
+  for (const [k, p] of Object.entries(S.chat.pending)) if (p.status !== 'pending' || p.expires_at < nowISO()) delete S.chat.pending[k];
+  S.chat.pending[aid] = { action, payload, status: 'pending', expires_at: new Date(Date.now() + 30 * 60000).toISOString() };
+  return { id: aid, action, summary, fields, status: 'pending' };
+}
+
+function continueMating(d) {
+  if (!d.dam_id) {
+    const r = resolveCamel(d.dam, 'female');
+    if (r.status === 'missing') return ask('أي ناقة تم تلقيحها؟ اكتب اسمها أو رقم الوسم.', 'dam', d);
+    if (r.status === 'none') return ask(`ما لقيت ناقة باسم «${d.dam}» في حلالك. تأكد من الاسم، أو أضفها أولاً من صفحة «حلالي».`, 'dam', { ...d, dam: null });
+    if (r.status === 'ambiguous') return ask(`عندك أكثر من ناقة تطابق «${d.dam}». أيها تقصد؟`, 'dam', { ...d, dam: null }, optionsFrom(r.list));
+    d.dam_id = r.camel.id; d.dam_name = r.camel.name;
+  }
+  if (!d.sire_id && !d.sire_text) {
+    if (!d.sire) return ask(`من هو الفحل الذي لقّح ${d.dam_name}؟`, 'sire', d);
+    const r = resolveCamel(d.sire, 'male');
+    if (r.status === 'ambiguous') return ask(`عندك أكثر من فحل يطابق «${d.sire}». أيهم؟`, 'sire', { ...d, sire: null }, optionsFrom(r.list));
+    if (r.status === 'ok') { d.sire_id = r.camel.id; d.sire_name = r.camel.name; } else { d.sire_text = d.sire; d.sire_name = d.sire; d.sire_external = true; }
+  }
+  if (!d.date) return ask(`متى كان تلقيح ${d.dam_name}؟ (مثال: اليوم، أمس، قبل 3 أيام، أو 2026-11-01)`, 'date', d);
+  if (d.date > todayISO()) return ask('تاريخ التلقيح لا يمكن أن يكون في المستقبل. متى كان التلقيح؟', 'date', { ...d, date: null });
+  const expected = addDays(d.date, Number(S.settings.gestation_days) || 390);
+  const prev = openMating(d.dam_id);
+  const fields = [['الناقة', d.dam_name], ['الفحل', d.sire_name + (d.sire_external ? ' (من خارج حلالك)' : '')], ['تاريخ التلقيح', fmtA(d.date)], ['الولادة المتوقعة', fmtA(expected) + ' (تقديري)']];
+  let text = `سأسجل تلقيح ${d.dam_name} من ${d.sire_name} بتاريخ ${fmtA(d.date)}. أكّد لحفظ السجل.`;
+  if (prev && prev.outcome === 'confirmed_pregnant') text += `\n⚠️ تنبيه: ${d.dam_name} مسجلة خلفة (مؤكد) من تلقيح ${fmtA(prev.mating_date)}. تأكد قبل الحفظ.`;
+  else if (prev) text += `\nملاحظة: يوجد تلقيح سابق غير مؤكد بتاريخ ${fmtA(prev.mating_date)} وسيُعتبر "ما لقحت" عند الحفظ.`;
+  const action = propose('record_mating', { dam_id: d.dam_id, sire_id: d.sire_id || null, sire_name_text: d.sire_text || null, mating_date: d.date }, 'تسجيل تلقيح', fields);
+  return { text: text + `\n${ESTIMATE_NOTE}`, meta: { action } };
+}
+function continueBirth(d) {
+  if (!d.dam_id) {
+    const r = resolveCamel(d.dam, 'female');
+    if (r.status === 'missing') return ask('أي ناقة ولدت؟', 'dam', d);
+    if (r.status === 'none') return ask(`ما لقيت ناقة باسم «${d.dam}» في حلالك. اكتب الاسم الصحيح أو رقم الوسم.`, 'dam', { ...d, dam: null });
+    if (r.status === 'ambiguous') return ask('أي ناقة تقصد؟', 'dam', { ...d, dam: null }, optionsFrom(r.list));
+    d.dam_id = r.camel.id; d.dam_name = r.camel.name;
+  }
+  if (!d.date) d.date = todayISO();
+  if (!d.calf_sex) return ask(`مبروك! المولود قعود أو بكرة؟`, 'calf_sex', d, [{ label: 'قعود', value: 'قعود' }, { label: 'بكرة', value: 'بكرة' }]);
+  const m = openMating(d.dam_id);
+  const fields = [['الأم', d.dam_name], ['تاريخ الولادة', fmtA(d.date)], ['المولود', CALF_SEX_AR[d.calf_sex]], ['اسم المولود', d.calf_name || '(يُحدد لاحقاً)'], ['الأب', m ? sireName(m) + ' — من سجل التلقيح' : 'غير معروف (لا يوجد تلقيح مسجل)']];
+  const action = propose('record_birth', { dam_id: d.dam_id, birth_date: d.date, calf_sex: d.calf_sex, calf_name: d.calf_name || null }, 'تسجيل ولادة', fields);
+  return { text: `سأسجل ولادة ${d.dam_name} وأنشئ ملفاً للمولود مربوطاً بأمه${m ? ' وأبيه' : ''}. أكّد للحفظ.`, meta: { action } };
+}
+function fillSlot(meta, text) {
+  const d = { ...meta.draft }; const n = normalizeAr(text);
+  const value = text.startsWith('@id:') ? text.trim() : NLU.cleanName(n);
+  if (/^(الغاء|إلغاء|كنسل|لا|خلاص|بلاش)$/.test(n)) return { text: 'تم الإلغاء. ما سجلت شيئاً.', meta: null };
+  switch (meta.awaiting) {
+    case 'dam': d.dam = value; d.dam_id = null; break;
+    case 'sire': d.sire = text.startsWith('@id:') ? value : text.trim(); break;
+    case 'date': { const r = NLU.extractDate(n); if (!r.date) return ask('ما فهمت التاريخ. اكتب مثلاً: اليوم، أمس، قبل 5 أيام، أو 2026-11-01', 'date', d); d.date = r.date; break; }
+    case 'calf_sex': { const s = NLU.sexWord(n); if (!s) return ask('اختر: قعود أو بكرة', 'calf_sex', d, [{ label: 'قعود', value: 'قعود' }, { label: 'بكرة', value: 'بكرة' }]); d.calf_sex = s; break; }
+    case 'listing_camel': return draftListing(value);
+    default: return null;
+  }
+  return d.kind === 'birth' ? continueBirth(d) : continueMating(d);
+}
+function camelOr(name, sex, onOk) {
+  const r = resolveCamel(name, sex);
+  if (r.status === 'missing') return { text: 'اكتب اسم المطية أو رقم وسمها.' };
+  if (r.status === 'none') return { text: `ما لقيت ${sex === 'male' ? 'فحلاً' : sex === 'female' ? 'ناقة' : 'مطية'} باسم «${name}» في حلالك.` };
+  if (r.status === 'ambiguous') return { text: `فيه أكثر من مطية تطابق «${name}»:`, meta: { cards: [{ type: 'camels', items: r.list.map(c => ({ id: c.id, name: c.name, tag_number: c.tag_number })) }] } };
+  return onOk(r.camel);
+}
+function answerLastMating(p) {
+  return camelOr(p.dam, 'female', c => {
+    const m = matings().filter(x => x.dam_id === c.id).sort(byDate('mating_date'))[0];
+    if (!m) return { text: `ما فيه تلقيح مسجل لـ ${c.name} في السجلات.`, meta: { source: 'records' } };
+    let t = `📋 حسب سجلاتك: آخر تلقيح لـ ${c.name} كان بتاريخ ${fmtA(m.mating_date)} من ${sireName(m) || 'غير مسجل'}.\nالحالة: ${OUTCOME_AR[m.outcome]}.`;
+    if (['pending', 'confirmed_pregnant'].includes(m.outcome)) t += `\n🔮 الولادة المتوقعة: ${fmtA(m.expected_birth_date)} (بعد ${diffDays(todayISO(), m.expected_birth_date)} يوم تقريباً). ${ESTIMATE_NOTE}`;
+    return { text: t, meta: { source: 'records', cards: [{ type: 'camel_link', id: c.id, name: c.name }] } };
+  });
+}
+function answerDueOne(p) {
+  return camelOr(p.dam, 'female', c => {
+    const m = openMating(c.id);
+    if (!m) return { text: `ما فيه تلقيح مفتوح مسجل لـ ${c.name}، فما أقدر أحسب موعد ولادة.`, meta: { source: 'records' } };
+    const d = diffDays(todayISO(), m.expected_birth_date);
+    return { text: `🔮 الموعد التقديري لولادة ${c.name}: ${fmtA(m.expected_birth_date)} ${d >= 0 ? `(بعد ${d} يوم)` : `(متجاوزة الموعد بـ ${-d} يوم)`}.\n📋 محسوب من تلقيح مسجل بتاريخ ${fmtA(m.mating_date)}. ${ESTIMATE_NOTE}`, meta: { source: 'records' } };
+  });
+}
+function answerDueList(p) {
+  const list = expectedBirths(p.period.from, p.period.to);
+  if (!list.length) return { text: `ما فيه نوق متوقع ولادتها ${p.period.label} (${fmtA(p.period.from)} – ${fmtA(p.period.to)}) حسب سجلات التلقيح.`, meta: { source: 'records' } };
+  return { text: `🔮 النوق المتوقع ولادتها ${p.period.label}: ${list.length}\n${list.map((b, i) => `${i + 1}. ${b.dam_name}${b.tag_number ? ' (' + b.tag_number + ')' : ''} — ${fmtA(b.expected_birth_date)}${b.sire_name ? ' — من ' + b.sire_name : ''}`).join('\n')}\n\n📋 محسوبة من تواريخ التلقيح المسجلة. ${ESTIMATE_NOTE}`, meta: { source: 'records', cards: [{ type: 'due' }] } };
+}
+function answerLastBirth(p) {
+  return camelOr(p.dam, 'female', c => {
+    const all = [...S.births.values()].filter(b => b.dam_id === c.id).sort(byDate('birth_date'));
+    const b = all[0];
+    if (!b) return { text: `ما فيه ولادة مسجلة لـ ${c.name}.`, meta: { source: 'records' } };
+    const calf = b.calf_id && S.camels.get(b.calf_id); const m = b.mating_id && S.matings.get(b.mating_id); const sire = m ? sireName(m) : null;
+    let t = `📋 حسب سجلاتك: آخر ولادة لـ ${c.name} كانت بتاريخ ${fmtA(b.birth_date)}`;
+    t += b.outcome === 'stillborn' ? ' (نفوق المولود).' : `، ${b.calf_sex ? 'المولود ' + CALF_SEX_AR[b.calf_sex] : 'جنس المولود غير مسجل'}${calf ? ' واسمه «' + calf.name + '»' : ''}${sire ? '، والأب ' + sire : ''}.`;
+    t += `\nإجمالي ولاداتها المسجلة: ${all.length}.`;
+    const cards = [{ type: 'camel_link', id: c.id, name: c.name }]; if (calf) cards.push({ type: 'camel_link', id: calf.id, name: calf.name });
+    return { text: t, meta: { source: 'records', cards } };
+  });
+}
+function answerOffspring(p) {
+  return camelOr(p.parent, null, c => {
+    const kids = camels().filter(k => k.dam_id === c.id || k.sire_id === c.id);
+    if (!kids.length) return { text: `ما فيه مواليد مسجلة لـ ${c.name} في حلالك.`, meta: { source: 'records' } };
+    return { text: `📋 مواليد ${c.name} المسجلة في حلالك: ${kids.length} (${kids.filter(k => k.sex === 'female').length} بكرة و ${kids.filter(k => k.sex === 'male').length} قعود).`, meta: { source: 'records', cards: [{ type: 'camels', items: kids.map(k => ({ id: k.id, name: k.name, tag_number: k.tag_number })) }] } };
+  });
+}
+function answerAge(p) {
+  const def = AGE_NAMES.find(a => a.key === p.key);
+  const list = listCamels({ age: p.key }).filter(c => !INACTIVE.includes(c.status));
+  const title = `${def.m}${def.f !== def.m ? ' / ' + def.f : ''} (${def.label})`;
+  if (!list.length) return { text: `📋 ما عندك في حلالك النشط أي ${title}.\nملاحظة: الإبل التي ليس لها تاريخ ميلاد مسجل لا تدخل في الحساب.`, meta: { source: 'records' } };
+  const f = list.filter(c => c.sex === 'female').length, m = list.length - f;
+  return { text: `📋 عندك ${list.length} من ${title}: ${f ? f + ' ' + def.f : ''}${f && m ? ' و ' : ''}${m ? m + ' ' + def.m : ''}.\n${list.map((c, i) => `${i + 1}. ${c.name}${c.tag_number ? ' (' + c.tag_number + ')' : ''}`).join('\n')}\n\nمحسوبة من تواريخ الميلاد المسجلة.`, meta: { source: 'records', cards: [{ type: 'camels', items: list.map(c => ({ id: c.id, name: c.name, tag_number: c.tag_number })) }] } };
+}
+function answerCounts() {
+  const s = dashboard();
+  return { text: `📋 حلالك النشط: ${s.total} رأس — ${s.females} ناقة و ${s.males} فحل.\nالنوق الملقحة: ${s.pregnant}، والمتوقع ولادتها خلال 30 يوماً: ${s.due_30}.\nالولادات المسجلة هذا العام: ${s.births_this_year}.${s.ages.groups.length ? '\nحسب العمر: ' + s.ages.groups.map(g => `${g.m === g.f ? g.m : g.m + '/' + g.f} ${g.males + g.females}`).join('، ') : ''}${s.ages.unknown ? `، وبدون تاريخ ميلاد ${s.ages.unknown}` : ''}.`, meta: { source: 'records' } };
+}
+function answerAlerts() {
+  const a = alerts();
+  if (!a.length) return { text: 'ما عندك تنبيهات قريبة. 👌', meta: { source: 'records' } };
+  return { text: `عندك ${a.length} تنبيه:\n${a.slice(0, 10).map(x => '• ' + x.text).join('\n')}\n\n${ESTIMATE_NOTE}`, meta: { source: 'records' } };
+}
+function answerCamel(p) {
+  return camelOr(p.name, null, c => {
+    const f = getCamel(c.id);
+    const age = f.age_days != null ? `${f.age_name.name} — ${Math.floor(f.age_days / 365)} سنة تقريباً${f.birth_date_estimated ? ' (تاريخ ميلاد تقديري)' : ''}` : 'غير مسجل';
+    return { text: `📋 ${f.name}${f.tag_number ? ' — وسم ' + f.tag_number : ''}\n${SEX_AR[f.sex]} • ${f.breed || 'فئة غير محددة'} • ${f.color || 'لون غير محدد'}\nالعمر: ${age}\nالأم: ${f.dam?.name || f.dam_name_text || 'غير مسجلة'} • الأب: ${f.sire?.name || f.sire_name_text || 'غير مسجل'}\nالمواليد المسجلة: ${f.offspring.length}`, meta: { source: 'records', cards: [{ type: 'camel_link', id: c.id, name: c.name }] } };
+  });
+}
+function draftListing(name) {
+  if (!name) return ask('أي مطية تبي تبيعها؟ اكتب اسمها أو رقم الوسم.', 'listing_camel', {});
+  return camelOr(name, null, c => {
+    const f = getCamel(c.id); const age = f.age_days != null ? Math.floor(f.age_days / 365) : null; const parts = [];
+    parts.push(`للبيع ${f.age_name ? f.age_name.name + ' ' : ''}${f.sex === 'female' ? '(ناقة)' : '(فحل)'} «${f.name}»${f.breed ? ' من ' + f.breed : ''}${f.color ? '، اللون ' + f.color : ''}.`);
+    if (age != null) parts.push(`العمر: ${f.age_name.name}، ${age} ${age >= 3 && age <= 10 ? 'سنوات' : 'سنة'} تقريباً${f.birth_date_estimated ? ' (تقديري)' : ''}.`);
+    const dam = f.dam?.name || f.dam_name_text, sire = f.sire?.name || f.sire_name_text;
+    if (dam || sire) parts.push(`${dam ? 'الأم: ' + dam : ''}${dam && sire ? ' — ' : ''}${sire ? 'الأب: ' + sire : ''} ${f.pedigree_verified ? '(موثق)' : '(حسب سجلات المالك، غير موثق رسمياً)'}.`);
+    if (f.sex === 'female' && f.births.length) parts.push(`ولدت ${f.births.length} ${f.births.length > 2 ? 'مرات' : 'مرة'} حسب السجلات.`);
+    const vac = f.events.filter(e => e.type === 'vaccination'); if (vac.length) parts.push(`آخر تحصين مسجل: ${vac[0].title} بتاريخ ${fmtA(vac[0].event_date)}.`);
+    const om = f.sex === 'female' ? openMating(f.id) : null; if (om) parts.push(`ملقحة بتاريخ ${fmtA(om.mating_date)}${om.outcome === 'confirmed_pregnant' ? ' (خلفة — مؤكد)' : ' (لم يُؤكد اللقاح بعد)'}.`);
+    parts.push('السعر: [حدده أنت]  •  الموقع: [المدينة/الدولة]  •  للتواصل: [رقمك]');
+    const missing = [!f.photos.length && 'صور واضحة', !f.breed && 'الفئة', !f.color && 'اللون', !f.birth_date && 'العمر'].filter(Boolean);
+    return { text: `✍️ مسودة وصف إعلان (مقترحة من المساعد بناءً على سجلاتك فقط — راجعها وعدّلها قبل النشر):\n\n${parts.join('\n')}${missing.length ? `\n\n💡 لإعلان أقوى أضف: ${missing.join('، ')}.` : ''}\n\nملاحظة: سوق وسم للإعلانات يأتي في المرحلة الثانية؛ يمكنك نسخ الوصف الآن.`, meta: { source: 'ai_draft', cards: [{ type: 'camel_link', id: f.id, name: f.name }] } };
+  });
+}
+const helpText = () => ({ text: `هلا والله! أنا مساعد وسم 🐪 أساعدك في إدارة حلالك.\nجرّب تكتب مثلاً:\n${EXAMPLES.map(e => '• ' + e).join('\n')}\n\nأي تسجيل أطلب تأكيدك قبل حفظه، والمواعيد دائماً تقديرية.`, meta: { options: EXAMPLES.slice(0, 4).map(e => ({ label: e, value: e })) } });
+
+// أسئلة مفتوحة → Claude (أدوات قراءة فقط من حلال المستخدم)
+const AI_SYSTEM = `أنت "مساعد وسم"، مساعد عربي خليجي لملاك الإبل، تتحدث بلهجة خليجية مهذبة وواضحة وباختصار.
+قواعد صارمة: لا تخترع أي بيانات عن حلال المستخدم؛ استخدم الأدوات فقط وإن لم تجد المعلومة قل ذلك. ميّز بين "حسب سجلاتك" و"تقديري/اقتراح". لا تدّعِ إثبات النسب أو الأصالة أو العمر. لا تقدم تشخيصاً بيطرياً بل معلومات عامة مع النصح بمراجعة طبيب بيطري. لا تعطِ سعراً مؤكداً. لا تنفذ عمليات مالية أو مزايدات أو تسجيلات؛ لتسجيل تلقيح أو ولادة اطلب من المستخدم كتابة جملة مثل "لقحت وضحى اليوم من شاهين". مصطلحات: المولود الذكر قعود والأنثى بكرة، الناقة اللاقح خلفة، الأعمار: حوار، مفرود، حق، لقي، جذع، ثني، رباع، سديس، ثم بعير للفحل وفاطر للناقة.`;
+const AI_TOOLS = [
+  { name: 'search_camels', description: 'بحث في حلال المستخدم بالاسم أو الوسم أو الجنس', inputSchema: { type: 'object', properties: { q: { type: 'string' }, sex: { type: 'string', enum: ['female', 'male'] } } },
+    execute: i => listCamels({ q: i.q, sex: i.sex }).slice(0, 30).map(c => ({ id: c.id, name: c.name, tag: c.tag_number, sex: c.sex, breed: c.breed, status: c.status, age: c.age_name?.name, expected_birth_date: c.expected_birth_date })) },
+  { name: 'get_camel', description: 'ملف مطية بالمعرف', inputSchema: { type: 'object', properties: { id: { type: 'string' } }, required: ['id'] },
+    execute: i => { const c = getCamel(i.id); return { ...c, photos: c.photos.length, events: c.events.slice(0, 15) }; } },
+  { name: 'expected_births', description: 'النوق المتوقع ولادتها بين تاريخين YYYY-MM-DD', inputSchema: { type: 'object', properties: { from: { type: 'string' }, to: { type: 'string' } }, required: ['from', 'to'] }, execute: i => expectedBirths(i.from, i.to) },
+  { name: 'alerts', description: 'تنبيهات المستخدم', inputSchema: { type: 'object', properties: {} }, execute: () => alerts() },
+  { name: 'herd_stats', description: 'إحصاءات الحلال', inputSchema: { type: 'object', properties: {} }, execute: () => { const s = dashboard(); delete s.recent; return s; } },
+];
+async function llmAnswer(text) {
+  if (!SAMPLE) return null;
+  const recent = S.chat.messages.slice(-8).filter(m => m.content && !m.content.startsWith('(اختيار'));
+  const msgs = recent.map(m => ({ role: m.role, content: m.content }));
+  while (msgs.length && msgs[0].role !== 'user') msgs.shift();
+  if (!msgs.length || msgs[msgs.length - 1].role !== 'user') msgs.push({ role: 'user', content: text });
+  msgs[0] = { role: 'user', content: `${AI_SYSTEM}\nتاريخ اليوم: ${todayISO()}. المدة من اللقاح إلى الولادة لدى المستخدم: ${S.settings.gestation_days} يوماً.\n\n${msgs[0].content}` };
+  const r = await SAMPLE(msgs, { tools: AI_TOOLS, cache: false });
+  return { text: r.text, meta: { source: 'ai' } };
+}
+
+async function aiHandle(raw) {
+  const text = String(raw || '').trim().slice(0, 1000);
+  if (!text) throw bad('empty', 'اكتب رسالتك');
+  const meta = lastMeta();
+  chatSave('user', text.startsWith('@id:') ? '(اختيار من القائمة)' : text);
+  const p = NLU.parse(text, todayISO());
+  let out;
+  try {
+    const n = normalizeAr(text);
+    if (meta && meta.awaiting && (p.intent === 'unknown' || text.startsWith('@id:') || /^(الغاء|إلغاء|لا|كنسل)$/.test(text.trim()) || (meta.awaiting === 'date' && NLU.extractDate(n).date) || (meta.awaiting === 'calf_sex' && NLU.sexWord(n)))) out = fillSlot(meta, text);
+    if (!out) switch (p.intent) {
+      case 'greeting': case 'help': case 'empty': out = helpText(); break;
+      case 'record_mating': out = p.invalid_date ? { text: 'التاريخ المكتوب غير صحيح. اكتب مثلاً 2026-11-01 أو 1/11/2026.' } : continueMating({ kind: 'mating', dam: p.dam, sire: p.sire, date: p.date }); break;
+      case 'record_birth': out = continueBirth({ kind: 'birth', dam: p.dam, calf_sex: p.calf_sex, calf_name: p.calf_name, date: p.date }); break;
+      case 'query_last_mating': out = answerLastMating(p); break;
+      case 'query_due_one': out = answerDueOne(p); break;
+      case 'query_due_list': out = answerDueList(p); break;
+      case 'query_last_birth': out = answerLastBirth(p); break;
+      case 'query_offspring': out = answerOffspring(p); break;
+      case 'query_counts': out = answerCounts(); break;
+      case 'query_age': out = answerAge(p); break;
+      case 'query_alerts': out = answerAlerts(); break;
+      case 'query_camel': out = answerCamel(p); break;
+      case 'draft_listing': out = draftListing(p.name); break;
+      default: {
+        try { out = await llmAnswer(text); } catch (e) { out = { text: e && e.code === 'rate_limited' ? 'المساعد المتقدم مشغول الحين، جرّب بعد شوي.' : 'المساعد المتقدم غير متاح حالياً. جرّب أحد الأوامر المعروفة.' }; }
+        if (!out) out = { text: `ما فهمت طلبك بالضبط 🙏\nأقدر حالياً أسجل التلقيح والولادة وأجاوب عن مواعيد الولادة وسجلات نوقك. أمثلة:\n${EXAMPLES.slice(0, 5).map(e => '• ' + e).join('\n')}`, meta: { options: EXAMPLES.slice(0, 3).map(e => ({ label: e, value: e })) } };
+      }
+    }
+  } catch (e) { if (e instanceof HttpError && e.status < 500) out = { text: e.message }; else throw e; }
+  chatSave('assistant', out.text, out.meta || null);
+  return { reply: out.text, intent: p.intent, ...(out.meta || {}) };
+}
+function aiConfirm(id) {
+  const a = S.chat.pending[id];
+  if (!a) throw new HttpError(404, 'not_found', 'الإجراء غير موجود أو انتهت صلاحيته');
+  if (a.status !== 'pending') throw new HttpError(409, 'already_handled', 'تمت معالجة هذا الإجراء مسبقاً');
+  if (a.expires_at < nowISO()) { a.status = 'expired'; Store.saveChat(); throw new HttpError(410, 'expired', 'انتهت صلاحية الإجراء، أعد الطلب'); }
+  a.status = 'confirmed';
+  const payload = { ...a.payload, source: 'assistant' }; let result, text;
+  try {
+    if (a.action === 'record_mating') { result = recordMating(payload); text = `✅ تم تسجيل التلقيح. الولادة المتوقعة ${fmtA(result.expected_birth_date)} (تقديري) وسأنبهك قبلها بـ ${S.settings.birth_alert_days} يوماً.`; }
+    else if (a.action === 'record_birth') { result = recordBirth(payload); text = `✅ تم تسجيل الولادة${result.calf ? ` وإنشاء ملف المولود «${result.calf.name}»` : ''}. مبروك ما جاكم 🎉`; }
+    else throw bad('unknown_action', 'إجراء غير معروف');
+  } catch (e) { a.status = 'pending'; throw e; }
+  chatSave('assistant', text, { source: 'records', cards: result.calf ? [{ type: 'camel_link', id: result.calf.id, name: result.calf.name }] : [{ type: 'camel_link', id: payload.dam_id, name: 'ملف الناقة' }] });
+  return { ok: true, reply: text, result };
+}
+function aiCancel(id) { const a = S.chat.pending[id]; if (!a || a.status !== 'pending') throw new HttpError(404, 'not_found', 'الإجراء غير موجود أو تمت معالجته'); a.status = 'cancelled'; chatSave('assistant', 'تم الإلغاء، ما سجلت شيئاً.', null); return { ok: true }; }
+
+async function analyzePhoto(photoId) {
+  if (!SAMPLE) return { enabled: false };
+  const p = S.photos.get(photoId); if (!p) throw new HttpError(404, 'not_found', 'الصورة غير موجودة');
+  const blob = await (await fetch(p.data)).blob();
+  const r = await SAMPLE('صف هذه الإبل وصفاً مرئياً موجزاً بالعربية في 4 أسطر: اللون الظاهر، الفئة المحتملة (مغاتير/مجاهيم/أصايل/أخرى) مع درجة ثقة (عالية/متوسطة/منخفضة)، والصفات المرئية. لا تحدد العمر أو النسب أو الأصالة ولا تقدم تشخيصاً. إذا لم تكن الصورة لإبل قل ذلك.', { images: [blob], cache: false });
+  return { enabled: true, suggestion: r.text, notice: 'اقتراح آلي من الصورة فقط — لا يثبت النسب أو الأصالة أو العمر.' };
+}
+// ===================== واجهة برمجية محلية بنفس مسارات الخادم =====================
+const ROUTES = [];
+const R = (method, pattern, fn) => { const keys = []; const re = new RegExp('^' + pattern.replace(/:([a-z_]+)/g, (_, k) => { keys.push(k); return '([^/?]+)'; }) + '$'); ROUTES.push({ method, re, keys, fn }); };
+const ME = { id: 'me', email: '', display_name: '', role: 'owner' };
+const meOut = () => ({ ...ME, ...S.settings, display_name: S.settings.display_name || ME.display_name || 'صاحب الحلال' });
+
+R('GET', '/api/me', () => ({ user: meOut() }));
+R('PATCH', '/api/me', b => {
+  const u = {};
+  if (b.display_name !== undefined) { const n = String(b.display_name).trim().slice(0, 60); if (n.length < 2) throw bad('invalid_name', 'الاسم قصير'); u.display_name = n; }
+  if (b.phone !== undefined) u.phone = b.phone ? String(b.phone).slice(0, 20) : null;
+  if (b.country_code !== undefined) u.country_code = b.country_code;
+  if (b.gestation_days !== undefined) { const g = parseInt(b.gestation_days, 10); if (!(g >= 330 && g <= 420)) throw bad('invalid_gestation', 'المدة من اللقاح إلى الولادة بين 330 و 420 يوماً'); u.gestation_days = g; }
+  if (b.birth_alert_days !== undefined) { const g = parseInt(b.birth_alert_days, 10); if (!(g >= 1 && g <= 60)) throw bad('invalid_alert', 'التنبيه بين 1 و 60 يوماً'); u.birth_alert_days = g; }
+  if (b.ai_image_training_consent !== undefined) u.ai_image_training_consent = !!b.ai_image_training_consent;
+  if (b.partner_data_sharing_consent !== undefined) u.partner_data_sharing_consent = !!b.partner_data_sharing_consent;
+  S.settings = { ...S.settings, ...u }; Store.saveSettings();
+  return { user: meOut() };
+});
+R('GET', '/api/countries', () => ({ countries: [['SA', 'السعودية'], ['QA', 'قطر'], ['AE', 'الإمارات'], ['KW', 'الكويت'], ['BH', 'البحرين'], ['OM', 'عُمان']].map(([code, name_ar]) => ({ code, name_ar })) }));
+R('GET', '/api/age-names', () => ({ age_names: AGE_NAMES }));
+R('GET', '/api/dashboard', () => dashboard());
+R('GET', '/api/alerts', () => ({ alerts: alerts() }));
+R('GET', '/api/farms', () => ({ farms: [...S.farms.values()].map(f => ({ ...f, camels: camels().filter(c => c.farm_id === f.id).length })) }));
+R('POST', '/api/farms', b => { const name = str(b.name, 80); if (!name) throw bad('name_required', 'اسم العزبة مطلوب'); const f = { id: newId(), name, country_code: b.country_code || S.settings.country_code, area_text: str(b.area_text, 120), created_at: nowISO() }; Store.put('farm', f); audit('create', 'farm', f.id); return { farm: f }; });
+R('GET', '/api/camels', (b, q) => ({ camels: listCamels(Object.fromEntries(q)) }));
+R('POST', '/api/camels', b => ({ camel: createCamel(b) }));
+R('GET', '/api/camels/:id', (b, q, p) => ({ camel: getCamel(p.id) }));
+R('PATCH', '/api/camels/:id', (b, q, p) => ({ camel: updateCamel(p.id, b) }));
+R('DELETE', '/api/camels/:id', (b, q, p) => deleteCamel(p.id));
+R('GET', '/api/camels/:id/pedigree', (b, q, p) => pedigree(p.id, q.get('depth')));
+R('GET', '/api/camels/:id/history', (b, q, p) => ({ history: history(p.id) }));
+R('POST', '/api/camels/:id/events', (b, q, p) => ({ event: addEvent(p.id, b) }));
+R('DELETE', '/api/events/:id', (b, q, p) => deleteEvent(p.id));
+R('POST', '/api/matings', b => ({ mating: recordMating(b) }));
+R('PATCH', '/api/matings/:id', (b, q, p) => ({ mating: updateMating(p.id, b) }));
+R('DELETE', '/api/matings/:id', (b, q, p) => deleteMating(p.id));
+R('POST', '/api/births', b => recordBirth(b));
+R('GET', '/api/calendar', (b, q) => { const from = q.get('from') || todayISO().slice(0, 8) + '01'; return calendar(from, q.get('to') || addDays(from, 41)); });
+R('POST', '/api/camels/:id/media', (b, q, p) => uploadPhoto(p.id, b));
+R('DELETE', '/api/media/:id', (b, q, p) => removePhoto(p.id));
+R('POST', '/api/media/:id/analyze', (b, q, p) => analyzePhoto(p.id));
+R('GET', '/api/ai/messages', () => ({ messages: aiHistory() }));
+R('POST', '/api/ai/messages', b => aiHandle(b.text));
+R('POST', '/api/ai/actions/:id/confirm', (b, q, p) => aiConfirm(p.id));
+R('POST', '/api/ai/actions/:id/cancel', (b, q, p) => aiCancel(p.id));
+R('DELETE', '/api/ai/messages', () => { S.chat = { messages: [], pending: {} }; Store.write('chat', S.chat); return { ok: true }; });
+R('POST', '/api/demo', () => seedDemo());
+R('DELETE', '/api/demo', () => removeDemo());
+
+async function localApi(method, path, body) {
+  const [p, qs] = path.split('?'); const q = new URLSearchParams(qs || '');
+  for (const r of ROUTES) {
+    if (r.method !== method) continue;
+    const m = r.re.exec(p); if (!m) continue;
+    const params = {}; r.keys.forEach((k, i) => { params[k] = decodeURIComponent(m[i + 1]); });
+    try { return await r.fn(body || {}, q, params); }
+    catch (e) { if (e instanceof HttpError) { const err = new Error(e.message); err.status = e.status; err.code = e.code; throw err; } console.error(e); const err = new Error('حدث خطأ غير متوقع'); err.status = 500; throw err; }
+  }
+  const err = new Error('المسار غير موجود'); err.status = 404; throw err;
+}
+
+// ===================== بيانات تجريبية (يضغطها المستخدم بنفسه، ويحذفها متى شاء) =====================
+function demoPhoto(bg, body, label) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 800 600"><defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${bg[0]}"/><stop offset="1" stop-color="${bg[1]}"/></linearGradient></defs><rect width="800" height="600" fill="url(#s)"/><circle cx="620" cy="150" r="70" fill="#F4E6C3" opacity=".55"/><path d="M0 470 Q200 420 400 460 T800 450 V600 H0Z" fill="#C9A86A" opacity=".55"/><path d="M0 520 Q250 480 500 515 T800 505 V600 H0Z" fill="#B08D57" opacity=".7"/><g fill="${body}" transform="translate(170 150)"><path d="M60 250 C40 200 70 150 120 140 C150 70 230 60 260 130 C280 90 330 80 360 140 C380 170 400 175 420 160 L430 100 C432 70 470 55 495 70 L520 85 C530 92 528 105 515 108 L495 110 L480 190 C470 240 440 260 420 262 L410 360 L392 360 L388 270 L300 275 L296 360 L278 360 L270 272 C230 270 200 268 180 262 L170 360 L152 360 L150 262 C120 262 100 262 92 258 L84 360 L66 360 Z"/></g><text x="400" y="575" font-family="sans-serif" font-size="24" fill="#fff" text-anchor="middle">${label}</text></svg>`;
+  return 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svg)));
+}
+function seedDemo() {
+  if (camels().some(c => c.is_demo)) throw bad('demo_exists', 'البيانات التجريبية موجودة مسبقاً');
+  const T = todayISO(); const d = n => addDays(T, -n); const mk = o => createCamel({ ...o, is_demo: 1 });
+  const sh = mk({ name: 'شاهين', sex: 'male', breed: 'مغاتير', color: 'أبيض', tag_number: 'DEMO-M01', birth_date: d(9 * 365), sire_name_text: 'الهداج (خارجي)' });
+  const su = mk({ name: 'سلطان', sex: 'male', breed: 'مجاهيم', color: 'أسود', tag_number: 'DEMO-M02', birth_date: d(11 * 365), birth_date_estimated: 1 });
+  const um = mk({ name: 'الحمرا', sex: 'female', breed: 'مغاتير', color: 'أشعل', tag_number: 'DEMO-F00', birth_date: d(16 * 365), birth_date_estimated: 1 });
+  const wa = mk({ name: 'وضحى', sex: 'female', breed: 'مغاتير', color: 'أبيض', tag_number: 'DEMO-F01', birth_date: d(8 * 365), dam_id: um.id, sire_name_text: 'ريمان (خارجي)', notes: 'بيانات تجريبية' });
+  const shu = mk({ name: 'الشعلة', sex: 'female', breed: 'مغاتير', color: 'أشعل', tag_number: 'DEMO-F02', birth_date: d(7 * 365), dam_id: um.id, sire_id: sh.id });
+  const mu = mk({ name: 'مزنة', sex: 'female', breed: 'مجاهيم', color: 'أسود', tag_number: 'DEMO-F03', birth_date: d(6 * 365) });
+  const gh = mk({ name: 'غالية', sex: 'female', breed: 'أصايل', color: 'صفراء', tag_number: 'DEMO-F04', birth_date: d(4 * 365 + 40) });
+  const re = mk({ name: 'ريم', sex: 'female', breed: 'مجاهيم', color: 'أسود', tag_number: 'DEMO-F05', birth_date: d(5 * 365) });
+  recordMating({ dam_id: wa.id, sire_id: sh.id, mating_date: d(1200) });
+  recordBirth({ dam_id: wa.id, birth_date: d(812), calf_sex: 'female', calf_name: 'هدباء', calf_tag: 'DEMO-C01', is_demo: 1 });
+  recordMating({ dam_id: wa.id, sire_id: sh.id, mating_date: d(800) });
+  const thib = recordBirth({ dam_id: wa.id, birth_date: d(412), calf_sex: 'male', calf_name: 'ذيب', calf_tag: 'DEMO-C02', is_demo: 1 });
+  addEvent(thib.calf.id, { type: 'weaning', event_date: d(60), title: 'فطام' });
+  updateMating(recordMating({ dam_id: wa.id, sire_id: sh.id, mating_date: d(380) }).id, { outcome: 'confirmed_pregnant' });
+  updateMating(recordMating({ dam_id: shu.id, sire_id: su.id, mating_date: d(365) }).id, { outcome: 'confirmed_pregnant' });
+  recordMating({ dam_id: mu.id, sire_name_text: 'صقر (فحل خارجي)', mating_date: d(20) });
+  recordMating({ dam_id: gh.id, sire_id: su.id, mating_date: d(120) });
+  updateMating(recordMating({ dam_id: re.id, sire_id: su.id, mating_date: d(395) }).id, { outcome: 'confirmed_pregnant' });
+  recordMating({ dam_id: um.id, sire_id: sh.id, mating_date: d(700) });
+  recordBirth({ dam_id: um.id, birth_date: d(310), calf_sex: 'female', calf_name: 'جوهرة', calf_tag: 'DEMO-C03', is_demo: 1 });
+  for (const c of [wa, shu, mu, gh, re, sh, su]) addEvent(c.id, { type: 'vaccination', event_date: d(170), title: 'تحصين دوري (تجريبي)', next_due_date: addDays(T, c === shu ? 3 : 15) });
+  addEvent(mu.id, { type: 'treatment', event_date: d(12), title: 'علاج طفيليات (تجريبي)', next_due_date: addDays(T, 2) });
+  addEvent(sh.id, { type: 'achievement', event_date: d(200), title: 'مشاركة في مزاين (تجريبي)' });
+  const pal = [[['#7FA9C9', '#E9D6A8'], '#6B4A2B'], [['#E7B98A', '#F3E3C3'], '#8A5A35'], [['#9DB7A5', '#EFE2C4'], '#3E2C1C'], [['#D9A77A', '#F6E8CC'], '#C9B79C']];
+  [[wa, 0], [shu, 1], [sh, 3], [su, 2], [mu, 2], [gh, 1], [re, 0], [um, 1]].forEach(([c, i]) => uploadPhoto(c.id, { data_base64: demoPhoto(pal[i][0], pal[i][1], `رسم توضيحي — ${c.name} (تجريبي)`), caption: 'رسم توضيحي — ليست صورة حقيقية', is_demo: 1 }));
+  return { ok: true };
+}
+function removeDemo() {
+  for (const c of camels().filter(x => x.is_demo)) deleteCamel(c.id);
+  return { ok: true };
+}
+// أيقونات خطية بسيطة (SVG) — بدون مكتبات خارجية
+window.ICONS = (() => {
+  const s = (d, extra = '') => `<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ${extra}>${d}</svg>`;
+  return {
+    home: s('<path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/>'),
+    camel: s('<path d="M3 17c0-3 1.5-5 4-5.5C8 8 11 7.5 12 10c.8-2 3-2.4 4-.5.6 1.2 1.3 1.6 2 1l.5-3c.2-1 1.5-1.4 2.3-.7l.7.7-1 .5-.8 4c-.4 2-1.5 3-2.7 3l-.5 5"/><path d="M7 17v3M11 16.5V20M16 16v4"/>'),
+    market: s('<path d="M4 7h16l-1.5 10.5a2 2 0 0 1-2 1.5h-9a2 2 0 0 1-2-1.5Z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/>'),
+    gavel: s('<path d="m14 4 6 6M11 7l6 6M12.5 5.5l-6 6 3 3 6-6"/><path d="M8 13 3 18l2 2 5-5M13 20h8"/>'),
+    ai: s('<path d="M12 3v2M12 19v2M5 12H3M21 12h-2"/><rect x="6" y="6" width="12" height="12" rx="4"/><path d="M9.5 11h.01M14.5 11h.01M9.5 14.5c1.5 1 3.5 1 5 0"/>'),
+    star: s('<path d="m12 3 2.6 5.6 6 .7-4.5 4.1 1.3 6L12 16.4 6.6 19.4l1.3-6L3.4 9.3l6-.7Z"/>'),
+    tent: s('<path d="M3 20 12 4l9 16Z"/><path d="M12 4v16M9 20l3-6 3 6"/>'),
+    trophy: s('<path d="M8 4h8v5a4 4 0 0 1-8 0Z"/><path d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 20h8"/>'),
+    vet: s('<path d="M10 3h4v5h5v4h-5v5h-4v-5H5V8h5Z"/>'),
+    feed: s('<path d="M6 21V9l6-5 6 5v12Z"/><path d="M9 21v-5h6v5M9 12h6"/>'),
+    truck: s('<path d="M3 6h11v10H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/>'),
+    handshake: s('<path d="m11 17 2 2a1.5 1.5 0 0 0 2-2"/><path d="m14 14 2.5 2.5a1.5 1.5 0 0 0 2-2L14 10l-2 1a2 2 0 0 1-2.5-3L12 6h3l5 5M3 10l4-4 3 2"/><path d="m3 10 6 6 1 1"/>'),
+    users: s('<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-4-6"/>'),
+    bell: s('<path d="M6 16V11a6 6 0 1 1 12 0v5l2 2H4Z"/><path d="M10 21h4"/>'),
+    user: s('<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>'),
+    calendar: s('<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/>'),
+    plus: s('<path d="M12 5v14M5 12h14"/>'),
+    search: s('<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>'),
+    send: s('<path d="M20 4 3 11l7 2 2 7Z"/><path d="m10 13 4-4"/>', 'style="transform:scaleX(-1)"'),
+    x: s('<path d="M6 6l12 12M18 6 6 18"/>'),
+    edit: s('<path d="M4 20h4L19 9l-4-4L4 16Z"/><path d="m13 7 4 4"/>'),
+    trash: s('<path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/>'),
+    share: s('<circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="m8.2 10.8 7.6-3.6M8.2 13.2l7.6 3.6"/>'),
+    tree: s('<rect x="9" y="3" width="6" height="4" rx="1"/><rect x="3" y="17" width="6" height="4" rx="1"/><rect x="15" y="17" width="6" height="4" rx="1"/><path d="M12 7v5M6 17v-5h12v5"/>'),
+    heart: s('<path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10Z"/>'),
+    image: s('<rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-8 8"/>'),
+    history: s('<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/>'),
+    logout: s('<path d="M15 4h4v16h-4M10 16l4-4-4-4M14 12H4"/>'),
+    more: s('<circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/>'),
+    check: s('<path d="m5 12 5 5 9-10"/>'),
+    chevron: s('<path d="m15 6-6 6 6 6"/>'),
+    lock: s('<rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>'),
+    dunes: '<svg class="dunes" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80 Q200 30 420 70 T820 60 T1200 70 V120 H0Z" fill="#E2C98F" opacity=".5"/><path d="M0 100 Q300 60 600 95 T1200 90 V120 H0Z" fill="#C9A35B" opacity=".6"/></svg>',
+  };
+})();
+/* وسم | WASM — واجهة الويب (المرحلة الأولى) — JavaScript بدون أطر، RTL أولاً */
+(() => {
+  'use strict';
+  const I = window.ICONS;
+  const app = document.getElementById('app');
+  const state = { user: null, countries: [], route: null, ages: [] };
+  const loadAges = async () => { if (!state.ages.length) state.ages = (await api('GET', '/api/age-names')).age_names; return state.ages; };
+  const ageLocal = (bd, sex) => { if (!bd || !state.ages.length) return null; const [y1, m1, d1] = bd.split('-').map(Number), [y2, m2, d2] = today().split('-').map(Number); let mo = (y2 - y1) * 12 + (m2 - m1) - (d2 < d1 ? 1 : 0); let r = state.ages[0]; for (const a of state.ages) if (mo >= a.fromMonths) r = a; return sex === 'female' ? r.f : r.m; };
+
+  // ===================== أدوات =====================
+  const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const fmtDate = iso => iso ? new Date(iso.length === 10 ? iso + 'T00:00:00Z' : iso).toLocaleDateString('ar-QA-u-nu-latn', { day: 'numeric', month: 'long', year: 'numeric', timeZone: iso.length === 10 ? 'UTC' : undefined }) : '—';
+  const fmtDT = iso => iso ? new Date(iso).toLocaleString('ar-QA-u-nu-latn', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : '';
+  const today = () => { const d = new Date(Date.now() + 3 * 3600000); return d.toISOString().slice(0, 10); };
+  const daysBetween = (a, b) => Math.round((new Date(b + 'T00:00:00Z') - new Date(a + 'T00:00:00Z')) / 86400000);
+  const ageText = d => { if (d == null) return 'غير معروف'; const y = Math.floor(d / 365); if (y >= 1) return `${y} ${y === 1 ? 'سنة' : y === 2 ? 'سنتان' : y <= 10 ? 'سنوات' : 'سنة'}`; const m = Math.floor(d / 30); return m >= 1 ? `${m} شهر` : `${d} يوم`; };
+
+  const SEX = { female: 'ناقة', male: 'فحل' };
+  const SEX_CALF = { female: 'بكرة', male: 'قعود' };
+  const STATUS = { active: 'نشطة', pregnant: 'خلفة', nursing: 'مرضع', sold: 'مباعة', dead: 'نافقة', transferred: 'منقولة' };
+  const STATUS_CLS = { active: 'green', pregnant: 'gold', nursing: 'gold', sold: '', dead: 'red', transferred: '' };
+  const OUTCOME = { pending: 'بانتظار التأكيد', confirmed_pregnant: 'خلفة (مؤكد)', not_pregnant: 'ما لقحت', born: 'ولدت', aborted: 'إجهاض' };
+  const EVENT = { weaning: 'فطام', vaccination: 'تحصين', treatment: 'علاج', vet_visit: 'زيارة بيطرية', sale: 'بيع', purchase: 'شراء', transfer: 'نقل', checkup: 'فحص', achievement: 'إنجاز/مشاركة', note: 'ملاحظة' };
+  const BREEDS = ['مغاتير', 'مجاهيم', 'أصايل', 'وضح', 'صفر', 'حمر', 'شعل', 'شقح', 'عمانية', 'هجن', 'أخرى'];
+  const COLORS = ['أبيض', 'أسود', 'أشعل', 'أصفر', 'أحمر', 'أشقح', 'أملح', 'أزرق'];
+  const ACTION_AR = { create: 'إنشاء', update: 'تعديل', delete: 'حذف', upload: 'رفع ملف', share: 'إنشاء رابط مشاركة', revoke_share: 'إلغاء رابط', login: 'دخول', register: 'تسجيل' };
+  const ENTITY_AR = { camel: 'مطية', mating: 'تلقيح', birth: 'ولادة', event: 'سجل', media: 'ملف', farm: 'عزبة', user: 'حساب' };
+  const FIELD_AR = { name: 'الاسم', tag_number: 'رقم الوسم', sex: 'الجنس', breed: 'الفئة', color: 'اللون', birth_date: 'تاريخ الميلاد', status: 'الحالة', notes: 'الملاحظات', dam_id: 'الأم', sire_id: 'الأب', outcome: 'النتيجة', microchip: 'الشريحة', farm_id: 'العزبة', dam_name_text: 'الأم (خارجية)', sire_name_text: 'الأب (خارجي)', mating_date: 'تاريخ التلقيح', expected_birth_date: 'الولادة المتوقعة' };
+
+  async function api(method, path, body) { return localApi(method, path, body); }
+
+  function toast(msg, err = false) {
+    const t = document.createElement('div'); t.className = 'toast' + (err ? ' err' : ''); t.textContent = msg;
+    document.getElementById('toasts').appendChild(t); setTimeout(() => t.remove(), 3600);
+  }
+  const fail = e => toast(e.message || 'حدث خطأ', true);
+
+  function formData(form) {
+    const o = {};
+    for (const el of form.elements) {
+      if (!el.name || el.disabled) continue;
+      if (el.type === 'checkbox') o[el.name] = el.checked;
+      else if (el.type === 'radio') { if (el.checked) o[el.name] = el.value; }
+      else o[el.name] = el.value.trim();
+    }
+    return o;
+  }
+
+  // ===================== نافذة منبثقة =====================
+  function modal(title, inner, onSubmit) {
+    const back = document.createElement('div');
+    back.className = 'modal-back';
+    back.innerHTML = `<form class="modal" role="dialog" aria-modal="true" aria-label="${esc(title)}" novalidate>
+      <div class="mh"><h2>${esc(title)}</h2><button type="button" class="icon-btn" data-close aria-label="إغلاق">${I.x}</button></div>
+      <div class="mb">${inner}</div>
+      <div class="notice err" data-err hidden></div>
+      ${onSubmit ? `<div class="mf"><button class="btn" type="submit">${I.check} حفظ</button><button type="button" class="btn ghost" data-close>إلغاء</button></div>` : ''}
+    </form>`;
+    const close = () => back.remove();
+    back.addEventListener('click', e => { if (e.target === back || e.target.closest('[data-close]')) close(); });
+    document.addEventListener('keydown', function k(e) { if (e.key === 'Escape') { close(); document.removeEventListener('keydown', k); } });
+    const form = back.querySelector('form');
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      if (!onSubmit) return;
+      const btn = form.querySelector('[type=submit]'); btn.disabled = true;
+      const errBox = form.querySelector('[data-err]'); errBox.hidden = true;
+      try { await onSubmit(formData(form), form); close(); }
+      catch (err) { errBox.textContent = err.message; errBox.hidden = false; }
+      finally { btn.disabled = false; }
+    });
+    document.body.appendChild(back);
+    const first = form.querySelector('input, select, textarea'); if (first) first.focus();
+    return { el: back, close, form };
+  }
+  const confirmBox = (text) => new Promise(res => {
+    const m = modal('تأكيد', `<p>${esc(text)}</p><div class="mf"><button type="button" class="btn danger" data-yes>نعم، متأكد</button><button type="button" class="btn ghost" data-close>تراجع</button></div>`);
+    m.el.querySelector('[data-yes]').onclick = () => { m.close(); res(true); };
+    m.el.addEventListener('click', e => { if (e.target.closest('[data-close]')) res(false); });
+  });
+
+  // ===================== التوجيه =====================
+  function go(path, keepScroll) { state.route = path; render(keepScroll); }
+  const NAV = [
+    { group: 'إدارة الحلال', items: [
+      { k: 'home', path: '/', label: 'الرئيسية', icon: I.home },
+      { k: 'herd', path: '/herd', label: 'حلالي', icon: I.camel },
+      { k: 'calendar', path: '/calendar', label: 'التقويم والمواعيد', icon: I.calendar },
+      { k: 'assistant', path: '/assistant', label: 'المساعد الذكي WASM AI', icon: I.ai },
+      { k: 'farms', path: '/farms', label: 'العزب', icon: I.tent },
+      { k: 'alerts', path: '/alerts', label: 'التنبيهات', icon: I.bell },
+    ] },
+    { group: 'قريباً في وسم', items: [
+      { k: 'market', path: '/soon/market', label: 'سوق الإبل', icon: I.market, soon: 'م2' },
+      { k: 'auctions', path: '/soon/auctions', label: 'المزادات', icon: I.gavel, soon: 'م3' },
+      { k: 'sires', path: '/soon/sires', label: 'الأفحل', icon: I.star, soon: 'م2' },
+      { k: 'mazayin', path: '/soon/mazayin', label: 'المزاين والنتائج', icon: I.trophy, soon: 'م3' },
+      { k: 'vet', path: '/soon/vet', label: 'الخدمات البيطرية', icon: I.vet, soon: 'م3' },
+      { k: 'feed', path: '/soon/feed', label: 'الأعلاف والمستلزمات', icon: I.feed, soon: 'م3' },
+      { k: 'transport', path: '/soon/transport', label: 'نقل الإبل', icon: I.truck, soon: 'م3' },
+      { k: 'brokers', path: '/soon/brokers', label: 'الوسطاء', icon: I.handshake, soon: 'م3' },
+      { k: 'community', path: '/soon/community', label: 'مجتمع أهل الإبل', icon: I.users, soon: 'م4' },
+    ] },
+    { group: 'الحساب', items: [{ k: 'account', path: '/account', label: 'حسابي والخصوصية', icon: I.user }] },
+  ];
+
+  function shell(active, title, content) {
+    const u = state.user;
+    const nav = NAV.map(g => `<div class="nav-label">${g.group}</div><nav class="nav">${g.items.map(i => `<a href="#" data-go="${i.path}" class="${i.k === active ? 'active' : ''}">${i.icon}<span>${i.label}</span>${i.soon ? `<span class="soon">${i.soon}</span>` : ''}</a>`).join('')}</nav>`).join('');
+    const bn = [['home', '/', 'الرئيسية', I.home], ['herd', '/herd', 'حلالي', I.camel], ['assistant', '/assistant', 'المساعد', I.ai, true], ['calendar', '/calendar', 'التقويم', I.calendar], ['more', '/more', 'المزيد', I.more]];
+    app.innerHTML = `
+      <div class="shell">
+        <aside class="sidebar" aria-label="القائمة الرئيسية">
+          <a class="brand" href="#" data-go="/"><img src="${LOGO}" alt=""><div><b>وسم</b><small>السوق الخليجي لأهل الإبل</small></div></a>
+          ${nav}
+          <div class="foot">نسخة تجريبية داخل Claude<br>بياناتك خاصة بك • © وسم WASM</div>
+        </aside>
+        <div class="main">
+          ${[...S.camels.values()].some(c => c.is_demo) ? '<div class="demo-banner">⚠️ في حلالك بيانات تجريبية وهمية (معلّمة بكلمة «تجريبي») — تقدر تحذفها من الرئيسية</div>' : ''}
+          <header class="topbar">
+            <a class="mobile-brand" href="#" data-go="/"><img src="${LOGO}" alt="وسم"><b style="font-family:var(--font-display);color:var(--emerald-800);font-size:1.25rem">وسم</b></a>
+            <div class="title">${esc(title)}</div><div class="spacer"></div>
+            <a class="icon-btn" href="#" data-go="/alerts" aria-label="التنبيهات">${I.bell}</a>
+            <a class="user-chip" href="#" data-go="/account"><span class="small">${esc(u.display_name)}</span><span class="avatar">${esc(u.display_name.trim().charAt(0))}</span></a>
+          </header>
+          <main class="page" id="page">${content}</main>
+        </div>
+      </div>
+      <nav class="bottom-nav" aria-label="التنقل">${bn.map(([k, p, l, ic, ai]) => `<a href="#" data-go="${p}" class="${k === active ? 'active' : ''} ${ai ? 'ai' : ''}">${ai ? `<span class="bub">${ic}</span>` : ic}<span>${l}</span></a>`).join('')}</nav>`;
+    if (!state.keepScroll) window.scrollTo(0, 0);
+  }
+
+  const loading = () => '<div class="empty"><div class="typing"><span></span><span></span><span></span></div></div>';
+  const emptyState = (text, action = '') => `<div class="empty">${I.camel}<p>${text}</p>${action}</div>`;
+
+  async function render(keepScroll) {
+    state.keepScroll = keepScroll;
+    const hash = state.route || '/';
+    state.user = (await api('GET', '/api/me')).user;
+    const [, a, b, c] = hash.split('/');
+    try {
+      switch (a) {
+        case '': return await viewDashboard();
+        case 'herd': return await viewHerd();
+        case 'camel': return b === 'new' ? camelFormPage() : await viewCamel(b, c || 'overview');
+        case 'calendar': return await viewCalendar(b);
+        case 'assistant': return await viewAssistant();
+        case 'alerts': return await viewAlerts();
+        case 'farms': return await viewFarms();
+        case 'account': return await viewAccount();
+        case 'soon': return viewSoon(b);
+        case 'more': return viewMore();
+        default: shell('', 'غير موجود', emptyState('الصفحة غير موجودة', '<a class="btn" href="#" data-go="/">الرئيسية</a>'));
+      }
+    } catch (e) {
+      if (e.status === 404) shell('', 'غير موجود', emptyState(esc(e.message), '<a class="btn" href="#" data-go="/herd">العودة إلى حلالي</a>'));
+      else fail(e);
+    }
+  }
+
+  // ===================== الرئيسية =====================
+  async function viewDashboard() {
+    shell('home', 'الرئيسية', loading());
+    const d = await api('GET', '/api/dashboard');
+    const u = state.user;
+    const hour = new Date().getHours();
+    const greet = hour < 12 ? 'صباح الخير' : 'مساء الخير';
+    document.getElementById('page').innerHTML = `
+      ${d.total === 0 ? `<section class="card" style="margin-bottom:16px"><h2>ابدأ بإضافة حلالك</h2><p class="muted">أضف أول ناقة أو فحل، أو جرّب المنصة ببيانات تجريبية وهمية تقدر تحذفها بضغطة.</p><div class="row"><a class="btn gold" href="#" data-go="/camel/new">${I.plus} إضافة مطية</a><button class="btn ghost" data-act="demo-load">تحميل بيانات تجريبية</button></div></section>` : ''}
+      <section class="hero-band">
+        <h1>${greet}، ${esc(u.display_name.split(' — ').pop())}</h1>
+        <p>${d.due_30 ? `لديك ${d.due_30} ${d.due_30 === 1 ? 'ناقة يُتوقع' : 'نوق يُتوقع'} ولادتها خلال 30 يوماً.` : 'لا توجد ولادات متوقعة خلال الثلاثين يوماً القادمة.'}</p>
+        <div class="actions row">
+          <button class="btn gold" data-act="mating">${I.plus} تسجيل تلقيح</button>
+          <button class="btn ghost" style="color:var(--ivory);border-color:rgba(250,246,236,.3)" data-act="birth">${I.plus} تسجيل ولادة</button>
+          <a class="btn ghost" style="color:var(--ivory);border-color:rgba(250,246,236,.3)" href="#" data-go="/assistant">${I.ai} اسأل المساعد</a>
+        </div>
+        ${I.dunes}
+      </section>
+      <div class="grid g4">
+        <div class="stat hero"><div class="k">إجمالي الحلال النشط</div><div class="v">${d.total}</div><div class="ico-bg">${I.camel}</div></div>
+        <div class="stat"><div class="k">النوق / الفحول</div><div class="v">${d.females} <span class="muted" style="font-size:1rem">/ ${d.males}</span></div><div class="ico-bg">${I.users}</div></div>
+        <div class="stat"><div class="k">النوق الملقحة</div><div class="v">${d.pregnant}</div><div class="ico-bg">${I.heart}</div></div>
+        <div class="stat"><div class="k">ولادات هذا العام</div><div class="v">${d.births_this_year}</div><div class="ico-bg">${I.star}</div></div>
+      </div>
+      <div class="grid g-main" style="margin-top:16px">
+        <section class="card">
+          <div class="card-h"><h2>الولادات المتوقعة</h2><a class="btn ghost sm" href="#" data-go="/calendar">التقويم</a></div>
+          ${d.upcoming.length ? `<ul class="list">${d.upcoming.map(b => { const n = daysBetween(today(), b.expected_birth_date); return `
+            <li><span class="dot ${n < 0 ? 'warning' : n <= 3 ? 'urgent' : 'info'}"></span>
+              <div class="grow"><a class="t" href="#" data-go="/camel/${b.dam_id}">${esc(b.dam_name)}</a> <span class="muted small">${esc(b.tag_number || '')}</span>
+              <div class="small muted">تلقيح ${fmtDate(b.mating_date)}${b.sire_name ? ' • من ' + esc(b.sire_name) : ''}</div></div>
+              <div style="text-align:left"><div class="small"><b>${fmtDate(b.expected_birth_date)}</b></div><span class="badge ${n < 0 ? 'warn' : 'gold'}">${n < 0 ? `متجاوزة ${-n} يوم` : n === 0 ? 'اليوم' : `بعد ${n} يوم`}</span></div></li>`; }).join('')}</ul>
+            <p class="small muted" style="margin:10px 0 0">⚠️ المواعيد تقديرية بناءً على ${u.gestation_days} يوماً من اللقاح إلى الولادة، ولا تغني عن المتابعة البيطرية.</p>`
+            : emptyState('لا توجد ولادات متوقعة. سجّل التلقيح ليظهر الموعد التقديري هنا.', '<button class="btn" data-act="mating">تسجيل تلقيح</button>')}
+        </section>
+        <section class="card">
+          <div class="card-h"><h2>التنبيهات</h2><a class="btn ghost sm" href="#" data-go="/alerts">الكل</a></div>
+          ${alertsList(d.alerts)}
+        </section>
+      </div>
+      <section class="card" style="margin-top:16px">
+        <div class="card-h"><h3>الحلال حسب العمر</h3><a class="btn ghost sm" href="#" data-go="/herd">حلالي</a></div>
+        ${d.ages.groups.length ? `<div class="facts">${d.ages.groups.map(g => `<a class="fact" href="#" data-go="/herd" data-age="${g.key}"><div class="k">${g.m === g.f ? g.m : g.m + ' / ' + g.f}</div><div class="v">${g.males + g.females} <span class="small muted">${g.key === 'hwar' ? `(${g.males} قعود، ${g.females} بكرة)` : `(${g.males} ${g.m}، ${g.females} ${g.f})`}</span></div></a>`).join('')}</div>` : '<p class="muted">أضف تواريخ الميلاد ليظهر التوزيع.</p>'}
+        ${d.ages.unknown ? `<p class="small muted" style="margin:10px 0 0">${d.ages.unknown} بدون تاريخ ميلاد مسجل.</p>` : ''}
+      </section>
+      ${d.has_demo ? `<div class="notice gold" style="margin-top:16px;justify-content:space-between;align-items:center"><span>في حلالك بيانات تجريبية وهمية للتجربة.</span><button class="btn danger sm" data-act="demo-remove">حذف البيانات التجريبية</button></div>` : ''}
+      <section class="card" style="margin-top:16px">
+        <div class="card-h"><h3>آخر النشاطات</h3></div>
+        ${d.recent.length ? `<ul class="list">${d.recent.map(r => `<li>${I.history}<div class="grow small">${ACTION_AR[r.action] || r.action} ${ENTITY_AR[r.entity] || r.entity}${r.camel_name ? ` — <a href="#" data-go="/camel/${r.camel_id}">${esc(r.camel_name)}</a>` : ''}</div><span class="small muted">${fmtDT(r.created_at)}</span></li>`).join('')}</ul>` : '<p class="muted">لا يوجد نشاط بعد.</p>'}
+      </section>`;
+  }
+
+  const alertsList = list => list.length ? `<ul class="list">${list.map(a => `<li><span class="dot ${a.level}"></span><div class="grow small">${a.camel_id ? `<a href="#" data-go="/camel/${a.camel_id}">${esc(a.text)}</a>` : esc(a.text)}</div></li>`).join('')}</ul>` : '<p class="muted">لا توجد تنبيهات حالياً 👌</p>';
+
+  async function viewAlerts() {
+    shell('alerts', 'التنبيهات', loading());
+    const { alerts } = await api('GET', '/api/alerts');
+    document.getElementById('page').innerHTML = `<h1>التنبيهات</h1><p class="muted">تنبيهات الولادة التقديرية، ومتابعات التحصين والعلاج، وتأكيد اللقاح.</p>
+      <div class="card">${alertsList(alerts)}</div>
+      <div class="notice gold" style="margin-top:14px">مواعيد الولادة تقديرية ولا تغني عن المتابعة البيطرية. يمكنك تعديل المدة من اللقاح إلى الولادة وموعد التنبيه من <a href="#" data-go="/account">حسابي</a>.</div>
+      <div class="notice info" style="margin-top:10px">الإشعارات الفورية على الجوال والبريد/الواتساب ستُضاف مع تطبيق الجوال (انظر خطة المراحل).</div>`;
+  }
+
+  // ===================== حلالي =====================
+  let herdFilter = { q: '', sex: '', status: '', age: '' };
+  async function viewHerd() {
+    shell('herd', 'حلالي', `
+      <div class="card-h"><div><h1 style="margin:0">حلالي</h1><p class="muted" style="margin:0">كل مطية لها ملف رقمي مستقل</p></div>
+      <a class="btn gold" href="#" data-go="/camel/new">${I.plus} إضافة مطية</a></div>
+      <div class="toolbar">
+        <div class="search">${I.search}<input class="input" id="hq" placeholder="ابحث بالاسم أو رقم الوسم…" value="${esc(herdFilter.q)}" aria-label="بحث"></div>
+        <div class="seg" id="hsex">${[['', 'الكل'], ['female', 'النوق'], ['male', 'الفحول']].map(([v, l]) => `<button type="button" data-v="${v}" class="${herdFilter.sex === v ? 'on' : ''}">${l}</button>`).join('')}</div>
+        <select class="input" id="hst" style="width:auto"><option value="">كل الحالات</option>${Object.entries(STATUS).map(([k, v]) => `<option value="${k}" ${herdFilter.status === k ? 'selected' : ''}>${v}</option>`).join('')}</select>
+        <select class="input" id="hage" style="width:auto"><option value="">كل الأعمار</option>${(await loadAges()).map(a => `<option value="${a.key}" ${herdFilter.age === a.key ? 'selected' : ''}>${a.m === a.f ? a.m : a.m + ' / ' + a.f}</option>`).join('')}<option value="unknown" ${herdFilter.age === 'unknown' ? 'selected' : ''}>بدون تاريخ ميلاد</option></select>
+      </div>
+      <div id="herdList">${loading()}</div>`);
+    const load = async () => {
+      const qs = new URLSearchParams(Object.entries(herdFilter).filter(([, v]) => v)).toString();
+      const { camels } = await api('GET', '/api/camels' + (qs ? '?' + qs : ''));
+      document.getElementById('herdList').innerHTML = camels.length ? `<div class="camel-grid">${camels.map(camelCard).join('')}</div><p class="small muted" style="margin-top:12px">${camels.length} مطية</p>`
+        : emptyState(herdFilter.q || herdFilter.sex || herdFilter.status ? 'لا توجد نتائج مطابقة.' : 'لم تسجل أي مطية بعد. ابدأ بإضافة نوقك وفحولك.', '<a class="btn" href="#" data-go="/camel/new">إضافة مطية</a>');
+    };
+    let t;
+    document.getElementById('hq').addEventListener('input', e => { clearTimeout(t); t = setTimeout(() => { herdFilter.q = e.target.value.trim(); load().catch(fail); }, 250); });
+    document.getElementById('hsex').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; herdFilter.sex = b.dataset.v; [...e.currentTarget.children].forEach(x => x.classList.toggle('on', x === b)); load().catch(fail); });
+    document.getElementById('hst').addEventListener('change', e => { herdFilter.status = e.target.value; load().catch(fail); });
+    document.getElementById('hage').addEventListener('change', e => { herdFilter.age = e.target.value; load().catch(fail); });
+    await load();
+  }
+
+  function camelCard(c) {
+    const due = c.expected_birth_date ? daysBetween(today(), c.expected_birth_date) : null;
+    return `<a class="camel-card" href="#" data-go="/camel/${c.id}">
+      <div class="ph">${c.photo_id ? `<img src="${mediaSrc(c.photo_id)}" alt="${esc(c.name)}" loading="lazy">` : `<div class="ph-fallback">${I.camel}</div>`}
+        <span class="badge ${c.sex === 'female' ? 'gold' : 'green'} sex">${c.age_name ? esc(c.age_name.name) : SEX[c.sex]}</span></div>
+      <div class="body"><div class="name">${esc(c.name)}</div>
+        <div class="meta">${esc([c.age_name ? SEX[c.sex] : null, c.tag_number, c.breed, c.color].filter(Boolean).join(' • ') || '—')}</div>
+        <div class="row" style="margin-top:8px;gap:6px"><span class="badge ${STATUS_CLS[c.status]}">${STATUS[c.status]}</span>
+        ${due != null ? `<span class="badge outline">${due < 0 ? 'متجاوزة الموعد' : `ولادة بعد ${due} يوم`}</span>` : ''}${c.is_demo ? '<span class="badge">تجريبي</span>' : ''}</div></div></a>`;
+  }
+
+  // ===================== نموذج المطية =====================
+  async function camelFormPage(existing = null) {
+    shell('herd', existing ? 'تعديل المطية' : 'إضافة مطية', loading());
+    const [{ camels }, { farms }] = await Promise.all([api('GET', '/api/camels'), api('GET', '/api/farms')]);
+    const others = camels.filter(c => !existing || c.id !== existing.id);
+    const v = existing || { sex: 'female', status: 'active' };
+    const opt = (list, sel) => `<option value="">— غير مسجل في حلالي —</option>` + list.map(c => `<option value="${c.id}" ${c.id === sel ? 'selected' : ''}>${esc(c.name)}${c.tag_number ? ' (' + esc(c.tag_number) + ')' : ''}</option>`).join('');
+    document.getElementById('page').innerHTML = `
+      <a href="#" data-go="${existing ? '/camel/' + existing.id : '/herd'}" class="small">${I.chevron} رجوع</a>
+      <h1 style="margin-top:8px">${existing ? 'تعديل ملف ' + esc(existing.name) : 'إضافة مطية جديدة'}</h1>
+      <form class="card" id="camelForm" novalidate>
+        <div class="form-grid">
+          <div class="field"><label for="f-name">اسم المطية *</label><input class="input" id="f-name" name="name" required maxlength="80" value="${esc(v.name)}"></div>
+          <div class="field"><label for="f-tag">رقم المطية / الوسم</label><input class="input" id="f-tag" name="tag_number" maxlength="80" value="${esc(v.tag_number)}"></div>
+          <div class="field"><label>الجنس *</label><div class="seg" id="sexSeg">${['female', 'male'].map(s => `<button type="button" data-v="${s}" class="${v.sex === s ? 'on' : ''}">${SEX[s]}</button>`).join('')}</div><input type="hidden" name="sex" value="${v.sex}"></div>
+          <div class="field"><label for="f-st">الحالة</label><select class="input" id="f-st" name="status">${Object.entries(STATUS).map(([k, l]) => `<option value="${k}" ${v.status === k ? 'selected' : ''}>${l}</option>`).join('')}</select></div>
+          <div class="field"><label for="f-breed">النوع / الفئة</label><input class="input" id="f-breed" name="breed" list="breeds" value="${esc(v.breed)}"><datalist id="breeds">${BREEDS.map(b => `<option value="${b}">`).join('')}</datalist></div>
+          <div class="field"><label for="f-color">اللون</label><input class="input" id="f-color" name="color" list="colors" value="${esc(v.color)}"><datalist id="colors">${COLORS.map(b => `<option value="${b}">`).join('')}</datalist></div>
+          <div class="field"><label for="f-bd">تاريخ الميلاد</label><input class="input" id="f-bd" type="date" name="birth_date" max="${today()}" value="${esc(v.birth_date)}"><span class="hint" id="ageHint"></span></div>
+          <div class="field" style="justify-content:flex-end"><label class="check"><input type="checkbox" name="birth_date_estimated" ${v.birth_date_estimated ? 'checked' : ''}> التاريخ تقريبي (غير مؤكد)</label></div>
+          <div class="field"><label for="f-dam">الأم (من حلالي)</label><select class="input" id="f-dam" name="dam_id">${opt(others.filter(c => c.sex === 'female'), v.dam_id)}</select></div>
+          <div class="field"><label for="f-damt">أو اسم الأم إن لم تكن في حلالي</label><input class="input" id="f-damt" name="dam_name_text" value="${esc(v.dam_name_text)}"></div>
+          <div class="field"><label for="f-sire">الأب (من حلالي)</label><select class="input" id="f-sire" name="sire_id">${opt(others.filter(c => c.sex === 'male'), v.sire_id)}</select></div>
+          <div class="field"><label for="f-siret">أو اسم الأب إن لم يكن في حلالي</label><input class="input" id="f-siret" name="sire_name_text" value="${esc(v.sire_name_text)}"></div>
+          <div class="field"><label for="f-farm">العزبة</label><select class="input" id="f-farm" name="farm_id"><option value="">—</option>${farms.map(f => `<option value="${f.id}" ${f.id === v.farm_id ? 'selected' : ''}>${esc(f.name)}</option>`).join('')}</select></div>
+          <div class="field"><label for="f-chip">رقم الشريحة الإلكترونية</label><input class="input" id="f-chip" name="microchip" dir="ltr" value="${esc(v.microchip)}"></div>
+          <div class="field full"><label for="f-notes">ملاحظات</label><textarea class="input" id="f-notes" name="notes" maxlength="2000">${esc(v.notes)}</textarea></div>
+        </div>
+        <div class="notice gold small" style="margin-top:14px">بيانات النسب والملكية تُعرض كـ«مسجلة من المالك» ولا تُعتبر موثقة إلا بمستندات أو جهة تحقق معتمدة.</div>
+        <div class="notice err" id="cfErr" hidden style="margin-top:10px"></div>
+        <div class="row" style="margin-top:16px"><button class="btn gold" type="submit">${I.check} ${existing ? 'حفظ التعديلات' : 'إضافة المطية'}</button><a class="btn ghost" href="#" data-go="${existing ? '/camel/' + existing.id : '/herd'}">إلغاء</a></div>
+      </form>`;
+    const form = document.getElementById('camelForm');
+    await loadAges();
+    const hint = () => { const h = document.getElementById('ageHint'); if (!h) return; const n = ageLocal(form.birth_date.value, form.sex.value); h.textContent = n ? 'الاسم حسب العمر: ' + n : ''; };
+    form.birth_date.addEventListener('input', hint); form.addEventListener('click', () => setTimeout(hint)); hint();
+    document.getElementById('sexSeg').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; form.sex.value = b.dataset.v; [...e.currentTarget.children].forEach(x => x.classList.toggle('on', x === b)); });
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const d = formData(form); const box = document.getElementById('cfErr'); box.hidden = true;
+      try {
+        const r = existing ? await api('PATCH', '/api/camels/' + existing.id, d) : await api('POST', '/api/camels', d);
+        toast(existing ? 'تم حفظ التعديلات' : 'تمت إضافة المطية'); go('/camel/' + r.camel.id);
+      } catch (err) { box.textContent = err.message; box.hidden = false; }
+    });
+  }
+
+  // ===================== الملف الرقمي للمطية =====================
+  const TABS = [['overview', 'نظرة عامة'], ['breeding', 'التلقيح والولادات'], ['health', 'الصحة والسجلات'], ['pedigree', 'شجرة النسب'], ['media', 'الصور والمستندات'], ['history', 'سجل التعديلات']];
+  async function viewCamel(id, tab) {
+    if (tab === 'edit') { const { camel } = await api('GET', '/api/camels/' + id); return camelFormPage(camel); }
+    shell('herd', 'الملف الرقمي', loading());
+    const { camel: c } = await api('GET', '/api/camels/' + id);
+    const photo = c.photos[0];
+    const open = c.matings.find(m => ['pending', 'confirmed_pregnant'].includes(m.outcome));
+    const due = open ? daysBetween(today(), open.expected_birth_date) : null;
+    document.getElementById('page').innerHTML = `
+      <a href="#" data-go="/herd" class="small">${I.chevron} حلالي</a>
+      <section class="profile-head" style="margin-top:10px">
+        <div class="profile-photo">${photo ? `<img src="${mediaSrc(photo.id)}" alt="${esc(c.name)}">` : `<div class="ph-fallback" style="display:grid;place-items:center;height:100%;color:var(--gold-500)">${I.camel}</div>`}</div>
+        <div>
+          <div class="row"><h1 style="margin:0">${esc(c.name)}</h1><span class="badge ${c.sex === 'female' ? 'gold' : 'green'}">${SEX[c.sex]}${c.age_name ? ' • ' + esc(c.age_name.name) : ''}</span><span class="badge ${STATUS_CLS[c.status]}">${STATUS[c.status]}</span>${c.is_demo ? '<span class="badge">بيانات تجريبية</span>' : ''}</div>
+          <div class="muted">${esc(c.tag_number ? 'الوسم: ' + c.tag_number : 'بدون رقم وسم')}${c.farm ? ' • ' + esc(c.farm.name) : ''}</div>
+          <div class="facts">
+            <div class="fact"><div class="k">الفئة</div><div class="v">${esc(c.breed || '—')}</div></div>
+            <div class="fact"><div class="k">اللون</div><div class="v">${esc(c.color || '—')}</div></div>
+            <div class="fact"><div class="k">العمر</div><div class="v">${c.age_name ? `<b>${esc(c.age_name.name)}</b> • ` : ''}${ageText(c.age_days)}${c.birth_date_estimated ? ' <span class="badge outline">تقريبي</span>' : ''}</div></div>
+            <div class="fact"><div class="k">الأم</div><div class="v">${c.dam ? `<a href="#" data-go="/camel/${c.dam.id}">${esc(c.dam.name)}</a>` : esc(c.dam_name_text || '—')}</div></div>
+            <div class="fact"><div class="k">الأب</div><div class="v">${c.sire ? `<a href="#" data-go="/camel/${c.sire.id}">${esc(c.sire.name)}</a>` : esc(c.sire_name_text || '—')}</div></div>
+            <div class="fact"><div class="k">المواليد</div><div class="v">${c.offspring.length}</div></div>
+          </div>
+          ${open ? `<div class="notice gold" style="margin-top:12px">${I.calendar}<div><b>الولادة المتوقعة: ${fmtDate(open.expected_birth_date)}</b> (${due < 0 ? `متجاوزة بـ ${-due} يوم` : `بعد ${due} يوم`}) — ${OUTCOME[open.outcome]}<br><span class="small">تقديري من تلقيح ${fmtDate(open.mating_date)}، ولا يغني عن المتابعة البيطرية.</span></div></div>` : ''}
+          <div class="row" style="margin-top:14px">
+            ${c.sex === 'female' ? `<button class="btn" data-act="mating" data-dam="${c.id}">${I.plus} تلقيح</button><button class="btn" data-act="birth" data-dam="${c.id}">${I.plus} ولادة</button>` : ''}
+            <button class="btn ghost" data-act="event" data-camel="${c.id}">${I.plus} سجل صحي/تشغيلي</button>
+            <a class="btn ghost" href="#" data-go="/camel/${c.id}/edit">${I.edit} تعديل</a>
+          </div>
+        </div>
+      </section>
+      <div class="tabs" role="tablist">${TABS.map(([k, l]) => `<button role="tab" class="${k === tab ? 'on' : ''}" data-tab="${k}">${l}</button>`).join('')}</div>
+      <div id="tabBody">${loading()}</div>`;
+    document.querySelector('.tabs').addEventListener('click', e => { const b = e.target.closest('[data-tab]'); if (b) go(`/camel/${c.id}/${b.dataset.tab}`); });
+    await renderTab(c, tab);
+  }
+
+  async function renderTab(c, tab) {
+    const body = document.getElementById('tabBody');
+    if (tab === 'overview') {
+      const items = timelineItems(c).slice(0, 8);
+      body.innerHTML = `<div class="grid g2">
+        <section class="card"><h3>آخر الأحداث</h3>${items.length ? `<div class="timeline">${items.join('')}</div>` : '<p class="muted">لا توجد سجلات بعد.</p>'}</section>
+        <section class="card"><h3>الملاحظات</h3><p style="white-space:pre-wrap">${esc(c.notes || 'لا توجد ملاحظات.')}</p>
+          <h3 style="margin-top:16px">المواليد</h3>${c.offspring.length ? `<ul class="list">${c.offspring.map(o => `<li><span class="badge ${o.sex === 'female' ? 'gold' : 'green'}">${SEX_CALF[o.sex]}</span><a class="grow t" href="#" data-go="/camel/${o.id}">${esc(o.name)}</a><span class="small muted">${fmtDate(o.birth_date)}</span></li>`).join('')}</ul>` : '<p class="muted">لا توجد مواليد مسجلة.</p>'}
+          <div class="row" style="margin-top:14px"><button class="btn danger sm" data-act="delete-camel" data-camel="${c.id}" data-name="${esc(c.name)}">${I.trash} حذف المطية</button></div></section></div>`;
+    } else if (tab === 'breeding') {
+      const rows = c.sex === 'female' ? c.matings : c.sired_matings;
+      body.innerHTML = `<div class="grid g2">
+        <section class="card"><div class="card-h"><h3>${c.sex === 'female' ? 'سجل التلقيح' : 'التلقيحات التي قام بها'}</h3>${c.sex === 'female' ? `<button class="btn sm" data-act="mating" data-dam="${c.id}">${I.plus} تلقيح</button>` : ''}</div>
+          ${rows.length ? `<ul class="list">${rows.map(m => `<li><div class="grow"><div class="t">${fmtDate(m.mating_date)} — ${c.sex === 'female' ? 'من ' + esc(m.sire_name || m.sire_name_text || 'غير مسجل') : `<a href="#" data-go="/camel/${m.dam_id}">${esc(m.dam_name)}</a>`}</div>
+            <div class="small muted">الولادة المتوقعة: ${fmtDate(m.expected_birth_date)} (تقديري)</div></div>
+            ${c.sex === 'female' ? `<select class="input" style="width:auto;min-height:36px;padding:4px 10px" data-act="outcome" data-mating="${m.id}" ${m.outcome === 'born' ? 'disabled' : ''}>${Object.entries(OUTCOME).filter(([k]) => k !== 'born' || m.outcome === 'born').map(([k, l]) => `<option value="${k}" ${m.outcome === k ? 'selected' : ''}>${l}</option>`).join('')}</select>
+            ${m.outcome !== 'born' ? `<button class="icon-btn" aria-label="حذف" data-act="delete-mating" data-mating="${m.id}">${I.trash}</button>` : ''}` : `<span class="badge">${OUTCOME[m.outcome]}</span>`}</li>`).join('')}</ul>` : '<p class="muted">لا يوجد تلقيح مسجل.</p>'}
+        </section>
+        ${c.sex === 'female' ? `<section class="card"><div class="card-h"><h3>سجل الولادات</h3><button class="btn sm" data-act="birth" data-dam="${c.id}">${I.plus} ولادة</button></div>
+          ${c.births.length ? `<ul class="list">${c.births.map((b, i) => `<li><span class="badge">${c.births.length - i}</span><div class="grow"><div class="t">${fmtDate(b.birth_date)}</div>
+            <div class="small muted">${b.outcome === 'stillborn' ? 'نفوق المولود' : `${b.calf_sex ? SEX_CALF[b.calf_sex] : ''} ${b.calf_id ? `— <a href="#" data-go="/camel/${b.calf_id}">${esc(b.calf_name)}</a>` : ''} ${b.calf_tag ? '(' + esc(b.calf_tag) + ')' : ''}`}</div></div></li>`).join('')}</ul>` : '<p class="muted">لا توجد ولادات مسجلة.</p>'}
+        </section>` : ''}</div>`;
+    } else if (tab === 'health') {
+      body.innerHTML = `<section class="card"><div class="card-h"><h3>السجلات الصحية والتشغيلية</h3><button class="btn sm" data-act="event" data-camel="${c.id}">${I.plus} إضافة</button></div>
+        ${c.events.length ? `<ul class="list">${c.events.map(e => `<li><span class="badge ${e.type === 'vaccination' ? 'green' : e.type === 'treatment' ? 'warn' : ''}">${EVENT[e.type]}</span>
+          <div class="grow"><div class="t">${esc(e.title)}</div><div class="small muted">${fmtDate(e.event_date)}${e.counterparty ? ' • ' + esc(e.counterparty) : ''}${e.amount != null ? ' • ' + e.amount + ' ' + esc(e.currency || '') : ''}${e.next_due_date ? ` • <b>المتابعة: ${fmtDate(e.next_due_date)}</b>` : ''}</div>${e.details ? `<div class="small">${esc(e.details)}</div>` : ''}</div>
+          <button class="icon-btn" aria-label="حذف" data-act="delete-event" data-event="${e.id}">${I.trash}</button></li>`).join('')}</ul>` : '<p class="muted">لا توجد سجلات. أضف التحصينات والعلاجات والزيارات البيطرية والفطام والبيع والنقل.</p>'}
+        <div class="notice info small" style="margin-top:12px">وسم يحفظ السجلات فقط ولا يقدم تشخيصاً بيطرياً.</div></section>`;
+    } else if (tab === 'pedigree') {
+      const p = await api('GET', `/api/camels/${c.id}/pedigree?depth=3`);
+      const node = (n, self) => {
+        if (!n) return '<div class="pnode none"><div class="n">—</div><div class="s">غير مسجل</div></div>';
+        const cls = `pnode ${n.sex === 'female' ? 'f' : 'm'} ${self ? 'self' : ''} ${n.external ? 'ext' : ''}`;
+        const inner = `<div class="n">${esc(n.name)}</div><div class="s">${n.external ? 'خارج الحلال' : esc([n.tag_number, n.breed].filter(Boolean).join(' • ') || SEX[n.sex])}${n.verified ? ' ✓ موثق' : ''}</div>`;
+        return n.id && !self ? `<a class="${cls}" href="#" data-go="/camel/${n.id}/pedigree">${inner}</a>` : `<div class="${cls}">${inner}</div>`;
+      };
+      const g1 = [p.tree], g2 = [p.tree.sire, p.tree.dam], g3 = g2.flatMap(x => [x?.sire, x?.dam]), g4 = g3.flatMap(x => [x?.sire, x?.dam]);
+      body.innerHTML = `<section class="card"><h3>شجرة النسب</h3>
+        <div class="ped"><div class="gen">${node(g1[0], true)}</div><div class="gen">${g2.map(n => node(n)).join('')}</div><div class="gen">${g3.map(n => node(n)).join('')}</div><div class="gen">${g4.map(n => node(n)).join('')}</div></div>
+        <div class="legend" style="margin-top:12px"><span style="color:#4F7FB0">▌ الأب</span><span style="color:#C27BA0">▌ الأم</span><span>إطار متقطع = خارج الحلال</span></div>
+        <div class="notice gold small" style="margin-top:12px">${esc(p.notice)}</div></section>
+        <section class="card"><h3>النسل (حتى 3 أجيال)</h3>${p.offspring.length ? `<ul class="list">${p.offspring.map(o => `<li><span class="badge">الجيل ${o.generation}</span><a class="grow t" href="#" data-go="/camel/${o.id}">${esc(o.name)}</a><span class="small muted">${SEX_CALF[o.sex]} • ${fmtDate(o.birth_date)}</span></li>`).join('')}</ul>` : '<p class="muted">لا يوجد نسل مسجل.</p>'}</section>`;
+    } else if (tab === 'media') {
+      body.innerHTML = `<section class="card"><div class="card-h"><h3>الصور</h3><label class="btn sm" style="cursor:pointer">${I.image} رفع صورة<input type="file" accept="image/jpeg,image/png,image/webp" hidden data-upload="photo" data-camel="${c.id}"></label></div>
+        ${c.photos.length ? `<div class="camel-grid">${c.photos.map(p => `<div class="camel-card"><div class="ph"><img src="${mediaSrc(p.id)}" alt="${esc(p.caption || c.name)}" loading="lazy">${p.is_primary ? '<span class="badge gold sex">الرئيسية</span>' : ''}</div><div class="body row" style="justify-content:space-between"><span class="small muted">${esc(p.caption || fmtDT(p.created_at))}</span><span class="row" style="gap:4px">${state.ai ? `<button class="btn ghost sm" data-act="analyze" data-media="${p.id}">حلّل الصورة</button>` : ''}<button class="icon-btn" aria-label="حذف" data-act="delete-media" data-media="${p.id}">${I.trash}</button></span></div></div>`).join('')}</div>` : '<p class="muted">لا توجد صور.</p>'}
+        <p class="small muted" style="margin-top:10px">تُصغّر الصور تلقائياً قبل الرفع وتُحفظ خاصة بك. «حلّل الصورة» يقترح اللون والفئة فقط ولا يثبت النسب أو العمر.</p></section>
+`;
+    } else if (tab === 'history') {
+      const { history } = await api('GET', `/api/camels/${c.id}/history`);
+      body.innerHTML = `<section class="card"><h3>سجل التعديلات</h3><p class="small muted">كل تغيير على هذه المطية محفوظ بتاريخه ولا يمكن تعديله.</p>
+        ${history.length ? `<ul class="list">${history.map(h => `<li>${I.history}<div class="grow"><div class="t small">${ACTION_AR[h.action] || h.action} ${ENTITY_AR[h.entity] || h.entity}</div>
+          ${h.diff && h.action === 'update' ? `<div class="small muted">${Object.entries(h.diff).filter(([k]) => FIELD_AR[k]).map(([k, [a, b]]) => `${FIELD_AR[k]}: ${esc(a ?? '—')} ← ${esc(b ?? '—')}`).join(' • ')}</div>` : ''}</div><span class="small muted nowrap">${fmtDT(h.created_at)}</span></li>`).join('')}</ul>` : '<p class="muted">لا يوجد سجل.</p>'}</section>`;
+    }
+  }
+
+  function timelineItems(c) {
+    const items = [];
+    c.matings.forEach(m => items.push([m.mating_date, `<div class="tl-item mating"><div class="when">${fmtDate(m.mating_date)}</div><div><b>تلقيح</b> من ${esc(m.sire_name || m.sire_name_text || '—')} <span class="badge">${OUTCOME[m.outcome]}</span></div></div>`]));
+    c.births.forEach(b => items.push([b.birth_date, `<div class="tl-item birth"><div class="when">${fmtDate(b.birth_date)}</div><div><b>ولادة</b> ${b.calf_name ? '— ' + esc(b.calf_name) : ''} ${b.calf_sex ? `<span class="badge">${SEX_CALF[b.calf_sex]}</span>` : ''}</div></div>`]));
+    c.events.forEach(e => items.push([e.event_date, `<div class="tl-item"><div class="when">${fmtDate(e.event_date)}</div><div><b>${EVENT[e.type]}</b> — ${esc(e.title)}</div></div>`]));
+    return items.sort((a, b) => b[0].localeCompare(a[0])).map(x => x[1]);
+  }
+
+  // ===================== نوافذ التسجيل =====================
+  async function camelOptions(sex, sel) {
+    const { camels } = await api('GET', '/api/camels?sex=' + sex);
+    return camels.filter(c => !['sold', 'dead', 'transferred'].includes(c.status)).map(c => `<option value="${c.id}" ${c.id === sel ? 'selected' : ''}>${esc(c.name)}${c.tag_number ? ' (' + esc(c.tag_number) + ')' : ''}</option>`).join('');
+  }
+  async function matingModal(damId) {
+    const [dams, sires] = await Promise.all([camelOptions('female', damId), camelOptions('male')]);
+    modal('تسجيل تلقيح', `<div class="stack">
+      <div class="field"><label>الناقة *</label><select class="input" name="dam_id" required>${dams}</select></div>
+      <div class="field"><label>الفحل من حلالي</label><select class="input" name="sire_id"><option value="">— فحل من خارج حلالي —</option>${sires}</select></div>
+      <div class="field"><label>أو اسم الفحل الخارجي</label><input class="input" name="sire_name_text" placeholder="مثال: صقر (عزبة أبو سالم)"></div>
+      <div class="field"><label>تاريخ التلقيح *</label><input class="input" type="date" name="mating_date" value="${today()}" max="${today()}"></div>
+      <div class="field"><label>ملاحظات</label><input class="input" name="notes"></div>
+      <div class="notice gold small">سيُحسب موعد الولادة التقديري تلقائياً (${state.user.gestation_days} يوماً) مع تنبيه قبله بـ ${state.user.birth_alert_days} يوماً. الموعد تقديري ولا يغني عن المتابعة البيطرية.</div></div>`,
+    async d => { const r = await api('POST', '/api/matings', d); toast(`تم التسجيل — الولادة المتوقعة ${fmtDate(r.mating.expected_birth_date)}`); render(); });
+  }
+  async function birthModal(damId) {
+    const dams = await camelOptions('female', damId);
+    modal('تسجيل ولادة', `<div class="stack">
+      <div class="field"><label>الأم *</label><select class="input" name="dam_id">${dams}</select></div>
+      <div class="field"><label>تاريخ الولادة *</label><input class="input" type="date" name="birth_date" value="${today()}" max="${today()}"></div>
+      <div class="field"><label>النتيجة</label><select class="input" name="outcome"><option value="live">مولود حي</option><option value="stillborn">نفوق المولود</option></select></div>
+      <div class="field"><label>جنس المولود</label><div class="row"><label class="check"><input type="radio" name="calf_sex" value="female" checked> بكرة</label><label class="check"><input type="radio" name="calf_sex" value="male"> قعود</label></div></div>
+      <div class="field"><label>اسم المولود</label><input class="input" name="calf_name" placeholder="يمكن تحديده لاحقاً"></div>
+      <div class="field"><label>رقم وسم المولود</label><input class="input" name="calf_tag"></div>
+      <div class="notice info small">سيُنشأ ملف للمولود تلقائياً ويُربط بأمه وبالفحل من آخر تلقيح مسجل.</div></div>`,
+    async d => { const r = await api('POST', '/api/births', d); toast('تم تسجيل الولادة — مبروك ما جاكم'); if (r.calf) go('/camel/' + r.calf.id); else render(); });
+  }
+  function eventModal(camelId) {
+    const m = modal('إضافة سجل', `<div class="stack">
+      <div class="field"><label>النوع *</label><select class="input" name="type">${Object.entries(EVENT).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select></div>
+      <div class="field"><label>العنوان *</label><input class="input" name="title" required placeholder="مثال: تحصين الحمى القلاعية"></div>
+      <div class="field"><label>التاريخ</label><input class="input" type="date" name="event_date" value="${today()}"></div>
+      <div class="field"><label>موعد المتابعة القادم</label><input class="input" type="date" name="next_due_date"><span class="hint">سيظهر في التقويم والتنبيهات</span></div>
+      <div class="field"><label>الطبيب / الطرف الآخر</label><input class="input" name="counterparty"></div>
+      <div class="field" data-amount hidden><label>المبلغ</label><div class="row"><input class="input" name="amount" type="number" min="0" step="any" style="flex:1"><select class="input" name="currency" style="width:auto">${['QAR', 'SAR', 'AED', 'KWD', 'BHD', 'OMR'].map(c => `<option>${c}</option>`).join('')}</select></div></div>
+      <div class="field"><label>تفاصيل</label><textarea class="input" name="details"></textarea></div>
+      <div class="notice gold small" data-sale hidden>تسجيل البيع أو النقل يغيّر حالة المطية إلى «مباعة/منقولة» ويخرجها من الحلال النشط.</div></div>`,
+    async d => { await api('POST', `/api/camels/${camelId}/events`, d); toast('تم الحفظ'); render(); });
+    const sel = m.form.type;
+    const upd = () => { const v = sel.value; m.form.querySelector('[data-amount]').hidden = !['sale', 'purchase', 'treatment', 'vet_visit'].includes(v); m.form.querySelector('[data-sale]').hidden = !['sale', 'transfer'].includes(v); };
+    sel.addEventListener('change', upd);
+  }
+  // ضغط الصورة في المتصفح قبل الرفع
+  function readFile(file, compress) {
+    return new Promise((res, rej) => {
+      const fr = new FileReader();
+      fr.onerror = () => rej(new Error('تعذر قراءة الملف'));
+      fr.onload = () => {
+        if (!compress || !file.type.startsWith('image/')) return res(fr.result);
+        const img = new Image();
+        img.onload = () => {
+          const max = 900, k = Math.min(1, max / Math.max(img.width, img.height));
+          const cv = document.createElement('canvas'); cv.width = Math.round(img.width * k); cv.height = Math.round(img.height * k);
+          cv.getContext('2d').drawImage(img, 0, 0, cv.width, cv.height);
+          let q = .82, out = cv.toDataURL('image/jpeg', q); while (out.length > 230000 && q > .35) { q -= .1; out = cv.toDataURL('image/jpeg', q); } res(out);
+        };
+        img.onerror = () => rej(new Error('صورة غير صالحة'));
+        img.src = fr.result;
+      };
+      fr.readAsDataURL(file);
+    });
+  }
+
+  // ===================== معالجة الأحداث العامة =====================
+  document.addEventListener('click', e => {
+    const g = e.target.closest('[data-go]');
+    if (!g) return;
+    e.preventDefault();
+    const ag2 = e.target.closest('[data-age]'); if (ag2) herdFilter = { q: '', sex: '', status: '', age: ag2.dataset.age };
+    go(g.dataset.go);
+  });
+  document.addEventListener('click', async e => {
+    const ag = e.target.closest('[data-age]'); if (ag) herdFilter = { q: '', sex: '', status: '', age: ag.dataset.age };
+    const el = e.target.closest('[data-act]');
+    if (!el || el.tagName === 'SELECT') return;
+    const a = el.dataset.act;
+    try {
+      if (a === 'mating') await matingModal(el.dataset.dam);
+      else if (a === 'birth') await birthModal(el.dataset.dam);
+      else if (a === 'event') eventModal(el.dataset.camel);
+      else if (a === 'delete-camel') { if (await confirmBox(`حذف «${el.dataset.name}» نهائياً مع كل سجلاتها؟ لا يمكن التراجع.`)) { await api('DELETE', '/api/camels/' + el.dataset.camel); toast('تم الحذف'); go('/herd'); } }
+      else if (a === 'delete-mating') { if (await confirmBox('حذف سجل التلقيح؟')) { await api('DELETE', '/api/matings/' + el.dataset.mating); toast('تم الحذف'); render(); } }
+      else if (a === 'delete-event') { if (await confirmBox('حذف هذا السجل؟')) { await api('DELETE', '/api/events/' + el.dataset.event); toast('تم الحذف'); render(); } }
+      else if (a === 'delete-media') { if (await confirmBox('حذف الملف نهائياً؟')) { await api('DELETE', '/api/media/' + el.dataset.media); toast('تم الحذف'); render(); } }
+      else if (a === 'revoke') { await api('DELETE', '/api/shares/' + el.dataset.share); toast('تم إلغاء الرابط'); render(); }
+      else if (a === 'demo-load') { el.disabled = true; await api('POST', '/api/demo'); toast('تم تحميل البيانات التجريبية'); render(); }
+      else if (a === 'demo-remove') { if (await confirmBox('حذف كل الإبل التجريبية وسجلاتها وصورها؟ بياناتك الحقيقية لا تتأثر.')) { await api('DELETE', '/api/demo'); toast('تم حذف البيانات التجريبية'); render(); } }
+      else if (a === 'analyze') { el.disabled = true; el.textContent = 'جارٍ التحليل…'; try { const r = await api('POST', '/api/media/' + el.dataset.media + '/analyze'); if (!r.enabled) toast('تحليل الصور غير متاح هنا', true); else modal('اقتراح من الصورة', `<p style="white-space:pre-wrap">${esc(r.suggestion)}</p><div class="notice gold small">${esc(r.notice)}</div>`); } finally { el.disabled = false; el.textContent = 'حلّل الصورة'; } }
+    } catch (err) { fail(err); }
+  });
+  document.addEventListener('change', async e => {
+    const el = e.target;
+    try {
+      if (el.dataset.act === 'outcome') { await api('PATCH', '/api/matings/' + el.dataset.mating, { outcome: el.value }); toast('تم تحديث النتيجة'); render(); }
+      if (el.dataset.upload) {
+        const f = el.files[0]; if (!f) return;
+        toast('جارٍ الرفع…');
+        const data = await readFile(f, el.dataset.upload === 'photo');
+        const r = await api('POST', `/api/camels/${el.dataset.camel}/media`, { data_base64: data, kind: el.dataset.upload, caption: f.name.slice(0, 80) });
+        if (r.duplicate_in_my_herd.length) toast(`تنبيه: هذه الصورة مرفوعة مسبقاً لـ ${r.duplicate_in_my_herd.map(d => d.name).join('، ')}`, true);
+        else if (r.duplicate_elsewhere) toast('تنبيه: صورة مطابقة موجودة في حساب آخر على المنصة — ستُراجع عند نشر الإعلانات', true);
+        else toast('تم الرفع');
+        render();
+      }
+    } catch (err) { fail(err); }
+  });
+
+  // ===================== التقويم =====================
+  async function viewCalendar(month) {
+    const base = month && /^\d{4}-\d{2}$/.test(month) ? month : today().slice(0, 7);
+    const [y, m] = base.split('-').map(Number);
+    const first = new Date(Date.UTC(y, m - 1, 1));
+    const startDow = (first.getUTCDay() + 1) % 7; // الأسبوع يبدأ السبت
+    const gridStart = new Date(first.getTime() - startDow * 86400000).toISOString().slice(0, 10);
+    const gridEnd = new Date(first.getTime() + (41 - startDow) * 86400000).toISOString().slice(0, 10);
+    shell('calendar', 'التقويم', loading());
+    const cal = await api('GET', `/api/calendar?from=${gridStart}&to=${gridEnd}`);
+    const by = {}; cal.items.forEach(i => (by[i.date] = by[i.date] || []).push(i));
+    const prev = new Date(Date.UTC(y, m - 2, 1)).toISOString().slice(0, 7), next = new Date(Date.UTC(y, m, 1)).toISOString().slice(0, 7);
+    const monthName = first.toLocaleDateString('ar-QA-u-nu-latn', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+    let cells = '';
+    for (let i = 0; i < 42; i++) {
+      const d = new Date(new Date(gridStart + 'T00:00:00Z').getTime() + i * 86400000).toISOString().slice(0, 10);
+      const evs = by[d] || [];
+      cells += `<div class="day ${d.slice(0, 7) !== base ? 'out' : ''} ${d === today() ? 'today' : ''}"><div class="num">${Number(d.slice(8))}</div>${evs.slice(0, 3).map(ev => `<a class="ev ${ev.kind}" href="#" data-go="/camel/${ev.camel_id}" title="${esc(ev.title + ' ' + ev.sub)}">${esc(ev.title.split(': ').pop())}</a>`).join('')}${evs.length > 3 ? `<span class="small muted">+${evs.length - 3}</span>` : ''}</div>`;
+    }
+    const monthItems = cal.items.filter(i => i.date.startsWith(base));
+    document.getElementById('page').innerHTML = `
+      <div class="card-h"><h1 style="margin:0">التقويم والمواعيد</h1>
+        <div class="row"><a class="btn ghost sm" href="#" data-go="/calendar/${prev}" aria-label="الشهر السابق">›</a><b style="min-width:130px;text-align:center">${monthName}</b><a class="btn ghost sm" href="#" data-go="/calendar/${next}" aria-label="الشهر التالي">‹</a><a class="btn ghost sm" href="#" data-go="/calendar">اليوم</a></div></div>
+      <div class="legend" style="margin-bottom:10px"><span class="l1">ولادة متوقعة (تقديري)</span><span class="l2">ولادة فعلية</span><span class="l3">تلقيح</span><span class="l4">متابعة صحية</span></div>
+      <div class="card" style="padding:12px"><div class="cal">${['السبت', 'الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة'].map(d => `<div class="dow">${d}</div>`).join('')}${cells}</div></div>
+      <section class="card"><h3>مواعيد ${monthName}</h3>${monthItems.length ? `<ul class="list">${monthItems.map(i => `<li><span class="badge ${i.kind === 'expected_birth' ? 'gold' : i.kind === 'mating' ? 'green' : ''}">${{ expected_birth: 'ولادة متوقعة', birth: 'ولادة', mating: 'تلقيح', follow_up: 'متابعة' }[i.kind]}</span><a class="grow" href="#" data-go="/camel/${i.camel_id}">${esc(i.title)} <span class="small muted">${esc(i.sub)}</span></a><span class="small nowrap">${fmtDate(i.date)}</span></li>`).join('')}</ul>` : '<p class="muted">لا توجد مواعيد هذا الشهر.</p>'}
+      <div class="notice gold small" style="margin-top:10px">${esc(cal.notice)}</div></section>`;
+  }
+
+  // ===================== المساعد الذكي =====================
+  async function viewAssistant() {
+    shell('assistant', 'المساعد الذكي', `
+      <div class="chat">
+        <div class="chat-head"><div class="ai-ico">${I.ai}</div><div class="grow"><b>مساعد وسم — WASM AI</b><div class="small muted">يفهم لهجتك • يسجل بعد تأكيدك • لا يخترع بيانات</div></div><button class="btn ghost sm" id="clearChat">مسح المحادثة</button></div>
+        <div class="msgs" id="msgs">${loading()}</div>
+        <form class="composer" id="composer"><input class="input" id="msgIn" placeholder="اكتب… مثال: لقحت وضحى اليوم من شاهين" autocomplete="off" maxlength="1000" aria-label="رسالة"><button class="btn gold" type="submit" aria-label="إرسال">${I.send}</button></form>
+      </div>
+      <p class="small muted" style="margin-top:8px">📋 = من سجلاتك • 🔮 = تقديري • ✍️ = مسودة من المساعد. المساعد لا ينفذ أي عملية مالية أو مزايدة، ولا يقدم تشخيصاً بيطرياً.</p>`);
+    const box = document.getElementById('msgs');
+    const { messages } = await api('GET', '/api/ai/messages');
+    box.innerHTML = '';
+    if (!messages.length) appendMsg({ role: 'assistant', content: 'هلا والله! أنا مساعد وسم 🐪\nأقدر أسجل لك التلقيح والولادة، وأجاوبك عن مواعيد الولادة وسجلات نوقك.', options: ['لقحت وضحى اليوم من شاهين', 'أي النوق عندي بتولد الشهر القادم؟', 'كم عندي حيران؟', 'أبي أبيع الشعلة'].map(x => ({ label: x, value: x })) });
+    messages.forEach(appendMsg);
+    const form = document.getElementById('composer'), input = document.getElementById('msgIn');
+    const send = async (text, shown) => {
+      appendMsg({ role: 'user', content: shown || text });
+      const typing = document.createElement('div'); typing.className = 'msg assistant'; typing.innerHTML = '<div class="typing"><span></span><span></span><span></span></div>'; box.appendChild(typing); box.scrollTop = box.scrollHeight;
+      try { const r = await api('POST', '/api/ai/messages', { text }); typing.remove(); appendMsg({ role: 'assistant', content: r.reply, cards: r.cards, action: r.action, options: r.options, source: r.source }); }
+      catch (e) { typing.remove(); appendMsg({ role: 'assistant', content: '⚠️ ' + e.message }); }
+    };
+    form.addEventListener('submit', e => { e.preventDefault(); const t = input.value.trim(); if (!t) return; input.value = ''; send(t); });
+    box.addEventListener('click', async e => {
+      const chip = e.target.closest('[data-chip]');
+      if (chip) return send(chip.dataset.chip, chip.textContent);
+      const act = e.target.closest('[data-ai]');
+      if (!act) return;
+      const card = act.closest('.action-card');
+      card.querySelectorAll('button').forEach(b => { b.disabled = true; });
+      try {
+        if (act.dataset.ai === 'confirm') { const r = await api('POST', `/api/ai/actions/${act.dataset.id}/confirm`); card.querySelector('.st').innerHTML = '<span class="badge green">تم الحفظ ✓</span>'; appendMsg({ role: 'assistant', content: r.reply, source: 'records' }); }
+        else { await api('POST', `/api/ai/actions/${act.dataset.id}/cancel`); card.querySelector('.st').innerHTML = '<span class="badge">ملغى</span>'; }
+      } catch (err) { fail(err); card.querySelectorAll('button').forEach(b => { b.disabled = false; }); }
+    });
+    document.getElementById('clearChat').onclick = async () => { await api('DELETE', '/api/ai/messages'); viewAssistant(); };
+    input.focus();
+  }
+
+  function appendMsg(m) {
+    const box = document.getElementById('msgs'); if (!box) return;
+    const div = document.createElement('div');
+    div.className = 'msg ' + m.role;
+    let html = esc(m.content);
+    if (m.source === 'ai_draft') html += '<span class="src badge outline">مسودة من المساعد — راجعها</span>';
+    if (m.source === 'ai') html += '<span class="src badge outline">إجابة من نموذج الذكاء الاصطناعي</span>';
+    (m.cards || []).forEach(c => {
+      if (c.type === 'camel_link') html += `<div class="chips"><a class="chip" href="#" data-go="/camel/${esc(c.id)}">${I.camel} فتح ملف ${esc(c.name || '')}</a></div>`;
+      if (c.type === 'camels') html += `<div class="chips">${c.items.map(x => `<a class="chip" href="#" data-go="/camel/${esc(x.id)}">${esc(x.name)}${x.tag_number ? ' (' + esc(x.tag_number) + ')' : ''}</a>`).join('')}</div>`;
+      if (c.type === 'due') html += `<div class="chips"><a class="chip" href="#" data-go="/calendar">${I.calendar} عرض في التقويم</a></div>`;
+    });
+    if (m.action) {
+      const st = m.action.status;
+      html += `<div class="action-card"><b>${esc(m.action.summary)}</b><dl class="kv">${m.action.fields.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>
+        <div class="st">${st === 'pending' ? `<div class="row"><button class="btn sm" data-ai="confirm" data-id="${esc(m.action.id)}">${I.check} تأكيد وحفظ</button><button class="btn ghost sm" data-ai="cancel" data-id="${esc(m.action.id)}">إلغاء</button></div>`
+        : `<span class="badge ${st === 'confirmed' ? 'green' : ''}">${{ confirmed: 'تم الحفظ ✓', cancelled: 'ملغى', expired: 'انتهت الصلاحية' }[st]}</span>`}</div></div>`;
+    }
+    if (m.options && m.options.length) html += `<div class="chips">${m.options.map(o => `<button type="button" class="chip" data-chip="${esc(o.value)}">${esc(o.label)}</button>`).join('')}</div>`;
+    div.innerHTML = html;
+    box.appendChild(div);
+    box.scrollTop = box.scrollHeight;
+  }
+
+  // ===================== العزب =====================
+  async function viewFarms() {
+    shell('farms', 'العزب', loading());
+    const { farms } = await api('GET', '/api/farms');
+    document.getElementById('page').innerHTML = `<div class="card-h"><div><h1 style="margin:0">العزب</h1><p class="muted" style="margin:0">نظّم حلالك حسب العزبة أو الموقع</p></div><button class="btn gold" id="addFarm">${I.plus} عزبة جديدة</button></div>
+      <div class="grid g3">${farms.map(f => `<div class="card"><div class="row">${I.tent}<h3 style="margin:0">${esc(f.name)}</h3></div><p class="muted small">${esc(f.area_text || '')} • ${esc((state.countries.find(c => c.code === f.country_code) || {}).name_ar || f.country_code)}</p><span class="badge green">${f.camels} مطية</span></div>`).join('') || emptyState('لا توجد عزب بعد.')}</div>
+      <div class="notice info small" style="margin-top:14px">إدارة العمال والمصاريف ومخزون الأعلاف للعزبة ستأتي في مرحلة لاحقة. لا نحفظ إحداثيات دقيقة لمواقع العزب حمايةً لخصوصيتك.</div>`;
+    if (!state.countries.length) state.countries = (await api('GET', '/api/countries')).countries;
+    document.getElementById('addFarm').onclick = () => modal('عزبة جديدة', `<div class="stack"><div class="field"><label>الاسم *</label><input class="input" name="name" required></div>
+      <div class="field"><label>الدولة</label><select class="input" name="country_code">${state.countries.map(c => `<option value="${c.code}" ${c.code === state.user.country_code ? 'selected' : ''}>${esc(c.name_ar)}</option>`).join('')}</select></div>
+      <div class="field"><label>المنطقة (وصف عام)</label><input class="input" name="area_text" placeholder="مثال: الشحانية"></div></div>`, async d => { await api('POST', '/api/farms', d); toast('تمت الإضافة'); render(); });
+  }
+
+  // ===================== الحساب =====================
+  async function viewAccount() {
+    if (!state.countries.length) state.countries = (await api('GET', '/api/countries')).countries;
+    const u = state.user;
+    const ROLE = { user: 'مستخدم عادي', owner: 'مالك حلال', trader: 'تاجر', broker: 'وسيط', company: 'شركة', provider: 'طبيب أو مقدم خدمة', country_admin: 'مدير دولة', super_admin: 'مدير عام' };
+    shell('account', 'حسابي', `<h1>حسابي والخصوصية</h1>
+      <div class="grid g2">
+        <form class="card stack" id="profileForm"><h3>البيانات الشخصية</h3>
+          <div class="field"><label>الاسم</label><input class="input" name="display_name" value="${esc(u.display_name)}"></div>
+          <div class="field"><label>الجوال</label><input class="input" name="phone" value="${esc(u.phone)}" dir="ltr"></div>
+          <div class="field"><label>الدولة</label><select class="input" name="country_code">${state.countries.map(c => `<option value="${c.code}" ${c.code === u.country_code ? 'selected' : ''}>${esc(c.name_ar)}</option>`).join('')}</select></div>
+          <div class="field"><label>نوع الحساب</label><input class="input" value="${ROLE[u.role]}" disabled></div>
+          <h3 style="margin-top:10px">إعدادات الحلال</h3>
+          <div class="field"><label>المدة من اللقاح إلى الولادة (يوم)</label><input class="input" type="number" name="gestation_days" min="330" max="420" value="${u.gestation_days}"><span class="hint">الافتراضي 390 يوماً تقريباً (نحو 13 شهراً). عدّلها حسب خبرتك أو توصية طبيبك.</span></div>
+          <div class="field"><label>التنبيه قبل الولادة (يوم)</label><input class="input" type="number" name="birth_alert_days" min="1" max="60" value="${u.birth_alert_days}"></div>
+          <button class="btn" type="submit">حفظ</button></form>
+        <div>
+          <form class="card stack" id="privacyForm"><h3>الخصوصية والموافقات</h3>
+            <label class="check"><input type="checkbox" name="ai_image_training_consent" ${u.ai_image_training_consent ? 'checked' : ''}><span>أوافق على استخدام صوري لتحسين نماذج الذكاء الاصطناعي في وسم <span class="small muted">(اختياري — معطل افتراضياً)</span></span></label>
+            <label class="check"><input type="checkbox" name="partner_data_sharing_consent" ${u.partner_data_sharing_consent ? 'checked' : ''}><span>أوافق على مشاركة بيانات التواصل مع شركاء وسم للعروض <span class="small muted">(اختياري — معطل افتراضياً)</span></span></label>
+            <div class="notice info small">ملفات حلالك خاصة بك ولا يطلع عليها أي مستخدم أو شركة إلا عبر رابط مشاركة تنشئه أنت.</div>
+            <div class="row"><button class="btn" type="submit">حفظ الموافقات</button></div></form>
+          <div class="card small muted">الدخول يتم بحساب Claude الخاص بك، وبيانات حلالك محفوظة في مساحة خاصة بك لا يطّلع عليها غيرك.</div>
+        </div></div>`);
+    const bind = (id, fn) => document.getElementById(id).addEventListener('submit', async e => { e.preventDefault(); try { await fn(formData(e.target)); } catch (err) { fail(err); } });
+    bind('profileForm', async d => { state.user = (await api('PATCH', '/api/me', d)).user; toast('تم الحفظ'); });
+    bind('privacyForm', async d => { state.user = (await api('PATCH', '/api/me', d)).user; toast('تم حفظ الموافقات'); });
+  }
+
+  // ===================== الأقسام القادمة =====================
+  const SOON = {
+    market: ['سوق الإبل', I.market, 2, ['إعلانات بيع وشراء: مغاتير، مجاهيم، أصايل وغيرها', 'فلاتر بالدولة والسعر والنوع والعمر والجنس', 'المفضلة، الإبلاغ، والمشاركة', 'التفاوض وإرسال العروض', 'نشر إعلان مباشرة من ملف المطية', 'تحليل الصور واكتشاف المكرر']],
+    auctions: ['المزادات الإلكترونية', I.gavel, 3, ['مزايدة مباشرة تُعالج على الخادم فقط', 'سجل مزايدات غير قابل للتعديل', 'تمديد تلقائي ضد القنص في الثواني الأخيرة', 'إشعارات تجاوز المزايدة وقرب الانتهاء', 'رصد أنماط المزايدة غير المعتادة للمراجعة البشرية']],
+    sires: ['الأفحل', I.star, 2, ['دليل الفحول المتاحة للتلقيح', 'سجل نسل كل فحل من بيانات الملاك (بموافقتهم)', 'حجز موعد تلقيح']],
+    mazayin: ['المزاين والنتائج', I.trophy, 3, ['جدول المهرجانات في دول الخليج', 'النتائج والمراكز', 'ربط الإنجازات بملف المطية']],
+    vet: ['الخدمات البيطرية', I.vet, 3, ['دليل العيادات والأطباء حسب الدولة', 'حجز الزيارات', 'ربط تقارير الزيارة بملف المطية (بموافقة المالك)']],
+    feed: ['الأعلاف والمستلزمات', I.feed, 3, ['متاجر شركاء وسم', 'عروض وأكواد خصم', 'طلب وتوصيل']],
+    transport: ['نقل الإبل', I.truck, 3, ['ناقلون معتمدون داخل الدولة وبين دول الخليج', 'طلب عرض سعر', 'تتبع الشحنة']],
+    brokers: ['الوسطاء', I.handshake, 3, ['ملفات وسطاء موثقين', 'عمولات واضحة', 'تقييمات']],
+    community: ['مجتمع أهل الإبل', I.users, 4, ['منشورات ونقاشات', 'أسئلة وأجوبة الخبرة', 'إشراف ومراجعة']],
+  };
+  function viewSoon(k) {
+    const s = SOON[k]; if (!s) return go('/');
+    shell(k, s[0], `<div class="card soon-hero"><div class="big">${s[1]}</div><h1>${s[0]}</h1><span class="badge gold">المرحلة ${s[2]}</span>
+      <p class="muted" style="max-width:520px;margin:12px auto">هذا القسم مخطط له ضمن المرحلة ${s[2]}. البنية الحالية (الحسابات، الصلاحيات، ملفات الإبل، سجل التدقيق، والمساعد) مصممة لتُبنى عليها هذه الميزات دون إعادة بناء النظام.</p>
+      <div class="phase-list">${s[3].map(f => `<div class="notice info">${I.check}<span>${f}</span></div>`).join('')}</div></div>`);
+  }
+  function viewMore() {
+    shell('more', 'المزيد', `<h1>المزيد</h1>${NAV.map(g => `<h3 style="margin-top:16px">${g.group}</h3><div class="card" style="padding:6px 14px"><ul class="list">${g.items.map(i => `<li>${i.icon}<a class="grow t" href="#" data-go="${i.path}">${i.label}</a>${i.soon ? `<span class="badge">${i.soon}</span>` : ''}</li>`).join('')}</ul></div>`).join('')}`);
+  }
+
+  async function boot() {
+    app.innerHTML = `<div class="boot"><img src="${LOGO}" alt="" style="width:72px"><h1 style="margin:12px 0 4px">وسم</h1><p class="muted">السوق الخليجي لأهل الإبل</p><div class="typing"><span></span><span></span><span></span></div></div>`;
+    const fail2 = (t) => { app.innerHTML = `<div class="boot"><img src="${LOGO}" alt="" style="width:72px"><h2 style="margin-top:12px">${t}</h2><p class="muted small" style="max-width:420px">وسم يحفظ بيانات حلالك في مساحة خاصة بحسابك في Claude. تأكد أنك مسجّل الدخول، وأن صاحب الصفحة شاركها معك بصلاحية تسمح بالكتابة.</p></div>`; };
+    for (let i = 0; i < 30 && !(window.claude && window.claude.use); i++) await new Promise(r => setTimeout(r, 100));
+    if (!window.claude || !window.claude.use) return fail2('افتح الصفحة من Claude');
+    const [db, user, sample] = await Promise.all([claude.use('db'), claude.use('user'), claude.use('sample').catch(() => null)]);
+    if (!db || !user) return fail2('تعذر الوصول إلى مساحة الحفظ');
+    const uid = await user.id();
+    if (!uid) return fail2('سجّل الدخول إلى Claude لاستخدام وسم');
+    try { const me = await user.me(); if (me && me.name) ME.display_name = me.name; } catch {}
+    if (sample) { SAMPLE = sample; state.ai = true; }
+    let lastLocal = 0;
+    window.addEventListener('wasm-save-error', ev => { const c = ev.detail && ev.detail.code; toast(c === 'invalid_argument' ? 'ما عندك صلاحية الحفظ في هذه الصفحة — اطلب من صاحبها صلاحية الكتابة' : c === 'quota_exceeded' ? 'امتلأت مساحة الحفظ' : 'تعذر الحفظ، تحقق من الاتصال', true); });
+    const origWrite = Store.write.bind(Store); Store.write = (id, d) => { lastLocal = Date.now(); return origWrite(id, d); };
+    let t;
+    try {
+      await Store.init(db, uid, () => {
+        if (Date.now() - lastLocal < 4000) return; // تغييراتي أنا معروضة أصلاً
+        clearTimeout(t); t = setTimeout(() => { const busy = document.querySelector('.modal-back') || /^\/camel\/(new|[^/]+\/edit)$/.test(state.route || '') || (state.route || '').startsWith('/assistant') || document.activeElement && /INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName); if (!busy) render(true); }, 400);
+      });
+    } catch (e) { return fail2(e.message || 'تعذر تحميل البيانات'); }
+    state.route = '/';
+    render();
+  }
+  boot();
+})();
+</script>
+</body>
+</html>

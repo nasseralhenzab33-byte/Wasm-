@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="وسم">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E2C27E"/><stop offset="1" stop-color="#B38A45"/></linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="18" fill="#0E3B31"/>
+  <rect x="5.5" y="5.5" width="53" height="53" rx="15" fill="none" stroke="url(#g)" stroke-width="1.5" opacity=".55"/>
+  <!-- سنامان على هيئة وسم -->
+  <path d="M13 41 C17 27 24 22 28 30 C30 34 31 35 32 35 C33 35 34 34 36 30 C40 22 47 27 51 41" fill="none" stroke="url(#g)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- خط الوسم (العصا) والنقطة -->
+  <path d="M32 40 V50" stroke="url(#g)" stroke-width="4.2" stroke-linecap="round"/>
+  <circle cx="32" cy="17" r="3" fill="url(#g)"/>
+</svg>

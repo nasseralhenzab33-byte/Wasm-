@@ -1,0 +1,12 @@
+{
+  "name": "وسم | WASM",
+  "short_name": "وسم",
+  "description": "السوق الخليجي لأهل الإبل",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF6EC",
+  "theme_color": "#0E3B31",
+  "icons": [{ "src": "/img/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
