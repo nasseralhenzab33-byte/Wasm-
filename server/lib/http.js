@@ -84,7 +84,7 @@ function serveStatic(root, req, res, pathname) {
   if (!file.startsWith(root + path.sep)) return false;
   if (!fs.existsSync(file) || !fs.statSync(file).isFile()) return false;
   const ext = path.extname(file);
-  res.writeHead(200, { 'Content-Type': MIME[ext] || 'application/octet-stream', 'Cache-Control': ext === '.html' ? 'no-cache' : 'public, max-age=3600' });
+  res.writeHead(200, { 'Content-Type': MIME[ext] || 'application/octet-stream', 'Cache-Control': (ext === '.html' || rel === '/sw.js' || ext === '.webmanifest') ? 'no-cache' : 'public, max-age=3600' });
   fs.createReadStream(file).pipe(res);
   return true;
 }

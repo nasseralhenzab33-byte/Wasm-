@@ -820,5 +820,8 @@
   }
 
   Object.assign(W, { api, esc, fmtDate, fmtDT, today, daysBetween, ageText, shell, modal, confirmBox, toast, fail, go, state, I, loading, emptyState, formData, readFile, render, refreshUnread, loadAges, SEX, SEX_CALF, STATUS, BREEDS, COLORS });
-  window.addEventListener('load', () => render());
+  window.addEventListener('load', () => {
+    render();
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(() => {});
+  });
 })();

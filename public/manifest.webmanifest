@@ -1,12 +1,21 @@
 {
-  "name": "وسم | WASM",
+  "id": "/",
+  "name": "وسم | WASM — السوق الخليجي لأهل الإبل",
   "short_name": "وسم",
-  "description": "السوق الخليجي لأهل الإبل",
+  "description": "السوق الخليجي لأهل الإبل: إدارة الحلال، التلقيح والولادة، السوق والمزادات، والمساعد الذكي.",
   "lang": "ar",
   "dir": "rtl",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#FAF6EC",
+  "orientation": "any",
+  "background_color": "#0E3B31",
   "theme_color": "#0E3B31",
-  "icons": [{ "src": "/img/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+  "categories": ["business", "shopping", "lifestyle"],
+  "icons": [
+    { "src": "/img/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/img/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/img/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
 }
