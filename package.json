@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "وسم | WASM — السوق الخليجي لأهل الإبل (المرحلة الأولى: إدارة الحلال والمساعد الذكي)",
   "private": true,
-  "engines": { "node": ">=22.5" },
+  "engines": { "node": ">=22.13" },
   "scripts": {
     "start": "node --disable-warning=ExperimentalWarning server/index.js",
     "dev": "LOG_REQUESTS=1 node --watch --disable-warning=ExperimentalWarning server/index.js",

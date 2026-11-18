@@ -79,6 +79,7 @@ git branch -M main && git remote add origin https://github.com/<حسابك>/wasm
 6. [الأمان والخصوصية](docs/06-SECURITY.md)
 7. [المهام المتبقية والتكلفة لكل مرحلة](docs/07-ROADMAP-COST.md)
 8. [الافتراضات](docs/08-ASSUMPTIONS.md)
+9. [النشر على Railway](docs/09-DEPLOY-RAILWAY.md)
 
 ## تفعيل الذكاء الاصطناعي المتقدم (اختياري)
 المساعد يعمل بالكامل للأوامر المعروفة **بدون أي مزود خارجي**. لتفعيل الأسئلة المفتوحة وتحليل الصور (م2)، أضف إلى `.env`:
@@ -87,6 +88,9 @@ AI_PROVIDER=anthropic        # أو openai لأي واجهة متوافقة
 AI_API_KEY=...
 AI_MODEL=...                 # اختياري
 ```
+
+## النشر على Railway (الأسهل — من المتصفح)
+انظر [docs/09-DEPLOY-RAILWAY.md](docs/09-DEPLOY-RAILWAY.md): ربط المستودع، إضافة Volume على `/data`، وضبط `ADMIN_EMAIL`.
 
 ## النشر على خادم (بأمر واحد)
 على خادم Ubuntu 24.04 جديد، بعد ربط النطاق بعنوان الخادم:

@@ -11,10 +11,33 @@ if (fs.existsSync(envFile)) {
   }
 }
 
+// منصات الاستضافة (Railway / Render): إعدادات إنتاج افتراضية + استخدام القرص الدائم تلقائياً
+const onPlatform = !!(process.env.RAILWAY_ENVIRONMENT || process.env.RENDER);
+if (onPlatform) {
+  process.env.NODE_ENV = process.env.NODE_ENV || 'production';
+  process.env.TRUST_PROXY = process.env.TRUST_PROXY || '1';
+}
+const volume = process.env.RAILWAY_VOLUME_MOUNT_PATH || process.env.DATA_DIR;
+if (volume) {
+  process.env.DB_FILE = process.env.DB_FILE || path.join(volume, 'wasm.db');
+  process.env.UPLOAD_DIR = process.env.UPLOAD_DIR || path.join(volume, 'uploads');
+} else if (onPlatform) {
+  console.warn('⚠️ لا يوجد قرص دائم (Volume): البيانات ستضيع عند إعادة التشغيل. أضف Volume مركّباً على /data');
+}
+
 const db = require('./lib/db');
 const { createApp } = require('./app');
 
 db.open(process.env.DB_FILE || path.join(__dirname, '..', 'data', 'wasm.db'));
+
+// ADMIN_EMAIL: البريد الذي يصبح مديراً عاماً (يكفي التسجيل به من الموقع)
+const admins = String(process.env.ADMIN_EMAIL || '').split(',').map(e => e.trim().toLowerCase()).filter(Boolean);
+for (const e of admins) db.run("UPDATE users SET role='super_admin', admin_country_code=NULL WHERE lower(email)=? AND role<>'super_admin'", e);
+
+// SEED_DEMO=1: بيانات تجريبية وهمية عند أول تشغيل فقط (قاعدة فارغة)
+if (process.env.SEED_DEMO === '1' && !db.one('SELECT 1 FROM users LIMIT 1')) {
+  require('../scripts/seed').seed({ silent: false }).catch(e => console.error('[seed]', e));
+}
 const port = Number(process.env.PORT) || 3000;
 const host = process.env.HOST || '0.0.0.0';
 const server = createApp();

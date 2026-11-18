@@ -113,6 +113,8 @@ async function seedPhases(ownerCtx, herdC, withPhotos) {
   for (const [cat, rank, nm, ow] of [['مغاتير — حقايق', 1, 'غلا', 'عزبة تجريبية'], ['مغاتير — حقايق', 2, 'شيخة', 'مالك تجريبي'], ['مجاهيم — جذاع', 1, 'الشاهينية', 'مالك تجريبي'], ['أصايل — ثنايا', 1, 'نوف', 'حساب تجريبي — أبو فهد']]) community.addResult(C(admin), f.id, { category: cat, rank, camel_name: nm, owner_display: ow });
   db.run("UPDATE listings SET is_demo=1 WHERE seller_id IN (SELECT id FROM users WHERE email LIKE '%@wasm.demo')");
   db.run("UPDATE auctions SET is_demo=1 WHERE seller_id IN (SELECT id FROM users WHERE email LIKE '%@wasm.demo')");
+  // في الإنتاج: حساب الإدارة التجريبي (كلمة مروره معروفة) لا يبقى مديراً
+  if (process.env.NODE_ENV === 'production') db.run("UPDATE users SET role='owner' WHERE id=?", admin.id);
 }
 
 async function seed({ silent = false, withPhotos = true } = {}) {
@@ -181,7 +183,7 @@ async function seed({ silent = false, withPhotos = true } = {}) {
   }
   db.run("UPDATE camels SET is_demo=1 WHERE owner_id=?", uid);
   await seedPhases(ctx, { wadha, shuala, shaheen, sultan, muzna, ghala, reem, nouf }, withPhotos);
-  if (!silent) console.log(`✅ تم إنشاء البيانات التجريبية (كلها وهمية).\n   مالك حلال: ${DEMO_EMAIL} / ${DEMO_PASSWORD}\n   مدير عام:  ${ADMIN_EMAIL} / ${DEMO_PASSWORD}\n   تاجر/بائع: trader@wasm.demo / ${DEMO_PASSWORD}`);
+  if (!silent) console.log(`✅ تم إنشاء البيانات التجريبية (كلها وهمية).\n   مالك حلال: ${DEMO_EMAIL} / ${DEMO_PASSWORD}\n${process.env.NODE_ENV === 'production' ? '' : `   مدير عام:  ${ADMIN_EMAIL} / ${DEMO_PASSWORD}\n`}   تاجر/بائع: trader@wasm.demo / ${DEMO_PASSWORD}`);
   return { user, DEMO_EMAIL, DEMO_PASSWORD };
 }
 

@@ -27,7 +27,8 @@ r.post('/api/auth/register', ctx => {
   const name = String(b.display_name || '').trim().slice(0, 60);
   if (name.length < 2) throw new HttpError(400, 'invalid_name', 'الاسم مطلوب');
   if (!COUNTRIES.includes(b.country_code)) throw new HttpError(400, 'invalid_country', 'اختر الدولة');
-  const role = SELF_ROLES.includes(b.role) ? b.role : 'owner';
+  const admins = String(process.env.ADMIN_EMAIL || '').split(',').map(e => e.trim().toLowerCase()).filter(Boolean);
+  const role = admins.includes(email) ? 'super_admin' : SELF_ROLES.includes(b.role) ? b.role : 'owner';
   auth.passwordPolicy(b.password);
   if (db.one('SELECT 1 FROM users WHERE email=?', email)) throw new HttpError(409, 'email_taken', 'البريد مسجل مسبقاً');
   const uid = id();
