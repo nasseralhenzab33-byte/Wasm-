@@ -34,8 +34,8 @@ db.open(process.env.DB_FILE || path.join(__dirname, '..', 'data', 'wasm.db'));
 const admins = String(process.env.ADMIN_EMAIL || '').split(',').map(e => e.trim().toLowerCase()).filter(Boolean);
 for (const e of admins) db.run("UPDATE users SET role='super_admin', admin_country_code=NULL WHERE lower(email)=? AND role<>'super_admin'", e);
 
-// SEED_DEMO=1: بيانات تجريبية وهمية عند أول تشغيل فقط (قاعدة فارغة)
-if (process.env.SEED_DEMO === '1' && !db.one('SELECT 1 FROM users LIMIT 1')) {
+// SEED_DEMO=1: بيانات تجريبية وهمية (مرة وحدة، ما تمس حسابات الناس الحقيقية)
+if (process.env.SEED_DEMO === '1' && !db.one("SELECT 1 FROM users WHERE email='demo@wasm.demo'")) {
   require('../scripts/seed').seed({ silent: false }).catch(e => console.error('[seed]', e));
 }
 const port = Number(process.env.PORT) || 3000;
